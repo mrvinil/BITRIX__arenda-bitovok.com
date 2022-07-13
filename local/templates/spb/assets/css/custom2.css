@@ -1,0 +1,532 @@
+
+header .contacts .phone a {
+  color: #fff!important;
+  text-decoration: none;
+}
+
+.loader{
+    margin: 50px auto 0px;
+    height: 240px;
+    width: 240px;
+    background: url(/img/loader.svg) no-repeat top center;
+}
+	.loader p{
+		padding-top: 160px;
+		color: #8e2d31;
+		text-align: center;
+	}
+/* #main.bkbd{
+	max-height: 700px!important;
+	} */
+
+#main.bk{
+  background: url(/img/bg-300.jpg) center center no-repeat, #f5d6be;
+  background-size: cover;
+  max-height: 710px!important;
+  padding-top: 0px!important;
+  height: 705px;
+  /*margin-top: 105px;*/
+}
+
+/* #main.bd{
+	background: url(/img/bg_bd.jpg) top center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+	max-height: 700px!important;
+	}
+
+#main.mz{
+	background: url(/img/bg_md.jpg) top center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+	max-height: 700px!important;
+	}
+
+#main.po{
+	background: url(/img/bg_po.jpg) top center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+	max-height: 700px!important;
+	} */
+.price-block{
+	/* background: #23292f; */
+}
+.price-day{
+	color: #8e2d31;
+	font-size: 150%
+}
+.price-day span{
+	text-decoration: line-through;
+}
+.price-day span>span{
+	color: #777;
+}
+.price-month{
+		color: #23292f;
+}
+.price-month span{
+	text-decoration: line-through;
+}
+.price-month span>span{
+	color: #777;
+}
+
+
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto 0 auto;
+  border-radius: 1px;
+  -webkit-box-shadow: 0 0 30px 0 rgba(0, 0, 0, .25);
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, .25);
+}
+section.slider{
+  box-shadow: none;
+}
+.slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  list-style: none;
+}
+
+.slider ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 1140px;
+  height: 400px;
+  background: #fff;
+  text-align: left;
+  opacity: 0;
+  transition: 0.33s;
+}
+.double-slider .slider-ind ul li {
+    position: relative;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 1140px;
+    height: 280px;
+    background: transparent;
+    text-align: left;
+    opacity: 0;
+    transition: 0.33s;
+}
+.slider ul li:nth-child(2){
+  opacity: 1;
+}
+span.control_prev, span.control_next {
+  position: absolute;
+  top: 45%;
+  z-index: 999;
+  display: block;
+  padding: 10px 16px;
+  width: auto;
+  height: auto;
+  background: #8e2d31;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
+  border-radius: 50%!important;
+  width: 40px;
+  height: 40px;
+  line-height: 1em;
+}
+
+span.control_prev:hover, span.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+span.control_prev {
+
+}
+
+span.control_next {
+  right: 0;
+  
+}
+
+.slider_option {
+  position: relative;
+  margin: 10px auto;
+  width: 160px;
+  font-size: 18px;
+}
+.slider .imag {
+    width: 100%;
+    height: 400px;
+    background-size: cover!important;
+    /* background-position-x: 400px; */
+}
+.slider .poradok p{
+	margin-left: 50px;
+}
+.slider .poradok p.text{
+	font-size: 18px;
+}
+.slider .poradok .image{
+	width: 40px;
+    height: 40px
+}
+
+.slider li:nth-child(1) .image {
+    background: url(/img/icon/chist/2.svg) no-repeat;
+}
+.slider li:nth-child(2) .image {
+    background: url(/img/icon/chist/3.svg) no-repeat;
+}
+.slider li:nth-child(3) .image {
+    background: url(/img/icon/chist/3.svg) no-repeat;
+}
+
+/* .slider li .col-6:last-child{
+  padding-right: 80px;
+} */
+section.slider{
+	background: #f5d6be;
+}
+
+
+.slider-blue, #advantage{
+  background: #f5d6be;
+}
+.slider-blue h2, #advantage h2, .slider-blue h3, #advantage h3{
+  color: #23292e;
+}
+section.slider span.control_prev {
+  left: -5px;
+}
+
+section.slider span.control_next {
+  right: 25px;
+  
+}
+
+#blag h2{
+	margin-bottom: 45px;
+}
+#blag .col-2{
+}
+#blag .col-2 .pismo{
+	width: 100%;
+	height: 220px;
+  background-size: cover;
+  border: 2px solid #eaeaea;
+  background-position-y: 20px;
+}
+
+
+#slider2 ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 1140px;
+  height: 350px;
+  background: #fff;
+  text-align: left;
+}
+
+#slider2{
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+#slider2 .imag{
+  background-position: top center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 350px;
+  width: 350px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 5px solid #eaeaea;
+}
+#slider2 h3{
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+#slider2 h4{
+  text-align: left;
+  margin-top: 0px;
+  margin-bottom: 45px;
+}
+.fishki-spec p{
+  padding-left: 42px;
+  margin-bottom: 15px;
+}
+.fishki-spec p:before{
+  content: "";
+  background: url(/img/checked.png) no-repeat;
+  background-size: contain;
+  width: 28px;
+  height: 28px;
+  left: 16px;
+  display: block;
+  position: absolute;
+}
+.fishki-specov{
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-top: 25px;
+  border-top: 2px solid #eaeaea;
+  border-bottom: 2px solid #eaeaea;
+}
+.fishki-specov p{
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 0;
+
+}
+.pisma .col-2:nth-child(1) .pismo{
+  background: url(http://www.crumb.ru/upload/medialibrary/99b/99b8f3646ef774f959dbb0506d711a72.jpg) no-repeat;
+}
+.pisma .col-2:nth-child(2) .pismo{
+  background: url(http://www.karat96.com/Images/sert/letter.jpg) no-repeat;
+  background-position-y: 0px!important;
+}
+.pisma .col-2:nth-child(3) .pismo{
+  background: url(http://ртк-томск.рф/upload/sertificates/Blagodarstvennoe_Grand_bimage_49_2960.jpg) no-repeat;
+  background-position-y: -5px!important;
+}
+.pisma .col-2:nth-child(4) .pismo{
+  background: url(https://www.mlm66.ru/4a84fb257424f.jpg) no-repeat;
+  background-position-y: 0px!important;
+}
+.pisma .col-2:nth-child(5) .pismo{
+  background: url(https://k-aydit.ru/d/725533/d/blagodarstvennoye_pismo_voisnkiy_uchet_zarnestservis.jpg) no-repeat;
+}
+.pisma .col-2:nth-child(6) .pismo{
+  background: url(http://parket-dom.ru/assets/images/other/gratitude/euro-plast/report.jpg) no-repeat;
+  background-position-y: 0px!important;
+}
+
+.sklade{
+  background: url(/img/bg_bk-white.jpg) center center no-repeat, #fff;
+  background-size: cover;
+  height: 670px;
+}
+.sklade h2 {
+    color: #fff;
+    /* text-shadow: 0px 0px 74px #23292e; */
+    margin-top: 170px;
+    font-size: 46px;
+    background: rgba(54, 81, 124, .8);
+    padding-top: 15px;
+}
+
+
+
+
+.svishe{
+  background: url(/img/bg_byt.jpg) top center;
+  background-size: cover;
+  height: 600px;
+}
+.svishe h2 {
+    color: #fff;
+    /* text-shadow: 0px 0px 74px #23292e; */
+    margin-top: 100px;
+    font-size: 46px;
+    background: rgba(54, 81, 124, .8);
+    padding-top: 15px;
+}
+#poradok-oformlen h2 {
+  background: rgba(54, 81, 124, .8);
+}
+
+#contacts h2, #contacts h3 {
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+
+#slider3 ul li {
+  height: 400px;
+}
+
+/*#slider3 ul li .row{*/
+      /*height: 400px;*/
+/*margin-left: 0px;*/
+      /*margin-right: 15px;*/
+/*padding: 15px 0px; */
+/*}*/
+#slider3 ul li .col-6.bg{
+    height: 400px;
+}
+
+/*#slider3 ul li .row .row{*/
+      /*height: 400px;*/
+      /*margin-left: 15px;*/
+      /*margin-right: 15px;*/
+      /*padding: 0px 0px;*/
+/*}*/
+
+#advantage .info h3 {
+    margin-top: 30px;
+    font-size: 22px;
+    text-align: left;
+    font-weight: 600;
+    margin-bottom: 15px;
+    padding-bottom: 0;
+    color: #8e2d31;
+}
+
+#slider .row .wow{
+  padding-right: 30px;
+}
+.control_next{
+background: url(/img/icon/arrow-r-wh.svg) no-repeat center, #8e2d31!important;
+background-size: 14px!important;
+}
+.control_prev{
+background: url(/img/icon/arrow-r-wh.svg) no-repeat center, #8e2d31!important;
+background-size: 14px!important;
+transform: rotateZ(180deg);
+}
+
+.opit-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: -50px;
+}
+.opit-item {
+  display: grid;
+  grid-template-columns: 0.7fr 1fr;
+  width: 48%;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 30px 0 rgba(0, 0, 0, .25);
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, .25);
+  margin-bottom: 50px;
+}
+.opit-first__block {
+    height: 215px;
+    background-color: #fff;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.opit-second__block {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.opit-name {
+    font-weight: 700;
+    color: #2196f3;
+    font-size: 26px;
+}
+.opit-check {
+  font-size: 18px;
+  position: relative;
+  padding-left: 30px
+}
+.opit-check:before {
+    content: "";
+    background: url(/img/checked.png) no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    left: 0;
+    display: block;
+    position: absolute;
+    bottom: 3px;
+}
+.opit-phone {
+  font-weight: 700;
+    color: #2196f3;
+    font-size: 22px;
+}
+
+#doc__op .tabs__content {
+  display: none;
+  height: 411px;
+    background-color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#doc__op .tabs__content.active {
+  display: block;
+}
+#doc__op .tabs__caption {
+    padding: 5px 0;
+    flex-direction: row;
+    justify-content: space-evenly;
+    display: flex;
+    margin: auto;
+    margin-bottom: 30px;
+}
+#doc__op .tabs__caption li.active {
+    color: #f30404;
+    border-left: none;
+    background: #fff;
+}
+#doc__op .tabs__caption li {
+    text-align: center;
+    width: 345px;
+    color: #ffffff;
+    text-transform: uppercase;
+    list-style: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.4em;
+    transition: cubic-bezier(0, 0, .2, 1) .33s;
+    margin-bottom: 15px;
+    background: #2196f3;
+    color: #fff;
+    box-shadow: 0px 6px 8px 1px rgba(0, 0, 0, 0.25);
+    padding: 20px 0;
+}
+#doc__op .tabs__caption li:hover {
+      border-left: none;
+}
+
+.kaskad-bot h2 {
+    color: #fff;
+    /* text-shadow: 0px 0px 74px #23292e; */
+    margin-top: 150px;
+    font-size: 46px;
+    /*background: rgba(35, 41, 46, 0.75);*/
+    padding-top: 15px;
+}
+#contacts .col-4:nth-child(2) {
+    text-align: center;
+}
+#catalog-arenda .product-wrap.col-6 {
+    -ms-flex: 0 0 48%;
+    flex: 0 0 48%;
+    max-width: 48%;
+}
+#contacts-bottom p a {
+    color: #23292e;
+    text-decoration: none;
+}
+.opit-phone a {
+    color: #2196f3;
+    text-decoration: none;
+}
+#poradok-oformlen h2 a {
+    color: #fff;
+    text-decoration: none;
+}
+#stick .header .contacts p a {
+    /*color: #F44336;*/
+    color: #fff;
+    text-decoration: none;
+}

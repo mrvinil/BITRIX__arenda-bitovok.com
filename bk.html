@@ -1,0 +1,160 @@
+<!-- <div id="catalog-nav-2">
+  <div class="container catalog-nav-2">
+    <div class="row">
+      <div class="col-12">
+          <ul class="tabs">
+            <li class="active">Металлические бытовки (блок-контейнеры)</li>
+            <li>Деревянные бытовки</li>
+          </ul> 
+      </div>
+    </div>
+  </div>
+</div> -->
+<div class="container">
+  <div class="row">
+    <div class="box visible"> 
+<div id="bk_ajax" class="row bk">
+   <div href="#product" data-id="bk01" data-toggle="modal" class="col-4 product">
+     <img class="img-product" src="" alt="">
+     <h3>БК-01</h3>
+     <div class="product-info">
+       <p>Назначение:</p>
+       <span>Для проживания</span>
+       <p>Стандартные размеры (м):</p>
+       <span>6x2.4, 7x2.4, 8x2.4, 9x2.4</span>
+     </div>
+     <div data-hover="Подробнее" class="more cta bl">Подробнее</div>
+   </div>
+
+   <div href="#product" data-id="bk02" data-toggle="modal" class="col-4 product">
+     <img class="img-product" src="" alt="">
+     <h3>БК-02</h3>
+     <div class="product-info">
+       <p>Назначение:</p>
+       <span>Для проживания</span>
+       <p>Стандартные размеры (м):</p>
+       <span>6x2.4, 7x2.4, 8x2.4, 9x2.4</span>
+     </div>
+     <div data-hover="Подробнее" class="more cta bl">Подробнее</div>
+   </div>
+
+    <div href="#product" data-id="bk03" data-toggle="modal" class="col-4 product">
+     <img class="img-product" src="" alt="">
+     <h3>БК-03</h3>
+     <div class="product-info">
+       <p>Назначение:</p>
+       <span>Для проживания</span>
+       <p>Стандартные размеры (м):</p>
+       <span>6x2.4, 7x2.4, 8x2.4, 9x2.4</span>
+     </div>
+     <div data-hover="Подробнее" class="more cta bl">Подробнее</div>
+   </div>
+
+    <div href="#product" data-id="bk04" data-toggle="modal" class="col-4 product">
+     <img class="img-product" src="" alt="">
+     <h3>БК-04</h3>
+     <div class="product-info">
+       <p>Назначение:</p>
+       <span>Для проживания</span>
+       <p>Стандартные размеры (м):</p>
+       <span>6x2.4, 7x2.4, 8x2.4, 9x2.4</span>
+     </div>
+     <div data-hover="Подробнее" class="more cta bl">Подробнее</div>
+   </div>
+
+    <!-- <div href="#product" data-id="bk05" data-toggle="modal" class="col-4 product">
+     <img class="img-product" src="" alt="">
+     <h3>БК-05</h3>
+     <div class="product-info">
+       <p>Назначение:</p>
+       <span>Для проживания</span>
+       <p>Стандартные размеры (м):</p>
+       <span>6x2.4, 7x2.4, 8x2.4, 9x2.4</span>
+     </div>
+     <div data-hover="Подробнее" class="more cta bl">Подробнее</div>
+   </div>
+
+    <div href="#product" data-id="bk06" data-toggle="modal" class="col-4 product">
+     <img class="img-product" src="" alt="">
+     <h3>БК-06</h3>
+     <div class="product-info">
+       <p>Назначение:</p>
+       <span>Для проживания</span>
+       <p>Стандартные размеры (м):</p>
+       <span>6x2.4, 7x2.4, 8x2.4, 9x2.4</span>
+     </div>
+     <div data-hover="Подробнее" class="more cta bl">Подробнее</div>
+   </div> -->
+
+    <div href="#product" data-id="bk07" data-toggle="modal" class="col-4 product">
+     <img class="img-product" src="" alt="">
+     <h3>БК-07</h3>
+     <div class="product-info">
+       <p>Назначение:</p>
+       <span>Для проживания</span>
+       <p>Стандартные размеры (м):</p>
+       <span>5x2.4</span>
+     </div>
+     <div data-hover="Подробнее" class="more cta bl">Подробнее</div>
+   </div>
+
+    <div href="#product" data-id="bk08" data-toggle="modal" class="col-4 product">
+     <img class="img-product" src="" alt="">
+     <h3>БК-08</h3>
+     <div class="product-info">
+       <p>Назначение:</p>
+       <span>Для проживания</span>
+       <p>Стандартные размеры (м):</p>
+       <span>4x2.4</span>
+     </div>
+     <div data-hover="Подробнее" class="more cta bl">Подробнее</div>
+   </div>
+</div>
+
+    </div>
+  </div>
+</div>
+
+<script>
+   jQuery(function($) {
+    $('.bk .product').each(function(){
+      imgattr = $(this).attr('data-id');
+      $(this).find('img').attr('src', '/img/bk/'+imgattr+'/0.jpg');
+    });
+  });
+
+/*  (function(s) {
+      var n;
+      s(".tabs").on("click", "li:not(.active)", function() {
+          n = s(this).parents("#catalog_content"), s(this).dmtabs(n)
+      }), s.fn.dmtabs = function(n) {
+          s(this).addClass("active").siblings().removeClass("active"), n.find(".box").eq(s(this).index()).show(1, function() {
+              s(this).addClass("open_tab")
+          }).siblings(".box").hide(1, function() {
+              s(this).removeClass("open_tab")
+          })
+      }
+  })(jQuery);*/
+ 
+
+  (function(m){
+    var img, product_name, path;
+    $('.bk .product').click(function(){
+        $('#product').addClass('bk-cart');
+        $('.bk-cart #product-gallery .img-thumb').show();
+        img = $(this).find('.img-product').attr('src');
+        product_name = $(this).find('h3').html();
+        path = $(this).attr('data-id');
+        $('#product .img-product-main').attr('src', img);
+        $('#product h2').html(product_name);
+        $('#img_1').attr('src', '/img/bk/' + path + '/0.jpg');
+        $('#img_2').attr('src', '/img/bk/' + path + '/1.jpg');
+        $('#img_3').attr('src', '/img/bk/' + path + '/2.jpg');
+      });
+    $('.product').click(function(){
+      $('.img-thumb').removeClass('active');
+      $('#img_1').addClass('active');
+    });
+  })(jQuery);
+</script>
+

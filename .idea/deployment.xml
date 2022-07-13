@@ -35,6 +35,8 @@
             <excludedPath local="true" path="$PROJECT_DIR$/.cache" />
             <excludedPath local="true" path="$PROJECT_DIR$/bitrix" />
             <excludedPath local="true" path="$PROJECT_DIR$/upload" />
+            <excludedPath path="/arenda-bitovok.com/public_html/webhook/hook.log" />
+            <excludedPath local="true" path="$PROJECT_DIR$/webhook/hook.log" />
           </excludedPaths>
         </serverdata>
       </paths>
