@@ -1,0 +1,316 @@
+/*ГЛОБАЛЬНЫЕ ПЕРЕМЕННЫЕ*/
+:root {
+	--color__white: #ffffff;
+	--color__black: #000000;
+	--color__dark: #404449;
+	--color__gray: #868686;
+	--color__red: #E41E0C;
+	--color__yellow: #FFCF00;
+}
+
+/*ШРИФТЫ*/
+@font-face {
+	font-family: 'Roboto';
+	font-display: swap;
+	src: url('assets/fonts/Roboto-Regular.woff') format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Roboto';
+	font-display: swap;
+	src: url('assets/fonts/Roboto-Medium.woff') format("woff");
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Roboto';
+	font-display: swap;
+	src: url('assets/fonts/Roboto-Bold.woff') format("woff");
+	font-weight: 700;
+	font-style: normal;
+}
+
+
+/*СТИЛИ ВСЕГО ДОКУМЕНТА*/
+* { /* отключаем подсветку кнопки или ссылки при тапе */
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+:focus::-webkit-input-placeholder {
+	color: transparent;
+}
+
+:focus::-moz-placeholder {
+	color: transparent;
+}
+
+:focus:-moz-placeholder {
+	color: transparent;
+}
+
+:focus:-ms-input-placeholder {
+	color: transparent;
+}
+
+:focus {
+	outline: none !important;
+}
+html {
+	color: var(--color__black);
+	font-family: 'Roboto', Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	height: 100%;
+}
+
+body {
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+}
+
+html, body {
+	overflow-x: hidden;
+	opacity: 1;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:after,
+:before {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+a, input, button {
+	transition: all 0.2s ease 0s;
+	-moz-transition: all 0.2s ease 0s;
+	-webkit-transition: all 0.2s ease 0s;
+}
+
+/* ОСНОВНЫЕ СТИЛИ >>>>>*/
+.section {
+	padding-right: 15px !important;
+	padding-left: 15px !important;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.clb {
+	clear: both;
+	height: 0;
+	width: 100%;
+}
+
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+/* <<<<< ОСНОВНЫЕ СТИЛИ*/
+
+/*КНОПКИ >>>>>*/
+.btn {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 0;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.42857143;
+	text-decoration: none;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-image: none;
+	transition: all 0.2s ease 0s;
+	-moz-transition: all 0.2s ease 0s;
+	-webkit-transition: all 0.2s ease 0s;
+}
+.btn--cta {
+	color: var(--color__dark);
+	background-color: transparent;
+	border: 2px solid var(--color__yellow);
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+.btn--cta:hover {
+	background-color: var(--color__yellow);
+}
+
+.btn--red {
+	color: var(--color__white);
+	background-color: var(--color__red);
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+.btn--red:hover {
+	opacity: .6;
+}
+
+/* <<<<< КНОПКИ*/
+
+/*ДЛЯ СЛАЙДЕРА >>>>>*/
+.button-arrow {
+	height: 20px;
+	width: 20px;
+	font-size: 20px;
+	color: #000;
+	display: grid;
+	align-items: center;
+	justify-items: center;
+	text-decoration: none;
+	background-color: transparent;
+}
+.navigation-prev {
+	left: 0;
+}
+.navigation-next {
+	right: 0;
+}
+.navigation-prev, .navigation-next {
+	line-height: 0;
+	position: absolute;
+	top: 50%;
+	display: block;
+	padding: 0;
+	-webkit-transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+	cursor: pointer;
+	border: none;
+	outline: none;
+	z-index: 10;
+}
+.slick-dots li {
+	margin: 0;
+}
+.slick-dots li.slick-active button:before {
+	opacity: 1;
+	color: var(--color__yellow);
+}
+.slick-dots li button:hover:before, .slick-dots li button:focus:before {
+	opacity: 1;
+	color: var(--color__yellow);
+}
+.slick-dots li button:before {
+	font-size: 14px;
+	opacity: 1;
+	color: var(--color__dark);
+}
+.slick-dotted.slick-slider {
+	margin-bottom: 0;
+}
+/*<<<<< ДЛЯ СЛАЙДЕРА*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+
+}
+
+/* Custom, iPhone 6/7/8/X */
+@media (max-width: 375px) {
+
+}
+
+/* Custom, iPhone Retina 5/SE */
+@media (max-width: 320px) {
+
+}
+
+
+/*==========  Mobile First  ==========*/
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+
+}
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+	.section {
+		/*width: 460px;*/
+	}
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+	.section {
+		/*width: 750px;*/
+	}
+}
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+	.section {
+		/*width: 970px;*/
+	}
+}
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+	.section {
+		max-width: 1140px;
+	}
+}
