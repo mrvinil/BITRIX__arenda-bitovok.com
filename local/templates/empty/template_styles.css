@@ -57,7 +57,7 @@
 	outline: none !important;
 }
 html {
-	color: var(--color__black);
+	color: var(--color__dark);
 	font-family: 'Roboto', Arial, sans-serif;
 	font-size: 16px;
 	font-weight: 400;
@@ -100,6 +100,7 @@ a, input, button {
 
 /* ОСНОВНЫЕ СТИЛИ >>>>>*/
 .section {
+	width: 100%;
 	padding-right: 15px !important;
 	padding-left: 15px !important;
 	margin-right: auto;
@@ -227,22 +228,87 @@ a, input, button {
 
 
 
+.header {
+	display: grid;
+	gap: 10px;
+}
 
+.header__top {
+	background: var(--color__yellow);
+}
 
+.header__nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 45px;
+}
 
+.header__menu {
+	list-style: none;
+	display: flex;
+	gap: 25px;
+}
 
+.header__menu-link {
+	color: var(--color__black);
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 19px;
+}
+.header__menu-link:hover {
+	text-decoration: underline;
+}
 
+.header__location {
+	display: flex;
+	align-items: center;
+	gap: 3px;
+}
 
+.header__location-icon {
+	width: 11px;
+	height: 11px;
+}
 
+.header__location-value {
+	font-size: 14px;
+	line-height: 17px;
+}
 
+.header__info {
+	display: flex;
+	justify-content: space-between;
+	min-height: 60px;
+}
 
+.header__logo {
+	background: url(/local/templates/empty/images/logo.svg) no-repeat;
+	background-size: cover;
+	width: 255px;
+	height: 39px;
+}
 
+.header__contacts {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+}
 
+.phone-link {
+	text-decoration: none;
+	color: var(--color__red);
+	font-size: 28px;
+	line-height: 31px;
+	font-weight: 500;
+}
 
-
-
-
-
+.callback-link {
+	color: var(--color__gray);
+	font-size: 12px;
+	line-height: 17px;
+}
 
 
 

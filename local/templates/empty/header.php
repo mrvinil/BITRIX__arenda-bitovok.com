@@ -75,7 +75,30 @@
 <div id="panel"><? $APPLICATION->ShowPanel(); ?></div>
 
 <header class="header">
-
+	<div class="header__top">
+		<nav class="section header__nav">
+			<ul class="header__menu">
+				<li><a href="#" class="header__menu-link">Модели</a></li>
+				<li><a href="#" class="header__menu-link">О бытовках</a></li>
+				<li><a href="#" class="header__menu-link">Доставка</a></li>
+				<li><a href="#" class="header__menu-link">Классификация</a></li>
+				<li><a href="#" class="header__menu-link">О нас</a></li>
+				<li><a href="#" class="header__menu-link">Карта</a></li>
+				<li><a href="#" class="header__menu-link">Контакты</a></li>
+			</ul>
+			<div class="header__location">
+				<img src="<?=SITE_TEMPLATE_PATH?>/images/icons/address.png" class="header__location-icon">
+				<p class="header__location-value">Санкт-Петербург и область</p>
+			</div>
+		</nav>
+	</div>
+	<div class="section header__info">
+		<a href="/" class="header__logo"></a>
+		<div class="header__contacts">
+			<a href="tel:88124256215" class="phone-link">(812) 425-62-15</a>
+			<a href="#" class="callback-link">заказать звонок</a>
+		</div>
+	</div>
 </header>
 
 <main class="wrapper">
