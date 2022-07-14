@@ -217,5 +217,10 @@ $APPLICATION->SetTitle("Новая страница");
 	</div>
 </div>
 
+<div class="section gap">
+	<h2 class="section-title">Где мы работаем</h2>
+	<img src="<?=SITE_TEMPLATE_PATH?>/images/map.png"class="map img-responsive">
+</div>
+
 
 <? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>
