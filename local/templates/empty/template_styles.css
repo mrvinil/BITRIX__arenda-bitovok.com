@@ -404,30 +404,37 @@ a, input, button {
 	max-width: 396px;
 }
 
-.card-wrap {
+.card {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 70px 20px;
 	margin-top: 60px;
 }
 
-.card {
+.card_theme_white .card__img-list {
+	background: var(--color__gray-light);
+}
 
+.card_theme_dark .card__img-list {
+	background: var(--color__dark);
 }
 
 .card__img-list {
+	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: var(--color__gray-light);
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
 	border-radius: 8px;
 	min-height: 345px;
 }
 
-.card__img {
-
+.card__label {
+	position: absolute;
+	bottom: 15px;
+	right: 20px;
+	pointer-events: none;
 }
 
 .card__desc {

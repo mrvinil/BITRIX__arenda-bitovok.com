@@ -22,9 +22,9 @@ $APPLICATION->SetTitle("Новая страница");
 
 <div class="section gap">
 	<h2 class="section-title">Популярные модели</h2>
-	<div class="card-wrap">
+	<div class="card card_theme_white">
 		
-		<div class="card">
+		<div class="card__item">
 			<div class="card__img-list">
 				<img src="<?=SITE_TEMPLATE_PATH?>/images/bk/bk1.png" alt="" class="card__img img-responsive">
 			</div>
@@ -36,7 +36,7 @@ $APPLICATION->SetTitle("Новая страница");
 			<a href="#" class="btn btn--cta card__button">Забронировать</a>
 		</div>
 		
-		<div class="card">
+		<div class="card__item">
 			<div class="card__img-list">
 				<img src="<?=SITE_TEMPLATE_PATH?>/images/bk/bk2.png" alt="" class="card__img img-responsive">
 			</div>
@@ -47,7 +47,7 @@ $APPLICATION->SetTitle("Новая страница");
 			</div>
 			<a href="#" class="btn btn--cta card__button">Забронировать</a>
 		</div>
-		<div class="card">
+		<div class="card__item">
 			<div class="card__img-list">
 				<img src="<?=SITE_TEMPLATE_PATH?>/images/bk/bk3.png" alt="" class="card__img img-responsive">
 			</div>
@@ -58,7 +58,7 @@ $APPLICATION->SetTitle("Новая страница");
 			</div>
 			<a href="#" class="btn btn--cta card__button">Забронировать</a>
 		</div>
-		<div class="card">
+		<div class="card__item">
 			<div class="card__img-list">
 				<img src="<?=SITE_TEMPLATE_PATH?>/images/bk/bk4.png" alt="" class="card__img img-responsive">
 			</div>
@@ -144,6 +144,49 @@ $APPLICATION->SetTitle("Новая страница");
 	<h2 class="section banner__title banner__title_type_small">Будем у вас <br> через 3 часа</h2>
 	<div class="section banner__desc">
 		<a href="#" class="btn btn--red banner__button banner__button_type_small">Заказать доставку</a>
+	</div>
+</div>
+
+<div class="section gap">
+	<h2 class="section-title">Классификация</h2>
+	<div class="card card_theme_dark">
+		<div class="card__item">
+			<div class="card__img-list">
+				<img src="<?=SITE_TEMPLATE_PATH?>/images/modul/modul1.png" alt="" class="card__img img-responsive">
+			</div>
+			<div class="card__desc">
+				<h3 class="card__name">Для рабочих</h3>
+			</div>
+			<a href="#" class="btn btn--cta card__button">Забронировать</a>
+		</div>
+		<div class="card__item">
+			<div class="card__img-list">
+				<img src="<?=SITE_TEMPLATE_PATH?>/images/modul/modul2.png" alt="" class="card__img img-responsive">
+			</div>
+			<div class="card__desc">
+				<h3 class="card__name">Для прорабов</h3>
+			</div>
+			<a href="#" class="btn btn--cta card__button">Забронировать</a>
+		</div>
+		<div class="card__item">
+			<div class="card__img-list">
+				<img src="<?=SITE_TEMPLATE_PATH?>/images/icons/icon__blob.svg" class="card__label">
+				<img src="<?=SITE_TEMPLATE_PATH?>/images/modul/modul3.png" alt="" class="card__img img-responsive">
+			</div>
+			<div class="card__desc">
+				<h3 class="card__name">Сантехнические модули</h3>
+			</div>
+			<a href="#" class="btn btn--cta card__button">Забронировать</a>
+		</div>
+		<div class="card__item">
+			<div class="card__img-list">
+				<img src="<?=SITE_TEMPLATE_PATH?>/images/modul/modul4.png" alt="" class="card__img img-responsive">
+			</div>
+			<div class="card__desc">
+				<h3 class="card__name">Офисные модули</h3>
+			</div>
+			<a href="#" class="btn btn--cta card__button">Забронировать</a>
+		</div>
 	</div>
 </div>
 
