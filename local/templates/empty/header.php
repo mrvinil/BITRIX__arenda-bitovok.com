@@ -29,9 +29,10 @@
 	//Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/css/remodal.css");
 	//Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/css/remodal-default-theme.css");
 	//Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/css/jquery.fancybox.min.css");
+	Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/css/popup.css");
 	
 	//JS
-	CJSCore::Init(array("jquery3", 'fx'));
+	CJSCore::Init(array("jquery2", 'fx'));
 	CUtil::InitJSCore( array('ajax' , 'popup' ));
 	//Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/assets/js/jquery.magnific-popup.min.js");
 	//Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/assets/js/jquery.smartmenus.js");
@@ -42,6 +43,8 @@
 	//Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/assets/js/select.js");
 	//Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/assets/js/slick.min.js");
 	Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/assets/js/phoneinput.js");
+	Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/assets/js/popup_callback.js");
+	Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/assets/js/popup_validate.js");
 	//Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/assets/js/myscript.js");
 	
 	//OUTSIDE
@@ -96,7 +99,7 @@
 		<a href="/" class="header__logo link"></a>
 		<div class="header__contacts">
 			<a href="tel:88124256215" class="phone-link link">(812) 425-62-15</a>
-			<a href="#" class="callback-link link">заказать звонок</a>
+			<a href="#" class="callback-link link" data-target="callback">заказать звонок</a>
 		</div>
 	</div>
 </header>
