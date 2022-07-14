@@ -119,6 +119,10 @@ a, input, button {
 	height: auto;
 }
 
+.link:hover {
+	opacity: .6;
+}
+
 /* <<<<< ОСНОВНЫЕ СТИЛИ*/
 
 /*КНОПКИ >>>>>*/
@@ -311,9 +315,60 @@ a, input, button {
 }
 
 
+.banner {
+	background-repeat: no-repeat;
+	min-height: 718px;
+	background-size: cover;
+	background-position: center;
+}
 
+.banner__title{
+	font-size: 139px;
+	line-height: 173px;
+	font-weight: 500;
+	color: var(--color__white);
+}
 
+.banner__title_type_center {
+	text-align: center;
+	padding-top: 23px;
+	padding-bottom: 32px;
+}
 
+.banner__desc {
+	display: flex;
+	gap: 66px;
+}
+
+.banner__advantage {
+	display: flex;
+	align-items: center;
+	gap: 66px;
+}
+
+.banner__advantage-item {
+	display: flex;
+	gap: 20px;
+}
+
+.banner__advantage-icon {
+	width: 67px;
+	height: 46px;
+}
+
+.banner__advantage-name {
+	color: var(--color__white);
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 22px;
+}
+
+.banner__button {
+	max-width: 534px;
+	height: 76px;
+	font-weight: 500;
+	font-size: 18px;
+}
 
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
