@@ -190,5 +190,25 @@ $APPLICATION->SetTitle("Новая страница");
 	</div>
 </div>
 
+<div class="section gap">
+	<h2 class="section-title section-title_type_big">О нас</h2>
+	<div class="slider">
+		<div class="slider__item">
+			<div class="slider__side-first">
+				<img src="<?=SITE_TEMPLATE_PATH?>/images/slider2/img__postavki.png" class="slider__img img-responsive">
+			</div>
+			<div class="slider__side-second">
+				<div class="slider__desc">
+					<img src="<?=SITE_TEMPLATE_PATH?>/images/slider2/icon__postavki.svg" class="slider__icon">
+					<h3 class="slider__name">Прямые поставки материалов</h3>
+					<p class="slider__text">За счет многолетнего опыта в сфере производства и строительства мобильных
+						сооружений и модульных зданий нам удалось наладить связи с прямыми поставщиками
+						строительных материалов.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
 
 <? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>

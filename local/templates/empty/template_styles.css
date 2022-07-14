@@ -384,6 +384,7 @@ a, input, button {
 .banner__advantage-icon {
 	width: 67px;
 	height: 46px;
+	pointer-events: none;
 }
 
 .banner__advantage-name {
@@ -485,6 +486,7 @@ a, input, button {
 
 .hang__img {
 	max-height: 50px;
+	pointer-events: none;
 }
 
 .hang__name {
@@ -541,6 +543,7 @@ a, input, button {
 
 .slider__icon {
 	max-height: 51px;
+	pointer-events: none;
 }
 
 .slider__name {
