@@ -339,6 +339,14 @@ a, input, button {
 	background-position: center;
 }
 
+.banner_type_small {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 65px;
+	min-height: 543px;
+}
+
 .banner__title{
 	font-size: 139px;
 	line-height: 173px;
@@ -350,6 +358,11 @@ a, input, button {
 	text-align: center;
 	padding-top: 23px;
 	padding-bottom: 32px;
+}
+
+.banner__title_type_small {
+	font-size: 122px;
+	line-height: 126px;
 }
 
 .banner__desc {
@@ -385,6 +398,10 @@ a, input, button {
 	height: 76px;
 	font-weight: 500;
 	font-size: 18px;
+}
+
+.banner__button_type_small {
+	max-width: 396px;
 }
 
 .card-wrap {
