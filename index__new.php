@@ -20,4 +20,57 @@ $APPLICATION->SetTitle("Новая страница");
 		</div>
 	</div>
 
+<div class="section gap">
+	<h2 class="section-title">Популярные модели</h2>
+	<div class="card-wrap">
+		
+		<div class="card">
+			<div class="card__img-list">
+				<img src="<?=SITE_TEMPLATE_PATH?>/images/bk/bk1.png" alt="" class="card__img img-responsive">
+			</div>
+			<div class="card__desc">
+				<p class="card__price">от 5 000 р/мес</p>
+				<h3 class="card__name">Блок-контейнер «Стандартный»</h3>
+				<p class="card__property">6 000 х 2 400 х 2 400 мм</p>
+			</div>
+			<a href="#" class="btn btn--cta card__button">Забронировать</a>
+		</div>
+		
+		<div class="card">
+			<div class="card__img-list">
+				<img src="<?=SITE_TEMPLATE_PATH?>/images/bk/bk2.png" alt="" class="card__img img-responsive">
+			</div>
+			<div class="card__desc">
+				<p class="card__price">от 5 000 р/мес</p>
+				<h3 class="card__name">Контейнер под склад «Морской»</h3>
+				<p class="card__property">6 000 х 2 400 х 2 400 мм</p>
+			</div>
+			<a href="#" class="btn btn--cta card__button">Забронировать</a>
+		</div>
+		<div class="card">
+			<div class="card__img-list">
+				<img src="<?=SITE_TEMPLATE_PATH?>/images/bk/bk3.png" alt="" class="card__img img-responsive">
+			</div>
+			<div class="card__desc">
+				<p class="card__price">от 5 000 р/мес</p>
+				<h3 class="card__name">Блок-контейнер «Распашонка»</h3>
+				<p class="card__property">6 000 х 2 400 х 2 400 мм</p>
+			</div>
+			<a href="#" class="btn btn--cta card__button">Забронировать</a>
+		</div>
+		<div class="card">
+			<div class="card__img-list">
+				<img src="<?=SITE_TEMPLATE_PATH?>/images/bk/bk4.png" alt="" class="card__img img-responsive">
+			</div>
+			<div class="card__desc">
+				<p class="card__price">от 5 000 р/мес</p>
+				<h3 class="card__name">Блок-контейнер «С тамбуром»</h3>
+				<p class="card__property">6 000 х 2 400 х 2 400 мм</p>
+			</div>
+			<a href="#" class="btn btn--cta card__button">Забронировать</a>
+		</div>
+	</div>
+</div>
+
+
 <? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>

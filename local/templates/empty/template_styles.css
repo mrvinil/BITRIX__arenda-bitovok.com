@@ -4,6 +4,7 @@
 	--color__black: #000000;
 	--color__dark: #404449;
 	--color__gray: #868686;
+	--color__gray-light: #F7F8F9;
 	--color__red: #E41E0C;
 	--color__yellow: #FFCF00;
 }
@@ -121,6 +122,16 @@ a, input, button {
 
 .link:hover {
 	opacity: .6;
+}
+
+.section-title {
+	font-weight: 500;
+	font-size: 41px;
+	line-height: 51px;
+}
+
+.gap {
+	margin-top: 88px;
 }
 
 /* <<<<< ОСНОВНЫЕ СТИЛИ*/
@@ -369,6 +380,65 @@ a, input, button {
 	font-weight: 500;
 	font-size: 18px;
 }
+
+.card-wrap {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 70px 20px;
+	margin-top: 60px;
+}
+
+.card {
+
+}
+
+.card__img-list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: var(--color__gray-light);
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	min-height: 345px;
+}
+
+.card__img {
+
+}
+
+.card__desc {
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.card__price {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.card__name {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 22px;
+	margin-top: 20px;
+	margin-bottom: 6px;
+}
+
+.card__property {
+	font-size: 18px;
+	line-height: 22px;
+	color: var(--color__gray);
+}
+
+.card__button {
+	width: 257px;
+	height: 70px;
+	font-weight: 500;
+	font-size: 18px;
+}
+
 
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
