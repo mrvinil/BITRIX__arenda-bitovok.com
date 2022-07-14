@@ -117,4 +117,27 @@ $APPLICATION->SetTitle("Новая страница");
 	</div>
 </div>
 
+<div class="section gap">
+	<h2 class="section-title section-title_type_big">О бытовках</h2>
+	<div class="slider">
+		<div class="slider__item">
+			<div class="slider__side-first">
+				<img src="<?=SITE_TEMPLATE_PATH?>/images/slider1/img__vn-otdelka.png" class="slider__img img-responsive">
+			</div>
+			<div class="slider__side-second">
+				<div class="slider__desc">
+					<img src="<?=SITE_TEMPLATE_PATH?>/images/slider1/icon__vn-otdelka.svg" class="slider__icon">
+					<h3 class="slider__name">Внешняя отделка</h3>
+					<p class="slider__text">Внешняя отделка сдаваемых в аренду базовых бытовок и
+						блок-контейнеров — это оцинкованный
+						профлист (профнастил) С-8.
+						<br><br>
+						Цвет профлиста можно выбрать в соответствии с каталогом RAL. Также можно выбрать полимерное
+						покрытие.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
 <? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>
