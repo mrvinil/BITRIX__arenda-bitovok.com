@@ -559,6 +559,46 @@ a, input, button {
 	line-height: 22px;
 }
 
+.footer {
+	display: flex;
+	align-items: center;
+	background: var(--color__gray-light);
+	min-height: 97px;
+}
+
+.footer__info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer__logo-wrap {
+	display: flex;
+	justify-content: space-between;
+	gap: 50px;
+	align-items: end;
+}
+
+.footer__logo {
+	background: url(/local/templates/empty/images/logo.svg) no-repeat;
+	background-size: cover;
+	width: 255px;
+	height: 39px;
+}
+
+.footer__address {
+	font-size: 14px;
+	line-height: 14px;
+	color: var(--color__black);
+}
+
+.footer__contacts {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+}
+
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
 
