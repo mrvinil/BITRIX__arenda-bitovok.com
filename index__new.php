@@ -210,5 +210,12 @@ $APPLICATION->SetTitle("Новая страница");
 	</div>
 </div>
 
+<div class="banner banner_type_small gap" style="background-image: url(<?=SITE_TEMPLATE_PATH?>/images/banner__otpravka.png);">
+	<h2 class="section banner__title banner__title_type_small">Ваша бытовка <br> готова к отправке</h2>
+	<div class="section banner__desc">
+		<a href="#" class="btn btn--red banner__button banner__button_type_small">Взять в аренду</a>
+	</div>
+</div>
+
 
 <? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>
