@@ -8,11 +8,11 @@ $APPLICATION->SetTitle("Новая страница");
 		<div class="section banner__desc">
 			<div class="banner__advantage">
 				<div class="banner__advantage-item">
-					<img src="<?=SITE_TEMPLATE_PATH?>/images/icons/clock.svg" class="banner__advantage-icon">
+					<img src="<?=SITE_TEMPLATE_PATH?>/images/icons/icon__clock.svg" class="banner__advantage-icon">
 					<p class="banner__advantage-name">Будем у вас уже&nbsp;через 3 часа</p>
 				</div>
 				<div class="banner__advantage-item">
-					<img src="<?=SITE_TEMPLATE_PATH?>/images/icons/wallet.svg" class="banner__advantage-icon">
+					<img src="<?=SITE_TEMPLATE_PATH?>/images/icons/icon__wallet.svg" class="banner__advantage-icon">
 					<p class="banner__advantage-name">Стоимость от&nbsp;5 000 р/мес</p>
 				</div>
 			</div>
@@ -72,5 +72,49 @@ $APPLICATION->SetTitle("Новая страница");
 	</div>
 </div>
 
+<div class="section gap">
+	<div class="hang">
+		<div class="hang__item">
+			<img src="<?=SITE_TEMPLATE_PATH?>/images/icons/icon__car-park.svg" class="hang__img">
+			<h3 class="hang__name">Собственный автопарк</h3>
+			<p class="hang__desc">Большой парк <br> манипуляторов</p>
+		</div>
+		<div class="hang__item">
+			<img src="<?=SITE_TEMPLATE_PATH?>/images/icons/icon__equipment.svg" class="hang__img">
+			<h3 class="hang__name">Любое наполнение</h3>
+			<p class="hang__desc">Мы укомплектуем бытовку&nbsp;разной&nbsp;мебелью</p>
+		</div>
+		<div class="hang__item">
+			<img src="<?=SITE_TEMPLATE_PATH?>/images/icons/icon__disinfection.svg" class="hang__img">
+			<h3 class="hang__name">Санитарная уборка</h3>
+			<p class="hang__desc">Дезинфекция&nbsp;бытовок от&nbsp;паразитов</p>
+		</div>
+		<div class="hang__item">
+			<img src="<?=SITE_TEMPLATE_PATH?>/images/icons/icon__rate.svg" class="hang__img">
+			<h3 class="hang__name">Тарифы</h3>
+			<p class="hang__desc">Выгодные&nbsp;почасовые и&nbsp;посменные&nbsp;тарифы</p>
+		</div>
+		<div class="hang__item">
+			<img src="<?=SITE_TEMPLATE_PATH?>/images/icons/icon__experience.svg" class="hang__img">
+			<h3 class="hang__name">На опыте</h3>
+			<p class="hang__desc">Водители&nbsp;и&nbsp;операторы с&nbsp;опытом&nbsp;работы >10 лет</p>
+		</div>
+		<div class="hang__item">
+			<img src="<?=SITE_TEMPLATE_PATH?>/images/icons/icon__cleaning.svg" class="hang__img">
+			<h3 class="hang__name">Влажная уборка</h3>
+			<p class="hang__desc">Проводим&nbsp;плановые&nbsp;уборки после&nbsp;каждой&nbsp;аренды </p>
+		</div>
+		<div class="hang__item">
+			<img src="<?=SITE_TEMPLATE_PATH?>/images/icons/icon__manufacture.svg" class="hang__img">
+			<h3 class="hang__name">Собственное производство</h3>
+			<p class="hang__desc">Более&nbsp;500&nbsp;бытовок у&nbsp;нас&nbsp;на&nbsp;складе</p>
+		</div>
+		<div class="hang__item">
+			<img src="<?=SITE_TEMPLATE_PATH?>/images/icons/icon__sale.svg" class="hang__img">
+			<h3 class="hang__name">Клиентам</h3>
+			<p class="hang__desc">Скидки&nbsp;и&nbsp;бонусы при&nbsp;повторном&nbsp;заказе</p>
+		</div>
+	</div>
+</div>
 
 <? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>

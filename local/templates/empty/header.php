@@ -87,7 +87,7 @@
 				<li><a href="#" class="header__menu-link">Контакты</a></li>
 			</ul>
 			<div class="header__location">
-				<img src="<?=SITE_TEMPLATE_PATH?>/images/icons/address.png" class="header__location-icon">
+				<img src="<?=SITE_TEMPLATE_PATH?>/images/icons/icon__address.png" class="header__location-icon">
 				<p class="header__location-value">Санкт-Петербург и область</p>
 			</div>
 		</nav>

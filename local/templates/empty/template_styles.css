@@ -439,6 +439,37 @@ a, input, button {
 	font-size: 18px;
 }
 
+.hang {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 20px;
+}
+
+.hang__item {
+	padding: 17px 20px 30px;
+	background: var(--color__gray-light);
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+
+.hang__img {
+	max-height: 50px;
+}
+
+.hang__name {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 17px;
+	color: var(--color__black);
+	padding: 12px 0 5px;
+}
+
+.hang__desc {
+	font-size: 15px;
+	line-height: 15px;
+	color: var(--color__gray);
+}
 
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
