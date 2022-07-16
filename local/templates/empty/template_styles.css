@@ -178,6 +178,10 @@ a, input, button {
 .btn--cta:hover {
 	background-color: var(--color__yellow);
 }
+.btn--cta:active {
+	background: #fab619;
+	border: 2px solid #fab619;
+}
 
 .btn--red {
 	color: var(--color__white);
@@ -201,6 +205,10 @@ a, input, button {
 .btn--yellow:hover {
 	background: #fcc521;
 	border: 2px solid #fcc521;
+}
+.btn--yellow:active {
+	background: #fab619;
+	border: 2px solid #fab619;
 }
 
 /* <<<<< КНОПКИ*/

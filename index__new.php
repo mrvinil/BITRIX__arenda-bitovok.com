@@ -16,7 +16,7 @@ $APPLICATION->SetTitle("Новая страница");
 				<p class="banner__advantage-name">Стоимость от&nbsp;5 000 р/мес</p>
 			</div>
 		</div>
-		<a href="#" class="btn btn--red banner__button">Взять в аренду</a>
+		<a href="#" class="btn btn--red banner__button" data-target="callback">Взять в аренду</a>
 	</div>
 </div>
 
@@ -33,7 +33,7 @@ $APPLICATION->SetTitle("Новая страница");
 				<h3 class="card__name">Блок-контейнер «Стандартный»</h3>
 				<p class="card__property">6 000 х 2 400 х 2 400 мм</p>
 			</div>
-			<a href="#" class="btn btn--cta card__button">Забронировать</a>
+			<a href="#" class="btn btn--cta card__button" data-target="callback">Забронировать</a>
 		</div>
 		
 		<div class="card__item">
@@ -45,7 +45,8 @@ $APPLICATION->SetTitle("Новая страница");
 				<h3 class="card__name">Контейнер под склад «Морской»</h3>
 				<p class="card__property">6 000 х 2 400 х 2 400 мм</p>
 			</div>
-			<a href="#" class="btn btn--cta card__button">Забронировать</a>
+			<a href="#" class="btn btn--cta card__button" data-target="callback">Забронировать</a>
+		
 		</div>
 		<div class="card__item">
 			<div class="card__img-list">
@@ -56,7 +57,7 @@ $APPLICATION->SetTitle("Новая страница");
 				<h3 class="card__name">Блок-контейнер «Распашонка»</h3>
 				<p class="card__property">6 000 х 2 400 х 2 400 мм</p>
 			</div>
-			<a href="#" class="btn btn--cta card__button">Забронировать</a>
+			<a href="#" class="btn btn--cta card__button" data-target="callback">Забронировать</a>
 		</div>
 		<div class="card__item">
 			<div class="card__img-list">
@@ -67,7 +68,7 @@ $APPLICATION->SetTitle("Новая страница");
 				<h3 class="card__name">Блок-контейнер «С тамбуром»</h3>
 				<p class="card__property">6 000 х 2 400 х 2 400 мм</p>
 			</div>
-			<a href="#" class="btn btn--cta card__button">Забронировать</a>
+			<a href="#" class="btn btn--cta card__button" data-target="callback">Забронировать</a>
 		</div>
 	</div>
 </div>
@@ -143,7 +144,7 @@ $APPLICATION->SetTitle("Новая страница");
 <div class="banner banner_type_small gap" style="background-image: url(<?=SITE_TEMPLATE_PATH?>/images/banner__srok.png);">
 	<h2 class="section banner__title banner__title_type_small">Будем у вас <br> через 3 часа</h2>
 	<div class="section banner__desc">
-		<a href="#" class="btn btn--red banner__button banner__button_type_small">Заказать доставку</a>
+		<a href="#" class="btn btn--red banner__button banner__button_type_small" data-target="callback">Заказать доставку</a>
 	</div>
 </div>
 
@@ -157,7 +158,7 @@ $APPLICATION->SetTitle("Новая страница");
 			<div class="card__desc">
 				<h3 class="card__name">Для рабочих</h3>
 			</div>
-			<a href="#" class="btn btn--cta card__button">Забронировать</a>
+			<a href="#" class="btn btn--cta card__button" data-target="callback">Забронировать</a>
 		</div>
 		<div class="card__item">
 			<div class="card__img-list">
@@ -166,7 +167,7 @@ $APPLICATION->SetTitle("Новая страница");
 			<div class="card__desc">
 				<h3 class="card__name">Для прорабов</h3>
 			</div>
-			<a href="#" class="btn btn--cta card__button">Забронировать</a>
+			<a href="#" class="btn btn--cta card__button" data-target="callback">Забронировать</a>
 		</div>
 		<div class="card__item">
 			<div class="card__img-list">
@@ -176,7 +177,7 @@ $APPLICATION->SetTitle("Новая страница");
 			<div class="card__desc">
 				<h3 class="card__name">Сантехнические модули</h3>
 			</div>
-			<a href="#" class="btn btn--cta card__button">Забронировать</a>
+			<a href="#" class="btn btn--cta card__button" data-target="callback">Забронировать</a>
 		</div>
 		<div class="card__item">
 			<div class="card__img-list">
@@ -185,7 +186,7 @@ $APPLICATION->SetTitle("Новая страница");
 			<div class="card__desc">
 				<h3 class="card__name">Офисные модули</h3>
 			</div>
-			<a href="#" class="btn btn--cta card__button">Забронировать</a>
+			<a href="#" class="btn btn--cta card__button" data-target="callback">Забронировать</a>
 		</div>
 	</div>
 </div>
@@ -213,7 +214,7 @@ $APPLICATION->SetTitle("Новая страница");
 <div class="banner banner_type_small gap" style="background-image: url(<?=SITE_TEMPLATE_PATH?>/images/banner__otpravka.png);">
 	<h2 class="section banner__title banner__title_type_small">Ваша бытовка <br> готова к отправке</h2>
 	<div class="section banner__desc">
-		<a href="#" class="btn btn--red banner__button banner__button_type_small">Взять в аренду</a>
+		<a href="#" class="btn btn--red banner__button banner__button_type_small" data-target="callback">Взять в аренду</a>
 	</div>
 </div>
 

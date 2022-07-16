@@ -1,5 +1,5 @@
 <? if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die(); ?>
-
+<?$utmMark = 'form-arendabitovokcom';?>
 <?IncludeTemplateLangFile(__FILE__);?>
 <!doctype html>
 <html>
@@ -99,7 +99,7 @@
 		<a href="/" class="header__logo link"></a>
 		<div class="header__contacts">
 			<a href="tel:88124256215" class="phone-link link">(812) 425-62-15</a>
-			<a href="#" class="callback-link link" data-target="callback">заказать звонок</a>
+			<a href="#" class="callback-link link">заказать звонок</a>
 		</div>
 	</div>
 </header>

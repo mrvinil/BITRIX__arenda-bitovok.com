@@ -1,18 +1,26 @@
 $(document).ready(() => {
-	/*
-	 * Поппап колбека
-	 */
 	
-	$('a[data-target=callback]').click((e) => {
-		e.preventDefault();
+	// находим скрытые инпуты
+	let productName = $(':hidden[name=productName]');
+	let productPrice = $(':hidden[name=productPrice]');
+	let productSize = $(':hidden[name=productSize]');
+	
+	// открываем попап и записываем в скрытые инпуты параметры товара
+	$('.btn[data-target=callback]').click( function(event){
+		event.preventDefault();
+		productName.val($(this).siblings('.card__desc').find('.card__name').text());
+		productPrice.val($(this).siblings('.card__desc').find('.card__price').text());
+		productSize.val($(this).siblings('.card__desc').find('.card__property').text());
 		callbackOpen();
 	});
 	
+	// закрытие попапа при клике на кнопку закрытия
 	$('.popup-callback__close').click(callbackClose);
 	
+	// закрытие попапа при клике вне попапа
 	$(document).mouseup((e) => {
 		let callback = $(".popup__container");
-		if ($('.popup-callback').css('visibility') == 'visible') {
+		if ($('.popup-callback').css('visibility') === 'visible') {
 			if (!callback.is(e.target)
 				&& callback.has(e.target).length === 0) {
 				callbackClose();
@@ -20,9 +28,38 @@ $(document).ready(() => {
 		}
 	});
 	
+	// закрытие попапа при нажатии на клавишу Escape
+	$(document).keydown(function(e) {
+		if(e.key === 'Escape') {
+			callbackClose();
+		}
+	});
+	
+	
+	// функция открытия попапа
+	function callbackOpen() {
+		$('.popup-callback').addClass('popup_opened');
+		setTimeout(() => {
+			$('.popup-callback').css('visibility', 'visible');
+		}, 300);
+	}
+	
+	// функция закрытия попапа
+	function callbackClose() {
+		$('.popup-callback').removeClass('popup_opened');
+		productName.val('');
+		productPrice.val('');
+		productSize.val('');
+		setTimeout(() => {
+			$('.popup-callback').css('visibility', 'hidden');
+		}, 300);
+	}
+	
+	// отправляем данные формы
 	$("#popupcallback").on("submit", function(){
 		$.ajax({
-			url: '/ajax/callback.php',
+			type:'POST',
+			url: '/webhook/product-arenda-webhook.php',
 			data: $(this).serialize(),
 			success: function(res){
 				$('#callbackFirstForm').hide();
@@ -32,130 +69,13 @@ $(document).ready(() => {
 					$('.popup-callback').css('visibility', 'hidden');
 					$('#message').hide();
 					$('#callbackFirstForm').show();
-				}, 2000);
+					callbackClose();
+				}, 3000);
+			},
+			error: function (){
+				alert("Ошибка");
 			}
 		});
 		return false;
 	});
-	
-	function callbackOpen() {
-		$('.popup-callback').addClass('popup_opened');
-		setTimeout(() => {
-			$('.popup-callback').css('visibility', 'visible');
-		}, 300);
-	}
-	function callbackClose() {
-		$('.popup-callback').removeClass('popup_opened');
-		setTimeout(() => {
-			$('.popup-callback').css('visibility', 'hidden');
-		}, 300);
-	}
-	
-	
-	/*
-	 * Поппап колбека со страницы обслуживание
-	 */
-	
-	$('a[data-target=callbackService]').click((e) => {
-		e.preventDefault();
-		callbackServiceOpen();
-	});
-	
-	$('.popup-callbackService__close').click(callbackServiceClose);
-	
-	$(document).mouseup((e) => {
-		let callback = $(".popup__container");
-		if ($('.popup-callbackService').css('visibility') == 'visible') {
-			if (!callback.is(e.target)
-				&& callback.has(e.target).length === 0) {
-				callbackServiceClose();
-			}
-		}
-	});
-	
-	$("#popupcallbackService").on("submit", function(){
-		$.ajax({
-			url: '/ajax/callbackService.php',
-			data: $(this).serialize(),
-			success: function(res){
-				$('#callbackFirstFormService').hide();
-				$('#messageService').show();
-				setTimeout( () => {
-					$('#popupcallbackService')[0].reset();
-					$('.popup-callbackService').css('visibility', 'hidden');
-					$('#message').hide();
-					$('#callbackFirstForm').show();
-				}, 2000);
-			}
-		});
-		return false;
-	});
-	
-	function callbackServiceOpen() {
-		$('.popup-callbackService').addClass('popup_opened');
-		setTimeout(() => {
-			$('.popup-callbackService').css('visibility', 'visible');
-		}, 300);
-	}
-	function callbackServiceClose() {
-		$('.popup-callbackService').removeClass('popup_opened');
-		setTimeout(() => {
-			$('.popup-callbackService').css('visibility', 'hidden');
-		}, 300);
-	}
-	
-	
-	/*
-	 * Поппап демозапроса
-	 */
-	
-	$('a[data-target=callbackDemo]').click((e) => {
-		e.preventDefault();
-		demoOpen();
-	});
-	
-	$('.popup-demo__close').click(demoClose);
-	
-	$(document).mouseup((e) => {
-		let callback = $(".popup__container");
-		if ($('.popup-demo').css('visibility') == 'visible') {
-			if (!callback.is(e.target)
-				&& callback.has(e.target).length === 0) {
-				demoClose();
-			}
-		}
-	});
-	
-	$("#popupcallbackDemo").on("submit", function(){
-		$.ajax({
-			url: '/ajax/callbackDemo.php',
-			data: $(this).serialize(),
-			success: function(res){
-				$('#callbackFirstFormDemo').hide();
-				$('#messageDemo').show();
-				setTimeout( () => {
-					$('#popupcallbackDemo')[0].reset();
-					$('.popup-demo').css('visibility', 'hidden');
-					$('#message').hide();
-					$('#callbackFirstForm').show();
-				}, 2000);
-			}
-		});
-		return false;
-	});
-	
-	function demoOpen() {
-		$('.popup-demo').addClass('popup_opened');
-		setTimeout(() => {
-			$('.popup-demo').css('visibility', 'visible');
-		}, 300);
-	}
-	
-	function demoClose() {
-		$('.popup-demo').removeClass('popup_opened');
-		setTimeout(() => {
-			$('.popup-demo').css('visibility', 'hidden');
-		}, 300);
-	}
-	
 });
