@@ -12,6 +12,11 @@
 		</div>
 		<div class="footer__contacts">
 			<a href="tel:88124256215" class="phone-link link">(812) 425-62-15</a>
+			<?$APPLICATION->IncludeFile(
+					SITE_DIR."/include/bitrix24Callback.php",
+					Array(),
+					Array("MODE"=>"php")
+			);?>
 			<a href="#" class="callback-link link">заказать звонок</a>
 		</div>
 	</div>
