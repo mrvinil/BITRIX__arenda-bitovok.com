@@ -74,11 +74,6 @@ body {
 	-moz-text-size-adjust: 100%;
 }
 
-html, body {
-	overflow-x: hidden;
-	opacity: 1;
-}
-
 *,
 *::before,
 *::after {
@@ -138,6 +133,14 @@ a, input, button {
 
 .gap {
 	margin-top: 88px;
+}
+
+#stick {
+	z-index: 999;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	overflow: hidden
 }
 
 /* <<<<< ОСНОВНЫЕ СТИЛИ*/
@@ -271,6 +274,7 @@ a, input, button {
 .header {
 	display: grid;
 	gap: 10px;
+	background: var(--color__white);
 }
 
 .header__top {

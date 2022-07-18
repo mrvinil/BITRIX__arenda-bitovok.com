@@ -4,7 +4,7 @@
 
 </main>
 
-<footer class="footer gap">
+<footer class="footer gap" id="contacts">
 	<div class="section footer__info">
 		<div class="footer__logo-wrap">
 			<a href="/" class="footer__logo link"></a>

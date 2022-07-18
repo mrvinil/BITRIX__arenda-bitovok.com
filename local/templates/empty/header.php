@@ -45,7 +45,7 @@
 	Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/assets/js/phoneinput.js");
 	Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/assets/js/popup_callback.js");
 	Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/assets/js/popup_validate.js");
-	//Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/assets/js/myscript.js");
+	Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/assets/js/myscript.js");
 	
 	//OUTSIDE
 	Asset::getInstance()->addString("<link rel='apple-touch-icon' sizes='57x57' href='/images/favicon/apple-icon-57x57.png'>");
@@ -77,17 +77,17 @@
 
 <div id="panel"><? $APPLICATION->ShowPanel(); ?></div>
 
-<header class="header">
+<header class="header" id="stick">
 	<div class="header__top">
 		<nav class="section header__nav">
 			<ul class="header__menu">
-				<li><a href="#" class="header__menu-link">Модели</a></li>
-				<li><a href="#" class="header__menu-link">О бытовках</a></li>
-				<li><a href="#" class="header__menu-link">Доставка</a></li>
-				<li><a href="#" class="header__menu-link">Классификация</a></li>
-				<li><a href="#" class="header__menu-link">О нас</a></li>
-				<li><a href="#" class="header__menu-link">Карта</a></li>
-				<li><a href="#" class="header__menu-link">Контакты</a></li>
+				<li><a href="#models" class="header__menu-link">Модели</a></li>
+				<li><a href="#aboutbit" class="header__menu-link">О бытовках</a></li>
+				<li><a href="#delivery" class="header__menu-link">Доставка</a></li>
+				<li><a href="#classification" class="header__menu-link">Классификация</a></li>
+				<li><a href="#aboutass" class="header__menu-link">О нас</a></li>
+				<li><a href="#map" class="header__menu-link">Карта</a></li>
+				<li><a href="#contacts" class="header__menu-link">Контакты</a></li>
 			</ul>
 			<div class="header__location">
 				<img src="<?=SITE_TEMPLATE_PATH?>/images/icons/icon__address.png" class="header__location-icon">

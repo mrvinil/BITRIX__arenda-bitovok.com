@@ -20,7 +20,7 @@ $APPLICATION->SetTitle("Новая страница");
 	</div>
 </div>
 
-<div class="section gap">
+<div class="section gap" id="models">
 	<h2 class="section-title">Популярные модели</h2>
 	<div class="card card_theme_white">
 		
@@ -118,7 +118,7 @@ $APPLICATION->SetTitle("Новая страница");
 	</div>
 </div>
 
-<div class="section gap">
+<div class="section gap" id="aboutbit">
 	<h2 class="section-title section-title_type_big">О бытовках</h2>
 	<div class="slider">
 		<div class="slider__item">
@@ -141,14 +141,14 @@ $APPLICATION->SetTitle("Новая страница");
 	</div>
 </div>
 
-<div class="banner banner_type_small gap" style="background-image: url(<?=SITE_TEMPLATE_PATH?>/images/banner__srok.png);">
+<div class="banner banner_type_small gap" style="background-image: url(<?=SITE_TEMPLATE_PATH?>/images/banner__srok.png);" id="delivery">
 	<h2 class="section banner__title banner__title_type_small">Будем у вас <br> через 3 часа</h2>
 	<div class="section banner__desc">
 		<a href="#" class="btn btn--red banner__button banner__button_type_small" data-target="callback">Заказать доставку</a>
 	</div>
 </div>
 
-<div class="section gap">
+<div class="section gap" id="classification">
 	<h2 class="section-title">Классификация</h2>
 	<div class="card card_theme_dark">
 		<div class="card__item">
@@ -191,7 +191,7 @@ $APPLICATION->SetTitle("Новая страница");
 	</div>
 </div>
 
-<div class="section gap">
+<div class="section gap" id="aboutass">
 	<h2 class="section-title section-title_type_big">О нас</h2>
 	<div class="slider">
 		<div class="slider__item">
@@ -218,7 +218,7 @@ $APPLICATION->SetTitle("Новая страница");
 	</div>
 </div>
 
-<div class="section gap">
+<div class="section gap" id="map">
 	<h2 class="section-title">Где мы работаем</h2>
 	<img src="<?=SITE_TEMPLATE_PATH?>/images/map.png" class="map img-responsive">
 </div>
