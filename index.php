@@ -392,7 +392,7 @@ $APPLICATION->SetTitle("Аренда бытовок и блок-контейне
 						<div class="slick__slider-item-second">
 							<div class="slick__slider-item-second-title">Стол</div>
 							<div class="slick__slider-item-second-text">
-								Мы с радостью предложем вам для
+								Мы с радостью предложим вам для
 								дополнительного удобства и комфорта любые виды столов на
 								Ваш выбор.
 							</div>
@@ -407,7 +407,7 @@ $APPLICATION->SetTitle("Аренда бытовок и блок-контейне
 							<div class="slick__slider-item-second-title">Тумбочка</div>
 							<div class="slick__slider-item-second-text">
 								У нас есть в наличии разные варианты
-								тумбочек которые мы предложем вам для доп удобства и
+								тумбочек, которые мы предложим вам для доп удобства и
 								комфорта
 							</div>
 						</div>
@@ -417,8 +417,8 @@ $APPLICATION->SetTitle("Аренда бытовок и блок-контейне
 						<div class="slick__slider-item-second">
 							<div class="slick__slider-item-second-title">Кровать</div>
 							<div class="slick__slider-item-second-text">
-								Мы с радостью предложем вам разные варианты
-								краватей которые послужать для вашего удобства и
+								Мы с радостью предложим вам разные варианты
+								кроватей, которые послужат для вашего удобства и
 								комфорта
 							</div>
 						</div>
@@ -431,8 +431,8 @@ $APPLICATION->SetTitle("Аренда бытовок и блок-контейне
 						<div class="slick__slider-item-second">
 							<div class="slick__slider-item-second-title">Шкаф</div>
 							<div class="slick__slider-item-second-text">
-								Мы готовы уукомплектовать доп контейнера
-								разными видами шкафов которые немного отличаются по
+								Мы готовы укомплектовать доп контейнера
+								разными видами шкафов, которые немного отличаются по
 								цвету и стоимости.
 							</div>
 						</div>
@@ -457,9 +457,9 @@ $APPLICATION->SetTitle("Аренда бытовок и блок-контейне
 						<div class="slick__slider-item-second">
 							<div class="slick__slider-item-second-title">Скамейка</div>
 							<div class="slick__slider-item-second-text">
-								Предлагаем разные варианты скмеек которые
+								Предлагаем разные варианты скамеек, которые
 								являются хитами продаж у нас в силу удобства комфорта, и
-								не дорогой цены.
+								недорогой цены.
 							</div>
 						</div>
 					</div>
@@ -468,7 +468,7 @@ $APPLICATION->SetTitle("Аренда бытовок и блок-контейне
 						<div class="slick__slider-item-second">
 							<div class="slick__slider-item-second-title">Комплект белья</div>
 							<div class="slick__slider-item-second-text">
-								С удовольствием паредлагаем вам разные виды
+								С удовольствием предлагаем вам разные виды
 								и варианты постельного белья
 							</div>
 						</div>
@@ -988,10 +988,10 @@ $APPLICATION->SetTitle("Аренда бытовок и блок-контейне
 						<div class="slick__slider-item-second-text">
 							<p>Мы ценим своих клиентов и всегда предлагаем приятные<br> бонусы и подарки.</p>
 							<p>Узнайте подробнее о действующих акциях у нашего менеджера по телефону <b>
-								<?$APPLICATION->IncludeFile( 
-						 			SITE_DIR."/include/phone.php", 
-						  			Array(), 
-						  			Array("MODE"=>"php") 
+								<?$APPLICATION->IncludeFile(
+						 			SITE_DIR."/include/phone.php",
+						  			Array(),
+						  			Array("MODE"=>"php")
 								);?></b>
 								или оставьте заявку на обратный звонок — мы моментально перезвоним.
 							</p>
