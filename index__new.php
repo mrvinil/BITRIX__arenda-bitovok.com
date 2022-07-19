@@ -83,37 +83,37 @@ $APPLICATION->SetTitle("Новая страница");
 		<div class="hang__item">
 			<img src="<?=SITE_TEMPLATE_PATH?>/images/icons/icon__equipment.svg" class="hang__img">
 			<h3 class="hang__name">Любое наполнение</h3>
-			<p class="hang__desc">Мы укомплектуем бытовку&nbsp;разной&nbsp;мебелью</p>
+			<p class="hang__desc">Мы укомплектуем бытовку разной мебелью</p>
 		</div>
 		<div class="hang__item">
 			<img src="<?=SITE_TEMPLATE_PATH?>/images/icons/icon__disinfection.svg" class="hang__img">
 			<h3 class="hang__name">Санитарная уборка</h3>
-			<p class="hang__desc">Дезинфекция&nbsp;бытовок от&nbsp;паразитов</p>
+			<p class="hang__desc">Дезинфекция бытовок от паразитов</p>
 		</div>
 		<div class="hang__item">
 			<img src="<?=SITE_TEMPLATE_PATH?>/images/icons/icon__rate.svg" class="hang__img">
 			<h3 class="hang__name">Тарифы</h3>
-			<p class="hang__desc">Выгодные&nbsp;почасовые и&nbsp;посменные&nbsp;тарифы</p>
+			<p class="hang__desc">Выгодные почасовые и посменные тарифы</p>
 		</div>
 		<div class="hang__item">
 			<img src="<?=SITE_TEMPLATE_PATH?>/images/icons/icon__experience.svg" class="hang__img">
 			<h3 class="hang__name">На опыте</h3>
-			<p class="hang__desc">Водители&nbsp;и&nbsp;операторы с&nbsp;опытом&nbsp;работы >10 лет</p>
+			<p class="hang__desc">Водители и операторы с опытом работы >10 лет</p>
 		</div>
 		<div class="hang__item">
 			<img src="<?=SITE_TEMPLATE_PATH?>/images/icons/icon__cleaning.svg" class="hang__img">
 			<h3 class="hang__name">Влажная уборка</h3>
-			<p class="hang__desc">Проводим&nbsp;плановые&nbsp;уборки после&nbsp;каждой&nbsp;аренды </p>
+			<p class="hang__desc">Проводим плановые уборки после каждой аренды </p>
 		</div>
 		<div class="hang__item">
 			<img src="<?=SITE_TEMPLATE_PATH?>/images/icons/icon__manufacture.svg" class="hang__img">
 			<h3 class="hang__name">Собственное производство</h3>
-			<p class="hang__desc">Более&nbsp;500&nbsp;бытовок у&nbsp;нас&nbsp;на&nbsp;складе</p>
+			<p class="hang__desc">Более 500 бытовок у нас на складе</p>
 		</div>
 		<div class="hang__item">
 			<img src="<?=SITE_TEMPLATE_PATH?>/images/icons/icon__sale.svg" class="hang__img">
 			<h3 class="hang__name">Клиентам</h3>
-			<p class="hang__desc">Скидки&nbsp;и&nbsp;бонусы при&nbsp;повторном&nbsp;заказе</p>
+			<p class="hang__desc">Скидки и бонусы при повторном заказе</p>
 		</div>
 	</div>
 </div>

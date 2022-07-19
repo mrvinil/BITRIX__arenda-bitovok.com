@@ -89,7 +89,7 @@
 				<li><a href="#map" class="header__menu-link">Карта</a></li>
 				<li><a href="#contacts" class="header__menu-link">Контакты</a></li>
 			</ul>
-			<div class="header__location">
+			<div class="header__location header__location_type_desktop">
 				<img src="<?=SITE_TEMPLATE_PATH?>/images/icons/icon__address.png" class="header__location-icon">
 				<p class="header__location-value">Санкт-Петербург и область</p>
 			</div>
@@ -105,6 +105,10 @@
 					Array("MODE"=>"php")
 			);?>
 			<span class="callback-link link">заказать звонок</span>
+			<div class="header__location header__location_type_mobile">
+				<img src="<?=SITE_TEMPLATE_PATH?>/images/icons/icon__address.png" class="header__location-icon">
+				<p class="header__location-value">Санкт-Петербург и область</p>
+			</div>
 		</div>
 	</div>
 </header>

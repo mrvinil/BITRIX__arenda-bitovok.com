@@ -323,6 +323,12 @@ a, input, button {
 	font-size: 14px;
 	line-height: 17px;
 }
+.header__location_type_desktop {
+	display: flex;
+}
+.header__location_type_mobile {
+	display: none;
+}
 
 .header__info {
 	display: flex;
@@ -618,6 +624,12 @@ a, input, button {
 	line-height: 14px;
 	color: var(--color__black);
 }
+.footer__address_type_desktop {
+	display: block;
+}
+.footer__address_type_mobile {
+	display: none;
+}
 
 .footer__contacts {
 	display: flex;
@@ -697,7 +709,192 @@ a, input, button {
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
-
+	.gap {
+		margin-top: 35px;
+	}
+	.section-title {
+		font-size: 30px;
+		line-height: 30px;
+	}
+	.header__logo {
+		width: 265px;
+	}
+	.header__top {
+		grid-row: 2 / 3;
+	}
+	.header__menu {
+		gap: 10px;
+	}
+	.header__menu-link {
+		font-size: 9px;
+		line-height: 11px;
+	}
+	.header__location_type_desktop {
+		display: none;
+	}
+	.header__location_type_mobile {
+		display: flex;
+	}
+	.header__location-value {
+		font-size: 10px;
+		line-height: 10px;
+	}
+	.header__info {
+		flex-direction: column;
+		gap: 25px;
+		padding-top: 20px;
+		padding-bottom: 15px;
+	}
+	.callback-link {
+		font-size: 11px;
+		line-height: 11px;
+		text-decoration: underline;
+	}
+	.header__contacts {
+		align-items: start;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.phone-link {
+		font-size: 12px;
+		line-height: 12px;
+		font-weight: 700;
+	}
+	.banner {
+		min-height: 540px;
+		background-position: inherit;
+	}
+	.banner__title_type_center {
+		font-size: 53px;
+		line-height: 53px;
+	}
+	.banner__desc {
+		flex-direction: column;
+		gap: 27px;
+	}
+	.banner__advantage {
+		gap: 43px;
+	}
+	.banner__advantage-item {
+		gap: 10px;
+		align-items: center;
+	}
+	.banner__advantage-icon {
+		width: 28px;
+		height: 28px;
+	}
+	.banner__advantage-name {
+		font-size: 14px;
+		line-height: 14px;
+	}
+	.card {
+		grid-template-columns: 1fr;
+		margin-top: 20px;
+	}
+	.card__img-list {
+		min-height: 170px;
+	}
+	.card__img {
+		padding: 15px 45px;
+	}
+	.card__button {
+		width: 100%;
+	}
+	.hang {
+		grid-template-columns: repeat(auto-fit, minmax(103px, max-content));
+		gap: 10px;
+	}
+	.hang__item {
+		padding: 7px;
+	}
+	.hang__img {
+		max-height: 28px;
+	}
+	.hang__name {
+		font-size: 8px;
+		line-height: 10px;
+		padding: 5px 0 5px;
+	}
+	.hang__desc {
+		font-size: 8px;
+		line-height: 10px;
+	}
+	
+	
+	
+	.section-title_type_big {
+		font-size: 24px;
+		line-height: 100%;
+	}
+	.slider__item {
+		grid-template-columns: 103px 1fr;
+	}
+	.slider__icon {
+		max-height: 30px;
+	}
+	.slider__img {
+		padding: 0;
+		object-fit: cover;
+	}
+	.slider__desc {
+		padding: 20px;
+		gap: 10px;
+	}
+	.slider__name {
+		font-size: 10px;
+		line-height: 12px;
+		font-weight: 500;
+	}
+	.slider__text {
+		font-size: 10px;
+		line-height: 12px;
+	}
+	.banner_type_small {
+		min-height: 180px;
+		gap: 20px;
+		background-position: center;
+	}
+	.banner__button_type_small {
+		max-width: 100%;
+		height: 45px;
+		font-size: 14px;
+	}
+	.slider__side-first {
+		align-items: stretch;
+	}
+	.banner__title_type_small {
+		font-size: 30px;
+		line-height: 31px;
+	}
+	
+	.footer {
+		min-height: 120px;
+	}
+	.footer__logo-wrap {
+		align-items: start;
+	}
+	.footer__logo {
+		width: 265px;
+	}
+	.footer__info {
+		flex-direction: column;
+		gap: 15px;
+		align-items: start;
+	}
+	.footer__address_type_desktop {
+		display: none;
+	}
+	.footer__address_type_mobile {
+		display: block;
+		font-size: 8px;
+		line-height: 10px;
+	}
+	.footer__contacts {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		gap: 10px;
+	}
 }
 
 /* Landscape phones and smaller */

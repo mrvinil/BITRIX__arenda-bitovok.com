@@ -182,6 +182,30 @@
 	}
 }
 
+@media (max-width: 767px) {
+	.popup__form {
+		gap: 30px;
+	}
+	.popup__title {
+		font-size: 16px;
+		line-height: 21px;
+	}
+	.popup__input-wrap {
+		flex-direction: column;
+		gap: 36px;
+	}
+	.popup__input {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.popup__btn {
+		min-height: 50px;
+		max-width: 100%;
+		font-size: 18px;
+		line-height: 30px;
+	}
+}
+
 @media (max-width: 424px) {
 	.popup__form {
 		padding: 20px;
@@ -195,8 +219,5 @@
 	}
 	textarea.popup__input {
 		height: 56px;
-	}
-	.popup__btn {
-		padding: 10px 68px;
 	}
 }

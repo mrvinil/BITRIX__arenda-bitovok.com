@@ -8,7 +8,7 @@
 	<div class="section footer__info">
 		<div class="footer__logo-wrap">
 			<a href="/" class="footer__logo link"></a>
-			<p class="footer__address">Режим работы: Пн–Пт с 9:00 до 19:00</p>
+			<p class="footer__address footer__address_type_desktop">Режим работы: Пн–Пт с 9:00 до 19:00</p>
 		</div>
 		<div class="footer__contacts">
 			<a href="tel:88124256215" class="phone-link link">(812) 425-62-15</a>
@@ -18,6 +18,7 @@
 					Array("MODE"=>"php")
 			);?>
 			<span class="callback-link link">заказать звонок</span>
+			<p class="footer__address footer__address_type_mobile">Режим работы: Пн–Пт с 9:00 до 19:00</p>
 		</div>
 	</div>
 </footer>
