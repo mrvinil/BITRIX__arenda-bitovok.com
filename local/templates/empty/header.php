@@ -104,7 +104,7 @@
 					Array(),
 					Array("MODE"=>"php")
 			);?>
-			<a href="#" class="callback-link link">заказать звонок</a>
+			<span class="callback-link link">заказать звонок</span>
 		</div>
 	</div>
 </header>

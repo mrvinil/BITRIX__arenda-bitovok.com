@@ -117,6 +117,7 @@ a, input, button {
 
 .link:hover {
 	opacity: .6;
+	cursor: pointer;
 }
 
 .section-title {
@@ -302,6 +303,9 @@ a, input, button {
 }
 .header__menu-link:hover {
 	text-decoration: underline;
+}
+.header__menu-link:focus {
+	font-weight: 700;
 }
 
 .header__location {
@@ -495,7 +499,7 @@ a, input, button {
 
 .hang {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(auto-fit, minmax(257px, max-content));
 	gap: 20px;
 }
 
@@ -634,7 +638,61 @@ a, input, button {
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
-
+	.header__menu {
+		gap: 10px;
+	}
+	.banner__desc {
+		gap: 36px;
+	}
+	.banner__title {
+		font-size: 84px;
+		line-height: 126px;
+	}
+	.banner__title_type_center {
+		text-align: center;
+		padding-top: 23px;
+		padding-bottom: 10px;
+		font-size: 116px;
+		line-height: 116px;
+	}
+	.banner__advantage {
+		gap: 36px;
+	}
+	.banner__advantage-name {
+		font-size: 14px;
+	}
+	.banner__button {
+		max-width: 260px;
+	}
+	.card__img {
+		padding: 0 44px;
+	}
+	.card__button {
+		width: 100%;
+	}
+	.section-title_type_big {
+		font-size: 80px;
+		line-height: 80px;
+	}
+	.slider__item {
+		grid-template-columns: 230px 1fr;
+	}
+	.slider__img {
+		padding: 0;
+		object-fit: cover;
+	}
+	.slider__desc {
+		padding: 20px;
+	}
+	.banner__button_type_small {
+		max-width: 100%;
+	}
+	.slider__side-first {
+		align-items: stretch;
+	}
+	.footer__logo-wrap {
+		gap: 15px;
+	}
 }
 
 /* Landscape phones and portrait tablets */

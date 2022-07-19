@@ -9,11 +9,11 @@ $APPLICATION->SetTitle("Новая страница");
 		<div class="banner__advantage">
 			<div class="banner__advantage-item">
 				<img src="<?=SITE_TEMPLATE_PATH?>/images/icons/icon__clock.svg" class="banner__advantage-icon">
-				<p class="banner__advantage-name">Будем у вас уже&nbsp;через 3 часа</p>
+				<p class="banner__advantage-name">Будем у вас уже&nbsp;через&nbsp;3&nbsp;часа</p>
 			</div>
 			<div class="banner__advantage-item">
 				<img src="<?=SITE_TEMPLATE_PATH?>/images/icons/icon__wallet.svg" class="banner__advantage-icon">
-				<p class="banner__advantage-name">Стоимость от&nbsp;5 000 р/мес</p>
+				<p class="banner__advantage-name">Стоимость от&nbsp;5&nbsp;000&nbsp;р/мес</p>
 			</div>
 		</div>
 		<a href="#" class="btn btn--red banner__button" data-target="callback">Взять в аренду</a>
