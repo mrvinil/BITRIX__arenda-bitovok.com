@@ -1,5 +1,8 @@
 <? if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die(); ?>
-<?$utmMark = 'form-arendabitovokcom';?>
+<?
+$utmMark = 'form-arendabitovokcom-new';
+$phonePath = $_SERVER['DOCUMENT_ROOT'] . SITE_DIR . "include/new/phonePath.php";
+?>
 <?IncludeTemplateLangFile(__FILE__);?>
 <!doctype html>
 <html>
@@ -11,37 +14,17 @@
 	use Bitrix\Main\Page\Asset;
 	
 	//CSS
-	//Asset::getInstance()->addCss("/bitrix/css/main/bootstrap.min.css");
-	//Asset::getInstance()->addCss("/bitrix/css/main/font-awesome.min.css");
 	Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/css/normalize.css");
 	Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/css/keyframes.css");
 	Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/css/FontAwesomePro571.css");
-	//Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/css/sm-core-css.css");
-	//Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/css/slick.css");
-	//Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/css/slick-theme.css");
-	//Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/css/burger-menu.css");
-	//Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/css/mmenu.css");
-	//Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/css/checkbox.css");
-	//Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/css/select.css");
-
-	//Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/css/magnific-popup.css");
-	
-	//Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/css/remodal.css");
-	//Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/css/remodal-default-theme.css");
-	//Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/css/jquery.fancybox.min.css");
+	Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/css/slick.css");
+	Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/css/slick-theme.css");
 	Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/css/popup.css");
 	
 	//JS
-	CJSCore::Init(array("jquery2", 'fx'));
+	CJSCore::Init(array("jquery3", 'fx'));
 	CUtil::InitJSCore( array('ajax' , 'popup' ));
-	//Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/assets/js/jquery.magnific-popup.min.js");
-	//Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/assets/js/jquery.smartmenus.js");
-	//Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/assets/js/jquery-cookie.js");
-	//Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/assets/js/jquery.fancybox.min.js");
-	//Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/assets/js/mmenu.js");
-	//Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/assets/js/remodal.min.js");
-	//Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/assets/js/select.js");
-	//Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/assets/js/slick.min.js");
+	Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/assets/js/slick.min.js");
 	Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/assets/js/phoneinput.js");
 	Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/assets/js/popup_callback.js");
 	Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/assets/js/popup_validate.js");
@@ -98,9 +81,15 @@
 	<div class="section header__info">
 		<a href="/" class="header__logo link"></a>
 		<div class="header__contacts">
-			<a href="tel:88124256215" class="phone-link link">(812) 425-62-15</a>
+			<a href="tel:<? if(file_exists($phonePath)) require $phonePath; ?>" class="phone-link link">
+				<?$APPLICATION->IncludeFile(
+						SITE_DIR."/include/new/phone.php",
+						Array(),
+						Array("MODE"=>"php")
+				);?>
+			</a>
 			<?$APPLICATION->IncludeFile(
-					SITE_DIR."/include/bitrix24Callback.php",
+					SITE_DIR."/include/new/bitrix24Callback.php",
 					Array(),
 					Array("MODE"=>"php")
 			);?>

@@ -59,7 +59,7 @@ $(document).ready(() => {
 	$("#popupcallback").on("submit", function(){
 		$.ajax({
 			type:'POST',
-			url: '/webhook/product-arenda-webhook.php',
+			url: '/webhook/new/product-arenda-webhook.php',
 			data: $(this).serialize(),
 			success: function(res){
 				$('#callbackFirstForm').hide();
