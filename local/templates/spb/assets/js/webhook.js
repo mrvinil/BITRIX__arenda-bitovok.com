@@ -5,7 +5,7 @@ $(document).ready(function () {
 			phone = $(".form-product-1 #product_phone").val(),
 			name = $(".form-product-1 #product_name").val(),
 			size = $(".form-product-1 #product_size").val(),
-			price = $(".form-product-1 #product_price").val(),
+			price = $(".form-product-1 .price-month").text(),
 			utm = $(".form-product-1 #product_utm").val();
 		if (!phone) {
 			$(".form-product-1 #product_phone").addClass("not_phone");
@@ -57,7 +57,7 @@ $(document).ready(function () {
 			phone = $(".form-product-2 #product_phone").val(),
 			name = $(".form-product-2 #product_name").val(),
 			size = $(".form-product-2 #product_size").val(),
-			price = $(".form-product-2 #product_price").val(),
+			price = $(".form-product-2 .price-month").text(),
 			utm = $(".form-product-2 #product_utm").val();
 		if (!phone) {
 			$(".form-product-2 #product_phone").addClass("not_phone");
@@ -109,7 +109,7 @@ $(document).ready(function () {
 			phone = $(".form-product-3 #product_phone").val(),
 			name = $(".form-product-3 #product_name").val(),
 			size = $(".form-product-3 #product_size").val(),
-			price = $(".form-product-3 #product_price").val(),
+			price = $(".form-product-3 .price-month").text(),
 			utm = $(".form-product-3 #product_utm").val();
 		if (!phone) {
 			$(".form-product-3 #product_phone").addClass("not_phone");
@@ -161,7 +161,7 @@ $(document).ready(function () {
 			phone = $(".form-product-4 #product_phone").val(),
 			name = $(".form-product-4 #product_name").val(),
 			size = $(".form-product-4 #product_size").val(),
-			price = $(".form-product-4 #product_price").val(),
+			price = $(".form-product-4 .price-month").text(),
 			utm = $(".form-product-4 #product_utm").val();
 		if (!phone) {
 			$(".form-product-4 #product_phone").addClass("not_phone");
