@@ -1,6 +1,6 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
-$APPLICATION->SetTitle("Новая страница");
+$APPLICATION->SetTitle("Аренда бытовок и блок-контейнеров с доставкой по СПб и Л.О.");
 ?>
 	
 	<div class="banner" style="background-image: url(<?= SITE_TEMPLATE_PATH ?>/images/banner__main.png);">

@@ -1,7 +1,5 @@
 <? require($_SERVER['DOCUMENT_ROOT'] . '/bitrix/header.php');
-$APPLICATION->SetPageProperty("description", "");
-$APPLICATION->SetPageProperty("keywords", "");
-$APPLICATION->SetPageProperty("title", "");
+$APPLICATION->SetPageProperty("title", "Аренда бытовок и блок-контейнеров с доставкой по СПб и Л.О.");
 $APPLICATION->SetTitle("Аренда бытовок и блок-контейнеров с доставкой по СПб и Л.О."); ?>
 
 
