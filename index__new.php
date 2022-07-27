@@ -13,7 +13,7 @@ $APPLICATION->SetTitle("Аренда бытовок и блок-контейне
 				</div>
 				<div class="banner__advantage-item">
 					<img src="<?= SITE_TEMPLATE_PATH ?>/images/icons/icon__wallet.svg" class="banner__advantage-icon">
-					<p class="banner__advantage-name">Стоимость от&nbsp;5&nbsp;000&nbsp;р/мес</p>
+					<p class="banner__advantage-name">Стоимость от&nbsp;7&nbsp;000&nbsp;р/мес</p>
 				</div>
 			</div>
 			<a href="#" class="btn btn--red banner__button" data-target="callback">Взять в аренду</a>
