@@ -349,6 +349,12 @@ a, input, button {
 	height: 39px;
 }
 
+.header__discount {
+	align-self: center;
+	font-weight: 700;
+	color: var(--color__red);
+}
+
 .header__contacts {
 	display: flex;
 	flex-direction: column;

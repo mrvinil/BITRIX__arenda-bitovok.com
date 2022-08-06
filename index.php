@@ -57,7 +57,7 @@ $APPLICATION->SetTitle("Аренда бытовок и блок-контейне
 								</div>
 							</div>
 							<div class="col-6">
-								<button id="form-send" data-hover="Оставить заявку" class="cta bl">Оставить заявку
+								<button id="form-send" data-hover="Арендовать" class="cta bl">Арендовать
 								</button>
 							</div>
 						</div>
@@ -106,7 +106,7 @@ $APPLICATION->SetTitle("Аренда бытовок и блок-контейне
 								</div>
 							</div>
 							<div class="col-6">
-								<button id="form-send" data-hover="Оставить заявку" class="cta bl">Оставить заявку
+								<button id="form-send" data-hover="Арендовать" class="cta bl">Арендовать
 								</button>
 							</div>
 						</div>
@@ -153,7 +153,7 @@ $APPLICATION->SetTitle("Аренда бытовок и блок-контейне
 								</div>
 							</div>
 							<div class="col-6">
-								<button id="form-send" data-hover="Оставить заявку" class="cta bl">Оставить заявку
+								<button id="form-send" data-hover="Арендовать" class="cta bl">Арендовать
 								</button>
 							</div>
 						</div>
@@ -201,7 +201,7 @@ $APPLICATION->SetTitle("Аренда бытовок и блок-контейне
 								</div>
 							</div>
 							<div class="col-6">
-								<button id="form-send" data-hover="Оставить заявку" class="cta bl">Оставить заявку
+								<button id="form-send" data-hover="Арендовать" class="cta bl">Арендовать
 								</button>
 							</div>
 						</div>
@@ -908,7 +908,7 @@ $APPLICATION->SetTitle("Аренда бытовок и блок-контейне
 					<div class="col-3">
 						<div class="input-col">
 							<input id="product_utm" type="hidden" value="<?= $utmMark ?>">
-							<button id="form-send" data-hover="Расчитать стоимость" class="cta bl">Оставить заявку
+							<button id="form-send" data-hover="Арендовать" class="cta bl">Арендовать
 							</button>
 						</div>
 					</div>

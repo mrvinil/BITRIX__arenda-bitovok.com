@@ -151,20 +151,31 @@ if ($utm == 'bk')
 		<!--  <div class="overlay"></div> -->
 		<div class="container">
 			<div class="row">
-				<div class="col-8">
+				<div class="col-12">
 					<h2 class="big-h2">Аренда бытовок</h2>
-					<h1 style="margin-top: 0px;">
+					<!-- <h1 style="margin-top: 0px;">
 						<span>Новые бытовки<br>по цене Б/У в аренду<br>от <b>7 000 руб/месяц</b></span>
-					</h1>
-					<?$APPLICATION->IncludeFile( 
-			 			SITE_DIR."/include/bitrix24Callback.php", 
-			  			Array(), 
-			  			Array("MODE"=>"php") 
+					</h1> -->
+					<?$APPLICATION->IncludeFile(
+			 			SITE_DIR."/include/bitrix24Callback.php",
+			  			Array(),
+			  			Array("MODE"=>"php")
 					);?>
-					<a class="mr-auto cta bl col-4" style="color: #fff; background:
-					transparent; border: 1px solid #fff; text-transform: uppercase;"
-					   data-toggle="modal"
-					   data-hover="Оставить заявку">Оставить заявку</a>
+					<div class="banner__desc">
+						<div class="banner__advantage">
+							<div class="banner__advantage-item">
+								<img src="<?= SITE_TEMPLATE_PATH ?>/images/icons/icon__clock.svg" class="banner__advantage-icon">
+								<p class="banner__advantage-name">Будем у вас уже&nbsp;через&nbsp;3&nbsp;часа</p>
+							</div>
+							<div class="banner__advantage-item">
+								<img src="<?= SITE_TEMPLATE_PATH ?>/images/icons/icon__wallet.svg" class="banner__advantage-icon">
+								<p class="banner__advantage-name">Август - скидка 10%</p>
+							</div>
+						</div>
+						<a class="mr-auto cta bl col-4" style="color: #fff;" data-toggle="modal" data-hover="Взять в аренду">Взять в аренду</a>
+<!--						<a href="#" class="btn btn--red banner__button" data-target="callback">Взять в аренду</a>-->
+					</div>
+					
 				</div>
 			</div>
 		</div>
@@ -177,12 +188,12 @@ if ($utm == 'bk')
 			<div class="col-5 ml-auto">
 				<div class="contacts">
 					<a href="tel:<? if(file_exists($phonePath)) require $phonePath; ?>" class="phone nv xbold">
-						<?$APPLICATION->IncludeFile( 
-				 			SITE_DIR."/include/phone.php", 
-				  			Array(), 
-				  			Array("MODE"=>"php") 
+						<?$APPLICATION->IncludeFile(
+				 			SITE_DIR."/include/phone.php",
+				  			Array(),
+				  			Array("MODE"=>"php")
 						);?>
-							
+						
 						</a>
 <!--					<p><span>Фрунзенская</span>, ул. Киевская 22</p>-->
 <!--					<p><span>Озерки</span>, ш. Выборгское 459</p>-->
@@ -210,10 +221,10 @@ if ($utm == 'bk')
 			<div class="col-3 ml-auto">
 				<div class="contacts">
 					<p class="phone nv xbold"><a href="tel:<? if(file_exists($phonePath)) require $phonePath; ?>">
-						<?$APPLICATION->IncludeFile( 
-				 			SITE_DIR."/include/phone.php", 
-				  			Array(), 
-				  			Array("MODE"=>"php") 
+						<?$APPLICATION->IncludeFile(
+				 			SITE_DIR."/include/phone.php",
+				  			Array(),
+				  			Array("MODE"=>"php")
 						);?>
 					</a></p><br>
 					<!-- <p class="adres-stick">ул. Киевская 22</p> -->
@@ -221,10 +232,10 @@ if ($utm == 'bk')
 			</div>
 			
 			<div class="col-2">
-				<?$APPLICATION->IncludeFile( 
-		 			SITE_DIR."/include/bitrix24Callback.php", 
-		  			Array(), 
-		  			Array("MODE"=>"php") 
+				<?$APPLICATION->IncludeFile(
+		 			SITE_DIR."/include/bitrix24Callback.php",
+		  			Array(),
+		  			Array("MODE"=>"php")
 				);?>
 				<a class="b24-web-form-popup-btn-13">
 					<div data-toggle="modal" data-hover="Заказать звонок" class="cta bl">

@@ -80,6 +80,7 @@ $phonePath = $_SERVER['DOCUMENT_ROOT'] . SITE_DIR . "include/new/phonePath.php";
 	</div>
 	<div class="section header__info">
 		<a href="/" class="header__logo link"></a>
+		<div class="header__discount">Август - скидка 10%</div>
 		<div class="header__contacts">
 			<a href="tel:<? if(file_exists($phonePath)) require $phonePath; ?>" class="phone-link link">
 				<?$APPLICATION->IncludeFile(

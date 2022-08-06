@@ -621,6 +621,70 @@ body > header > div > div > div:nth-child(4) > div > p:nth-child(2) > span:befor
 }
 
 
+.banner__desc {
+   display: flex;
+   gap: 66px;
+}
+
+.banner__advantage {
+   display: flex;
+   align-items: center;
+   gap: 66px;
+}
+
+.banner__advantage-item {
+   display: flex;
+   gap: 20px;
+    align-items: center;
+}
+
+.banner__advantage-icon {
+   width: 67px;
+   height: 46px;
+   pointer-events: none;
+}
+
+.banner__advantage-name {
+   color: #fff !important;
+   font-weight: 500 !important;
+   font-size: 18px !important;
+   line-height: 22px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .banner__desc {
+        gap: 36px;
+    }
+    .banner__advantage {
+        gap: 36px;
+    }
+    .banner__advantage-name {
+        font-size: 14px;
+    }
+}
+@media (max-width: 767px) {
+    .banner__desc {
+        flex-direction: column;
+        gap: 27px;
+    }
+    .banner__advantage {
+        gap: 43px;
+    }
+    .banner__advantage-item {
+        gap: 10px;
+        align-items: center;
+    }
+    .banner__advantage-icon {
+        width: 28px;
+        height: 28px;
+    }
+    .banner__advantage-name {
+        font-size: 14px !important;
+        line-height: 14px !important;
+    }
+}
 
 #main h2,
 .form h2 {
@@ -640,10 +704,11 @@ body > header > div > div > div:nth-child(4) > div > p:nth-child(2) > span:befor
 }
 #main h2.big-h2{
     font-weight: 800;
-    font-size: 50px;
+    font-size: 106px;
     margin-top: 130px;
     color: #fff;
     text-transform: uppercase;
+    text-align: center;
 }
 #main h2 span {
     display: inline;
