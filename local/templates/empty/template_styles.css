@@ -173,14 +173,14 @@ a, input, button {
 }
 .btn--cta {
 	color: var(--color__dark);
-	background-color: transparent;
+	background-color: var(--color__yellow);
 	border: 2px solid var(--color__yellow);
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
 	border-radius: 8px;
 }
 .btn--cta:hover {
-	background-color: var(--color__yellow);
+	background-color: transparent;
 }
 .btn--cta:active {
 	background: #fab619;
@@ -353,6 +353,7 @@ a, input, button {
 	align-self: center;
 	font-weight: 700;
 	color: var(--color__red);
+	font-size: 21px;
 }
 
 .header__contacts {
@@ -368,6 +369,7 @@ a, input, button {
 	font-size: 28px;
 	line-height: 31px;
 	font-weight: 500;
+	font-style: italic;
 }
 
 .callback-link {
@@ -499,7 +501,7 @@ a, input, button {
 }
 
 .card__img {
-	padding: 40px;
+	/*padding: 40px;*/
 	height: 345px;
 }
 
@@ -538,8 +540,8 @@ a, input, button {
 .card__button {
 	width: 257px;
 	height: 70px;
-	font-weight: 500;
-	font-size: 18px;
+	font-weight: 700;
+	font-size: 22px;
 }
 
 .hang {
@@ -598,7 +600,7 @@ a, input, button {
 }
 
 .slider__dots {
-	display: none;
+	/*display: none;*/
 	margin-top: 13px;
 	position: relative;
 	margin-bottom: 65px;
@@ -746,7 +748,7 @@ a, input, button {
 		min-height: 300px;
 	}
 	.card__img {
-		padding: 20px;
+		/*padding: 20px;*/
 		height: auto;
 	}
 	.card__button {
@@ -874,7 +876,7 @@ a, input, button {
 		padding: 20px 45px;
 	}
 	.card__img {
-		padding: 10px;
+		/*padding: 10px;*/
 		height: auto;
 	}
 	.card__button {

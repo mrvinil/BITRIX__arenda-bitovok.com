@@ -26,10 +26,10 @@
 				<p style="font-size: 150%;">
 					<b class="phone">
 						<a href="tel:<? if(file_exists($phonePath)) require $phonePath; ?>">
-							<?$APPLICATION->IncludeFile( 
-					 			SITE_DIR."/include/phone.php", 
-					  			Array(), 
-					  			Array("MODE"=>"php") 
+							<?$APPLICATION->IncludeFile(
+					 			SITE_DIR."/include/phone.php",
+					  			Array(),
+					  			Array("MODE"=>"php")
 							);?>
 						</a>
 					</b>
@@ -39,10 +39,10 @@
 				<p>Режим работы:
 					<p>
 						<b>
-							<?$APPLICATION->IncludeFile( 
-					 			SITE_DIR."/include/operating.php", 
-					  			Array(), 
-					  			Array("MODE"=>"php") 
+							<?$APPLICATION->IncludeFile(
+					 			SITE_DIR."/include/operating.php",
+					  			Array(),
+					  			Array("MODE"=>"php")
 							);?>
 						</b>
 					</p>
@@ -272,7 +272,7 @@
 							</div>
 							<div class="col-6">
 								<input id="product_utm" type="hidden" value="<?= $utmMark ?>">
-								<button id="form-send" data-hover="Оставить заявку" class="cta bl">Оставить заявку
+								<button id="form-send" data-hover="Арендовать" class="cta bl">Арендовать
 								</button>
 							</div>
 						</div>
@@ -371,10 +371,10 @@
 	</symbol>
 </svg>
 
-<?$APPLICATION->IncludeFile( 
-	SITE_DIR."/include/yandexMetrika.php", 
-	Array(), 
-	Array("MODE"=>"php") 
+<?$APPLICATION->IncludeFile(
+	SITE_DIR."/include/yandexMetrika.php",
+	Array(),
+	Array("MODE"=>"php")
 );?>
 
 
