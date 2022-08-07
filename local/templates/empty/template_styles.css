@@ -789,7 +789,8 @@ a, input, button {
 		line-height: 30px;
 	}
 	.header__logo {
-		width: 265px;
+		width: 164px;
+		height: 25px;
 	}
 	.header__top {
 		grid-row: 2 / 3;
@@ -816,9 +817,9 @@ a, input, button {
 	}
 	.header__info {
 		flex-direction: column;
-		gap: 25px;
-		padding-top: 20px;
-		padding-bottom: 15px;
+		gap: 10px;
+		padding-top: 5px;
+		padding-bottom: 5px;
 	}
 	.callback-link {
 		font-size: 11px;
