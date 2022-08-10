@@ -627,6 +627,11 @@ body > header > div > div > div:nth-child(4) > div > p:nth-child(2) > span:befor
    gap: 66px;
 }
 
+.banner__button {
+    background: #ffcf00 !important;
+    border: 1px solid #ffcf00 !important;
+}
+
 .banner__advantage {
    display: flex;
    align-items: center;
