@@ -171,9 +171,7 @@ if ($utm == 'bk')
 								<p class="banner__advantage-name">Август - скидка 10%</p>
 							</div>
 						</div>
-						<a class="mr-auto cta bl col-6" style="color: #fff; margin: 0 auto;" data-toggle="modal"
-						   data-hover="Взять в
-						 аренду">Взять в аренду</a>
+						<a class="mr-auto cta bl col-6 banner__button" data-toggle="modal" data-hover="Взять в аренду">Взять в аренду</a>
 					</div>
 				</div>
 			</div>
