@@ -446,7 +446,8 @@ body > header > div > div > div:nth-child(4) > div > p:nth-child(2) > span:befor
     position: fixed;
     width: 100%;
     top: 0;
-    background: #23292e;
+    /*background: #23292e;*/
+    background: rgba(54, 81, 124, .8);
     height: 60px;
     overflow: hidden
 }
@@ -487,13 +488,13 @@ body > header > div > div > div:nth-child(4) > div > p:nth-child(2) > span:befor
 #stick .header .toplinks .nav li a {
     font-size: 24px;
     font-weight: 700;
-    color: #F44336;
+    color: var(--color__yellow);
     transition: cubic-bezier(0, 0, .2, 1) .33s;
     text-transform: uppercase;
 }
 
 #stick .header .toplinks .nav li a:hover {
-    color: #F44336;
+    color: var(--color__yellow);
     text-decoration: none
 }
 
