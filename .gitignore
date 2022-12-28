@@ -6,6 +6,7 @@
 /*web.config
 /*.log
 /*.sql
+/.log
 # исключаем из репозитория текстовые файлы, но оставляем robots.txt
 /*.txt
 !/robots.txt

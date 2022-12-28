@@ -2,6 +2,13 @@
 <?
 $utmMark = 'form-arendabitovokcom-new';
 $phonePath = $_SERVER['DOCUMENT_ROOT'] . SITE_DIR . "include/new/phonePath.php";
+$_monthsList = array(
+	"1"=>"Январь","2"=>"Февраль","3"=>"Март",
+	"4"=>"Апрель","5"=>"Май", "6"=>"Июнь",
+	"7"=>"Июль","8"=>"Август","9"=>"Сентябрь",
+	"10"=>"Октябрь","11"=>"Ноябрь","12"=>"Декабрь");
+
+$month = $_monthsList[date("n")];
 ?>
 <?IncludeTemplateLangFile(__FILE__);?>
 <!doctype html>
@@ -80,7 +87,7 @@ $phonePath = $_SERVER['DOCUMENT_ROOT'] . SITE_DIR . "include/new/phonePath.php";
 	</div>
 	<div class="section header__info">
 		<a href="/" class="header__logo link"></a>
-		<div class="header__discount">Август - скидка 10%</div>
+		<div class="header__discount"><?=$month?> - скидка 10%</div>
 		<div class="header__contacts">
 			<a href="tel:<? if(file_exists($phonePath)) require $phonePath; ?>" class="phone-link link">
 				<?$APPLICATION->IncludeFile(

@@ -160,6 +160,15 @@ if ($utm == 'bk')
 							Array(),
 							Array("MODE"=>"php")
 					);?>
+					<?
+					$_monthsList = array(
+							"1"=>"Январь","2"=>"Февраль","3"=>"Март",
+							"4"=>"Апрель","5"=>"Май", "6"=>"Июнь",
+							"7"=>"Июль","8"=>"Август","9"=>"Сентябрь",
+							"10"=>"Октябрь","11"=>"Ноябрь","12"=>"Декабрь");
+					
+					$month = $_monthsList[date("n")];
+					?>
 					<div class="banner__desc">
 						<div class="banner__advantage">
 							<div class="banner__advantage-item">
@@ -168,7 +177,7 @@ if ($utm == 'bk')
 							</div>
 							<div class="banner__advantage-item">
 								<img src="<?= SITE_TEMPLATE_PATH ?>/images/icons/icon__wallet.svg" class="banner__advantage-icon">
-								<p class="banner__advantage-name">Август - скидка 10%</p>
+								<p class="banner__advantage-name"><?=$month?> - скидка 10%</p>
 							</div>
 						</div>
 						<a class="mr-auto cta bl col-6 banner__button" data-toggle="modal" data-hover="Взять в аренду">Взять в аренду</a>
