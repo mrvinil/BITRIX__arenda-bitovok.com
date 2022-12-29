@@ -28,9 +28,12 @@ $this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayB
 			<?else:?>
 				<div class="card__img-slider">
 					<? foreach ($arItem["PROPERTIES"]["MORE_PHOTO"]["VALUE"] as $PHOTO): ?>
-						<? $src = CFile::GetFileArray($PHOTO); ?>
+						<?// $src = CFile::GetFileArray($PHOTO); ?>
+						<? $img = CFile::ResizeImageGet($PHOTO, array('width'=>545, 'height'=>345),
+								BX_RESIZE_IMAGE_EXACT, true); ?>
 						<div class="card__img-item">
-							<img src="<?= $src["SRC"] ?>" alt="<?=$arItem["NAME"];?>" class="card__img img-responsive">
+							<img src="<?= $img["src"] ?>" alt="<?=$arItem["NAME"];?>" width="<?=$img["width"]?>" height="<?=$img["height"]?>"
+							     class="card__img img-responsive">
 						</div>
 					<?endforeach;?>
 				</div>
