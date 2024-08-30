@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Металлострой";
+$arDirProperties = Array(
+
+);
+?>

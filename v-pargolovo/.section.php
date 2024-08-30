@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Парголово";
+$arDirProperties = Array(
+
+);
+?>

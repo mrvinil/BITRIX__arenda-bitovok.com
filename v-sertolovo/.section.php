@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Сертолово";
+$arDirProperties = Array(
+
+);
+?>

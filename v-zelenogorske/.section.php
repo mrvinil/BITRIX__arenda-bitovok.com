@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Зеленогорск";
+$arDirProperties = Array(
+
+);
+?>

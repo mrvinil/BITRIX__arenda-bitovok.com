@@ -26,7 +26,7 @@
 				<p><b><span>Фрунзенская</span>, Ул. Киевская, дом 5</b></p>
 				<p><b><span>Озерки</span>, ш. Выборгское, дом 459</b></p>
 			</div> -->
-			<div class="col-6">
+			<div class="col-12">
 				<p>Телефон:</p>
 				<p style="font-size: 150%;"><b class="phone">
 					<a href="tel:<? if(file_exists($phonePath)) require $phonePath; ?>">
@@ -37,20 +37,153 @@
 						);?>
 					</a></b></p>
 			</div>
-			<div class="col-6">
+			<!-- <div class="col-6">
 				<p>Режим работы:
 				<p><b><?$APPLICATION->IncludeFile(
 					 			SITE_DIR."/include/operating.php",
 					  			Array(),
 					  			Array("MODE"=>"php")
 							);?></b></p></p>
+			</div> -->
+		</div>
+	</div>
+</section>
+	
+	<section class="section">
+		<div class="container">
+		<?$APPLICATION->IncludeComponent(
+	"bitrix:news.list",
+	"photogallery",
+	array(
+		"ACTIVE_DATE_FORMAT" => "d.m.Y",
+		"ADD_SECTIONS_CHAIN" => "N",
+		"AJAX_MODE" => "N",
+		"AJAX_OPTION_ADDITIONAL" => "",
+		"AJAX_OPTION_HISTORY" => "N",
+		"AJAX_OPTION_JUMP" => "N",
+		"AJAX_OPTION_STYLE" => "Y",
+		"CACHE_FILTER" => "N",
+		"CACHE_GROUPS" => "Y",
+		"CACHE_TIME" => "36000000",
+		"CACHE_TYPE" => "N",
+		"CHECK_DATES" => "Y",
+		"DETAIL_URL" => "",
+		"DISPLAY_BOTTOM_PAGER" => "N",
+		"DISPLAY_DATE" => "N",
+		"DISPLAY_NAME" => "N",
+		"DISPLAY_PICTURE" => "N",
+		"DISPLAY_PREVIEW_TEXT" => "N",
+		"DISPLAY_TOP_PAGER" => "N",
+		"FIELD_CODE" => array(
+			0 => "",
+			1 => "",
+		),
+		"FILTER_NAME" => "",
+		"HIDE_LINK_WHEN_NO_DETAIL" => "N",
+		"IBLOCK_ID" => "3",
+		"IBLOCK_TYPE" => "content",
+		"INCLUDE_IBLOCK_INTO_CHAIN" => "N",
+		"INCLUDE_SUBSECTIONS" => "N",
+		"MESSAGE_404" => "",
+		"NEWS_COUNT" => "1000",
+		"PAGER_BASE_LINK_ENABLE" => "N",
+		"PAGER_DESC_NUMBERING" => "N",
+		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+		"PAGER_SHOW_ALL" => "N",
+		"PAGER_SHOW_ALWAYS" => "N",
+		"PAGER_TEMPLATE" => ".default",
+		"PAGER_TITLE" => "Новости",
+		"PARENT_SECTION" => "",
+		"PARENT_SECTION_CODE" => "",
+		"PREVIEW_TRUNCATE_LEN" => "",
+		"PROPERTY_CODE" => array(
+			0 => "",
+			1 => "MORE_PHOTO",
+			2 => "",
+		),
+		"SET_BROWSER_TITLE" => "N",
+		"SET_LAST_MODIFIED" => "N",
+		"SET_META_DESCRIPTION" => "N",
+		"SET_META_KEYWORDS" => "N",
+		"SET_STATUS_404" => "N",
+		"SET_TITLE" => "N",
+		"SHOW_404" => "N",
+		"SORT_BY1" => "ACTIVE_FROM",
+		"SORT_BY2" => "SORT",
+		"SORT_ORDER1" => "DESC",
+		"SORT_ORDER2" => "ASC",
+		"STRICT_SECTION_CHECK" => "N",
+		"COMPONENT_TEMPLATE" => "photogallery"
+	),
+	false
+);?>
+		</div>
+	</section>
+
+<section class="section" id="region-menu-bottom">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-lg-3">
+				<a href="/v-boksitogorske/">Бокситогорск</a>
+				<a href="/v-volosovo/">Волосово</a>
+				<a href="/v-volhove/">Волхов</a>
+				<a href="/vo-vsevolozhske/">Всеволожск</a>
+				<a href="/v-vyborge/">Выборг</a>
+				<a href="/v-vyritse/">Вырица</a>
+				<a href="/v-gatchine/">Гатчина</a>
+				<a href="/v-zelenogorske/">Зеленогорск</a>
+				<a href="/v-ivangorode/">Ивангород</a>
+				<a href="/v-kingiseppe/">Кингисепп</a>
+				<a href="/v-kirishah/">Кириши</a>
+				<a href="/v-kirovske/">Кировск</a>
+			</div>
+			<div class="col-md-6 col-lg-3">
+				<a href="/v-kolpino/">Колпино</a>
+				<a href="/v-kommunare/">Коммунар</a>
+				<a href="/v-krasnom-sele/">Красное Село</a>
+				<a href="/v-kronshtadte/">Кронштадт</a>
+				<a href="/v-kudrovo/">Кудрово</a>
+				<a href="/v-kuzmolovskom/">Кузьмоловский</a>
+				<a href="/v-lodejnom-pole/">Лодейное Поле</a>
+				<a href="/v-lomonosove/">Ломоносов</a>
+				<a href="/v-luge/">Луга</a>
+				<a href="/vo-mge/">Мга</a>
+				<a href="/v-metallostroe/">Металлострой</a>
+				<a href="/v-murino/">Мурино</a>
+			</div>
+			<div class="col-md-6 col-lg-3">
+				<a href="/v-nikolskom/">Никольское</a>
+				<a href="/v-otradnom/">Отрадное</a>
+				<a href="/v-pavlovske/">Павловск</a>
+				<a href="/v-pargolovo/">Парголово</a>
+				<a href="/v-petergofe/">Петергоф</a>
+				<a href="/v-pikalyovo/">Пикалёво</a>
+				<a href="/v-podporozhe/">Подпорожье</a>
+				<a href="/v-priozerske/">Приозерск</a>
+				<a href="/v-pushkine/">Пушкин</a>
+				<a href="/v-roshhino/">Рощино</a>
+				<a href="/v-svetogorske/">Светогорск</a>
+				<a href="/v-sertolovo/">Сертолово</a>
+			</div>
+			<div class="col-md-6 col-lg-3">
+				<a href="/v-sestroretske/">Сестрорецк</a>
+				<a href="/v-siverskom/">Сиверский</a>
+				<a href="/v-slantsah/">Сланцы</a>
+				<a href="/v-sosnovom-boru/">Сосновый Бор</a>
+				<a href="/v-strelne/">Стрельна</a>
+				<a href="/v-svasstroe">Сясьстрой</a>
+				<a href="/v-tihvine/">Тихвин</a>
+				<a href="/v-tosno/">Тосно</a>
+				<a href="/v-ulyanovke/">Ульяновка</a>
+				<a href="/v-shlisselburge/">Шлиссельбург</a>
+				<a href="/v-yanino/">Янино</a>
+				<a href="/v-posyolke-imeni-morozova/">посёлок имени Морозова</a>
+				<a href="/v-posyolke-imeni-sverdlova/">посёлок имени Свердлова</a>
 			</div>
 		</div>
 	</div>
 </section>
-<!-- <section class="section" style="padding: 0px!important;">
-	<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af8420d0d6daa896b1b2167b1207f004d7013434b4c52b15f1b3bbf6f1aaca616&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=false"></script>
-</section> -->
+
 
 <div class="header_canvas">
 	<canvas id="canvas" width="320" height="194"></canvas>
@@ -374,33 +507,11 @@
 
 
 <!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-	(function (m, e, t, r, i, k, a) {
-		m[i] = m[i] || function () {
-			(m[i].a = m[i].a || []).push(arguments)
-		};
-		m[i].l = 1 * new Date();
-		k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
-	})
-	(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-	
-	ym(57178468, "init", {
-		clickmap: true,
-		trackLinks: true,
-		accurateTrackBounce: true,
-		webvisor: true
-	});
-</script>
-<noscript>
-	<div><img src="https://mc.yandex.ru/watch/57178468" style="position:absolute; left:-9999px;" alt=""/></div>
-</noscript>
-<!-- /Yandex.Metrika counter -->
-
-
-<!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
    ym(70597204, "init", {
@@ -450,5 +561,36 @@
                 var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
         })(window,document,'https://cdn-ru.bitrix24.ru/b5901341/crm/site_button/loader_1_rp61zn.js');
 </script>
+
+
+
+<script>
+	$(document).ready(function(){
+		var slick_view = document.querySelectorAll('.card__img-slider');
+		for (var i = 0; i < slick_view.length; i++) {
+			$(slick_view[i]).slick({
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				arrows: false,
+				dots: true,
+				autoplay: true,
+				autoplaySpeed: 3000,
+			});
+		}
+	});
+</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			// Получаем элемент с ценой месячной аренды
+			var priceElement = document.querySelector(".price-month");
+			// Получаем текст из элемента
+			var priceText = priceElement.textContent;
+			// Извлекаем число из текста
+			var price = priceText.match(/\d+/)[0];
+			// Заменяем текст в мета-теге описания
+			var descriptionElement = document.querySelector('meta[name="description"]');
+			descriptionElement.setAttribute("content", descriptionElement.getAttribute("content").replace(/\d+/, price));
+		});
+	</script>
 </body>
 </html>

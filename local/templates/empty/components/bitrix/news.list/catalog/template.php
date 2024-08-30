@@ -29,11 +29,9 @@ $this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayB
 				<div class="card__img-slider">
 					<? foreach ($arItem["PROPERTIES"]["MORE_PHOTO"]["VALUE"] as $PHOTO): ?>
 						<?// $src = CFile::GetFileArray($PHOTO); ?>
-						<? $img = CFile::ResizeImageGet($PHOTO, array('width'=>545, 'height'=>345),
-								BX_RESIZE_IMAGE_EXACT, true); ?>
+						<? $img = CFile::ResizeImageGet($PHOTO, array('width'=>545, 'height'=>345), BX_RESIZE_IMAGE_EXACT, true); ?>
 						<div class="card__img-item">
-							<img src="<?= $img["src"] ?>" alt="<?=$arItem["NAME"];?>" width="<?=$img["width"]?>" height="<?=$img["height"]?>"
-							     class="card__img img-responsive">
+							<img src="<?= $img["src"] ?>" alt="<?=$arItem["NAME"];?>" width="<?=$img["width"]?>" height="<?=$img["height"]?>" class="card__img img-responsive">
 						</div>
 					<?endforeach;?>
 				</div>
@@ -47,3 +45,17 @@ $this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayB
 		<a href="#" class="btn btn--cta card__button" data-target="callback">Арендовать</a>
 	</div>
 <?endforeach;?>
+
+<!--<script>-->
+<!--	var swiper = new Swiper(".card__img-slider", {-->
+<!--		spaceBetween: 30,-->
+<!--		centeredSlides: true,-->
+<!--		autoplay: {-->
+<!--			delay: 2500,-->
+<!--			disableOnInteraction: false,-->
+<!--		},-->
+<!--		pagination: {-->
+<!--			el: ".swiper-pagination",-->
+<!--		},-->
+<!--	});-->
+<!--</script>-->

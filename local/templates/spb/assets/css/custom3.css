@@ -267,12 +267,15 @@
 }
 .slick__slider_double .slick__slider-item-first {
 	background-size: contain !important;
+	min-height: 100px;
 }
 
 .slick__slider-item-second {
 	padding: 20px;
 	display: grid;
 	grid-gap: 20px;
+	height: 400px;
+    overflow: auto;
 }
 .slick__slider_santech .slick__slider-item-second {
 	padding: 5px;
@@ -340,5 +343,14 @@
 	}
 	.komplekt-slider .slick__slider .slick-next {
 	    right: -33px;
+	}
+}
+
+@media (min-height: 960px) {
+	#main {
+	    height: 960px !important;
+	}
+	#main.bk {
+		max-height: 550px !important;
 	}
 }

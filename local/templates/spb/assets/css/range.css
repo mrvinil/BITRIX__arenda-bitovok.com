@@ -219,7 +219,7 @@ input::-moz-focus-outer {
   width: 24px;
   position: absolute;
   left: 9px;
-  top: 7px;
+  bottom: 8px;
   stroke-dasharray: 33;
 }
 

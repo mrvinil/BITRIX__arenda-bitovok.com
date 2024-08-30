@@ -9,7 +9,6 @@
             <mapping deploy="/arenda-bitovok.com/public_html" local="$PROJECT_DIR$" web="/" />
           </mappings>
           <excludedPaths>
-            <excludedPath path="/arenda-bitovok.com/public_html/.cache" />
             <excludedPath path="/arenda-bitovok.com/public_html/bitrix" />
             <excludedPath path="/arenda-bitovok.com/public_html/upload" />
             <excludedPath local="true" path="$PROJECT_DIR$/.cache" />
@@ -17,6 +16,9 @@
             <excludedPath local="true" path="$PROJECT_DIR$/upload" />
             <excludedPath path="/arenda-bitovok.com/public_html/webhook/hook.log" />
             <excludedPath local="true" path="$PROJECT_DIR$/webhook/hook.log" />
+            <excludedPath path="/arenda-bitovok.com/public_html/.cache" />
+            <excludedPath path="/arenda-bitovok.com/public_html/cgi-bin" />
+            <excludedPath local="true" path="$PROJECT_DIR$/cgi-bin" />
           </excludedPaths>
         </serverdata>
       </paths>

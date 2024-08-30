@@ -1,0 +1,1061 @@
+@import "fonts"
+@import "var"
+body
+	background: #fff
+
+h1
+	font-family: 'Open Sans'
+	font-weight: 800
+	font-size: 48px
+	color: $color_nv
+	text-transform: uppercase
+	margin-bottom: 48px
+
+h2
+	font-family: 'Open Sans'
+	font-weight: 400
+	font-size: 38px
+	color: $color_nv
+	display: block
+	text-align: center
+	padding-bottom: 19px
+	text-align: center
+h3
+	font-family: 'Open Sans'
+	font-weight: 300
+	font-size: 24px
+	padding-bottom: 36px
+	text-align: center
+h4
+	font-family: 'Open Sans'
+	font-weight: 300
+	font-size: 22px
+b
+	font-family: 'Open Sans'
+	font-weight: 600
+p, input, li
+	font-family: 'Open Sans'
+	font-weight: 300
+	font-size: 18px
+	color: $color_nv
+
+section
+	width: 100%
+	min-width: 1170px
+	position: relative
+	padding-top: 70px!important
+	padding-bottom: 70px!important
+.vert-line
+	display: block
+	position: absolute
+	top: 50px
+	transition: cubic-bezier(0, 0, 0.2, 1) 1.0s
+	left: 50%
+	background: $color_bl
+	width: 1px
+	height: 0px
+header
+	background: #fff
+	position: relative
+	z-index: 1
+	.logo
+		background: url('/img/logo.svg') no-repeat
+		background-size: 154px
+		background-position: 15px 5px
+	.header.container
+		padding-top: 24px
+	.descriptor
+		font-size: 16px
+		color: $color_nv
+		line-height: 1.25emv
+	.contacts
+		text-align: right
+		p
+			font-size: 16px
+		.phone
+			font-size: 22px
+			font-weight: 600
+			margin-bottom: 0px
+	
+			
+#stick
+	display: none
+	z-index: 999999999
+	position: fixed
+	width: 100%
+	top: 0px
+	background: $color_nv
+	height: 56px
+	overflow: hidden
+	.header
+		padding-top: 12px
+		.logo
+			background: url('/img/logo-wh.svg') no-repeat
+			//background-size: 168px 33px
+			background-position-y: 1px
+			width: 100%
+			height: 100%
+		.toplinks
+			.nav
+				justify-content: flex-end
+				li
+					padding-right: 20px
+
+					&:last-child
+						padding-right: 0px
+					a
+						font-size: 16px
+						font-weight: 300
+						color: #acabab
+						transition: cubic-bezier(0, 0, 0.2, 1) .33s
+						&:hover
+							color: $color_bl
+							text-decoration: none
+
+		.contacts
+			justify-content: flex-end
+			display: flex
+			flex-wrap: wrap
+			p
+				text-align: right
+				color: #acabab
+				font-size: 14px
+				margin-bottom: 0px
+				line-height: 1em
+			a
+				text-align: right
+				color: #acabab
+				font-size: 14px
+		.cta
+			height: 31px
+			font-size: 12px
+			font-weight: 700
+			padding: 0px
+			text-align: center
+			width: 100%
+			display: block
+			line-height: 2.25em
+			&:hover
+				color: $color_bl
+				&:after
+					padding: 0px
+					color: $color_bl
+			&:after
+				color: $color_bl
+				padding: 0px
+				line-height: 2.25em
+#main.bkbd
+	background: url(/img/bg_bd_bk.jpg) no-repeat top center
+	background-size: cover
+#main
+	height: 650px
+	min-height: 650px
+	h1
+		text-align: center
+		padding: 0px 2px
+		span
+			display: inline
+			background: rgba(54, 81, 124, 0.8)
+			color: #fff
+			padding: 0px 10px
+			line-height: 1.37em
+	h2
+		font-weight: 600
+		font-size: 30px
+		padding-top: 17px
+		text-align: left
+		padding-bottom: 0px
+		margin-top: -2px
+	p
+		color: $color_bl
+		padding-top: 55px
+		margin-bottom: 51px
+		font-weight: 400
+
+.form
+	padding-top: 69px
+	h2
+		font-weight: 400
+		font-size: 30px
+		padding-bottom: 0px
+		margin-bottom: 33px
+
+	h3
+		font-size: 22px
+		font-weight: 300
+		text-align: center
+		margin-bottom: 109px
+		color: $color_gr
+	.forma
+		padding-top: 10px
+		.input-col
+			margin-top: -11px
+		.cta
+			width: 100%!important
+			max-width: 100%
+			display: block
+			text-align: center
+	
+		.conf
+			font-size: 12px
+			line-height: 1.25em
+			padding-top: 15px
+			a
+				text-decoration: underline
+				color: $color_gr
+.input-col
+	input
+		border: 0px
+		border-bottom: 1px solid $color_gr
+		background: none
+		padding-bottom: 8px
+		width: 100%
+		transition: cubic-bezier(0, 0, 0.2, 1) .66s
+		&:focus
+			outline: none
+			border-bottom: 1px solid $color_bl
+			color: $color_nv
+h3.post-title
+	font-size: 22px
+	font-weight: 300
+	text-align: center
+	margin-bottom: 110px
+	color: $color_gr
+
+/******CATALOG*******/
+
+#catalog-section
+	#catalog-nav-1
+		background: $color_bl
+		height: 69px
+		ul
+			display: flex
+			justify-content: space-between
+			padding-bottom: 5px
+			padding-top: 20px
+			li
+				color: $color_wh
+				text-transform: uppercase
+				border-bottom: 1px solid $color_wh
+				padding-bottom: 7px
+				list-style: none
+				cursor: pointer
+				font-size: 18px
+				line-height: 1em
+				transition: cubic-bezier(0, 0, 0.2, 1) .33s
+				&.active
+					color: $color_nv
+					border-bottom: 1px solid $color_nv
+					font-size: 133%
+	#catalog-nav-2
+		background: $color_wh
+		.tabs
+			display: flex
+			justify-content: center
+			li
+				color: $color_nv
+				transition: cubic-bezier(0, 0, 0.2, 1) .33s
+				list-style: none
+				cursor: pointer
+				font-size: 18px
+				height: 36px
+				line-height: 2.75em
+				margin-left: 15px
+				margin-right: 15px
+				&.active
+					color: $color_bl
+	.box
+		display: none
+	.visible, .open_tab
+		display: block
+		width: 100%
+
+.bk, .bd, .mz, .pox
+	justify-content: space-between!important
+.product
+	transition: cubic-bezier(0, 0, 0.2, 1) .5s
+	cursor: pointer
+	padding-bottom: 25px
+	padding-top: 15px
+	overflow: hidden
+	position: relative
+	flex: 0 0 30%!important
+    max-width: 30%!important
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15)
+	.img-product
+		width: 338px
+	.img-fluid
+	h3
+		font-size: 24px
+		font-weight: 600
+		padding-bottom: 10px
+	.product-info
+		transition: cubic-bezier(0, 0, 0.2, 1) .5s
+		transform: translateY(0px)
+		opacity: 1
+		p
+			font-size: 17px
+			color: $color_nv
+			margin: 0px
+			font-weight: 400
+		span
+			font-size: 17px
+			opacity: .75
+			font-weight: 400
+	.more
+		display: block
+		position: absolute
+		width: 260px
+		left: 50%
+		margin-left: -130px
+		opacity: 0
+		transform: translateY(0px)
+	&:hover
+		box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.3)
+		.product-info
+			transition: cubic-bezier(0, 0, 0.2, 1) .25s
+			transform: translateY(-10px)
+			opacity: 0
+		.more
+			transition: cubic-bezier(0, 0, 0.2, 1) .33s
+			opacity: 1
+			transform: translateY(-85px)
+#img_1
+	widows: 100px
+#img_2
+	widows: 100px
+#img_3
+	widows: 100px
+
+
+/***** БУ *****/
+
+#by
+	background: url(/img/bg_by.jpg) center center
+	height: 780px
+	h2
+		@extend %whcolor
+		text-transform: uppercase
+		span
+			@extend %title_bg
+	h3
+		@extend %whcolor
+		span
+			@extend %title_bg
+	.forma
+		margin-top: 60px
+		width: 960px
+		background-color: $color_nvo
+		padding:
+			top: 25px
+			bottom: 25px
+		input
+			color: #fff
+			border-bottom: 1px solid $color_bl
+
+/***** Доставка ******/
+#delivery
+	background: $color_wh
+	height: 995px
+	.infographic
+		.icon
+			height: 82px
+			width: 100%
+			margin-bottom: 25px
+		p
+			text-align: center
+			font-size: 18px
+			line-height: 1.25em
+			font-weight: 400
+		.col-12
+			margin-bottom: 60px		
+		.col-3:nth-child(1)
+			.col-12:nth-child(1)
+				.icon
+					background: url(/img/car.svg) no-repeat center top
+			.col-12:nth-child(2)
+				.icon
+					background: url(/img/clok.svg) no-repeat center top
+		.col-6:nth-child(2)
+			background: url(/img/manipulator.png) no-repeat center top
+		.col-3:nth-child(3)
+			.col-12:nth-child(1)
+				.icon
+					background: url(/img/skid.svg) no-repeat center top
+
+			.col-12:nth-child(2)
+				.icon
+					background: url(/img/man.svg) no-repeat center top
+	.forma
+		margin-top: 60px
+		width: 960px
+		h3
+			font-weight: 400
+		input
+			color: $color_nv
+			border-bottom: 1px solid $color_bl
+
+#sertification
+	height: 965px
+	overflow: hidden
+	background: url(/img/setr_perspective.jpg) no-repeat bottom center
+
+#arenda
+	.icon
+		width: 100%
+	.col-3
+		margin-top: 25px
+		&:nth-child(2)
+			.icon
+				background: url(/img/sost.svg) no-repeat center
+				height: 84px
+		&:nth-child(3)
+			.icon
+				background: url(/img/car2.svg) no-repeat center
+				height: 84px
+		&:nth-child(4)
+			.icon
+				background: url(/img/dilivry.svg) no-repeat center
+				height: 84px
+		&:nth-child(5)
+			.icon
+				background: url(/img/skid2.svg) no-repeat center
+				height: 84px
+	h4
+		text-align: center
+		font-size: 22px
+		padding-top: 15px
+		font-weight: 600
+		&:after
+			display: block
+			background: $color_bl
+			content: ""
+			height: 1px 
+			width: 92px
+			margin: 15px auto
+	p
+		font-size: 14px
+		font-weight: 400
+		text-align: center
+#arenda_form
+	height: 712px
+	position: relative
+	background: url(/img/arenda.jpg) no-repeat center top
+	h2
+		text-align: center
+		font-size: 32px
+		font-weight: 400
+	h3
+		font-size: 22px
+	.col-empty
+	.form-section
+		.range-slider__range
+			width: calc(100% - (90px))
+		.range-slider__value
+			width: 77px
+		.promoted-checkbox
+			i
+				font-size: 14px!important
+				font-style: normal
+		.forma
+			padding-top: 30px
+
+#advantage
+	background: $color_wh
+	.info
+		h3
+			font-size: 32px
+			text-align: left
+			font-weight: 600
+			margin-bottom: 15px
+			padding-bottom: 0px
+			color: $color_bl
+		p
+			line-height: 1.25em
+			font-size: 16px
+		.col-4
+			p
+				text-align: center
+				font-size: 18px
+				color: $color_nv
+				line-height: 1.25em
+				b
+					font-size: 150%
+					line-height: 1.25em
+	.row
+		&:nth-child(2)
+			background: #fff
+			.bg
+				background: url(/img/a1.jpg) no-repeat
+			box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.25)
+			margin-bottom: 0px
+			padding:
+				top: 25px
+				bottom: 25px
+			min-height: 294px
+		&:nth-child(3)
+			background: #fff
+			.bg
+				background: url(/img/a2.jpg) no-repeat
+			box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.25)
+			margin-bottom: 0px
+			padding:
+				top: 25px
+				bottom: 25px
+			min-height: 294px
+		&:nth-child(4)
+			background: #fff
+			.bg
+				background: url(/img/a3.jpg) no-repeat
+			box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.25)
+			margin-bottom: 0px
+			padding:
+				top: 25px
+				bottom: 25px
+			min-height: 294px
+		&:nth-child(5)
+			background: #fff
+			.bg
+				background: url(/img/a4.jpg) no-repeat
+			box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.25)
+			margin-bottom: 0px
+			padding:
+				top: 25px
+				bottom: 25px
+			min-height: 294px
+		&:nth-child(6)
+			background: #fff
+			.bg
+				background: url(/img/a5.jpg) no-repeat
+			box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.25)
+			margin-bottom: 0px
+			padding:
+				top: 25px
+				bottom: 25px
+			min-height: 294px
+
+
+#faq
+	background: #f9f9f9
+	padding-top: 185px
+	.row
+		justify-content: center
+	
+	li
+		list-style: none
+		padding: 12px 0px
+
+	.dropdownlink
+		font-family: Open Sans
+		font-weight: 400
+		color: $color_nv
+		font-size: 22px
+		cursor: pointer
+		line-height: 1.25em
+		padding-bottom: 6px
+		i
+			margin-right: 24px
+			width: 16px
+			height: 16px
+			position: relative
+			&:before
+				top: 13px
+				content: ""
+				position: absolute
+				width: 17px
+				height: 3px
+				background: $color_bl
+			&:after
+				top: 6px
+				left: 7px
+				content: ""
+				position: absolute
+				height: 17px
+				width: 3px
+				background: $color_bl
+				transition: 0.33s
+	.open
+		i
+			&:after
+				top: 6px
+				left: 7px
+				content: ""
+				position: absolute
+				transform: scaleY(0)
+				background: $color_bl
+	.submenuItems
+		display: none
+		background: $color_wh
+		padding: 12px 24px
+		p
+			line-height: 1.25em
+			margin-bottom: 0px
+			color: $color_nv
+		
+#contact
+	h2
+		margin-bottom: 70px
+	.contact-info
+		.col-3
+			&:nth-child(1)
+				.icon
+					background: url(/img/phone-icon.svg) no-repeat
+					width: 37px
+					height: 36px
+				p
+					color: $color_nv
+					font-weight: 300
+					font-size: 18px
+			&:nth-child(2)
+				.icon
+					background: url(/img/mail-icon.svg) no-repeat
+					width: 67px
+					height: 36px
+				a
+					color: $color_nv
+					font-size: 18px
+					transition: cubic-bezier(0, 0, 0.2, 1) .33s
+					&:hover
+						color: $color_bl
+						text-decoration: none
+			&:nth-child(3)
+				.icon
+					background: url(/img/location-icon.svg) no-repeat
+					width: 42px
+					height: 64px
+				p
+					color: $color_nv
+					font-weight: 300
+					font-size: 14px
+
+			&:nth-child(4)
+				.icon
+					background: url(/img/clock-icon.svg) no-repeat
+					width: 37px
+					height: 36px
+				p
+					color: $color_nv
+					font-weight: 300
+					font-size: 18px
+			.icon
+				float: left
+				margin-right: 20px
+	.forma
+		margin-top: 100px
+		.input-col
+			margin-bottom: 36px
+		.textarea
+			padding-top: 35px
+			margin-bottom: 24px
+			textarea
+				width: 100%
+				height: 152px
+				resize: none
+				padding: 5px 10px
+		.cta
+			text-align: center
+			display: block
+		.conf
+			font-size: 12px
+			line-height: 1.25em
+			a
+				color: $color_gr
+				text-decoration: underline
+footer
+	width: 100%
+	min-width: 1170px
+	margin-top: 120px
+	padding-top: 32px
+	padding-bottom: 10px
+	background: $color_wh
+	.col-7
+		.logo
+			//padding-top: 70px
+			background: url(/img/logo.svg) no-repeat
+			background-size: 226px 48px
+			width: 226px
+			height: 48px
+			margin-left: -16px
+			margin-bottom: 24px
+		p
+			font-size: 14px
+			line-height: 1.25em
+		.copyright
+			font-size: 16px
+	.col-2
+		p
+			font-size: 16px
+			line-height: 1.25em
+			padding-bottom: 3px
+			a
+				color: $color_gr
+				text-decoration: none
+				transition: cubic-bezier(0, 0, 0.2, 1) .33s
+				&:hover
+						color: $color_bl
+	.col-3
+		ul
+			li
+				list-style: none
+				padding-bottom: 10px
+				a
+					color: $color_gr
+					transition: cubic-bezier(0, 0, 0.2, 1) .33s
+					text-decoration: none
+					&:hover
+						color: $color_bl
+
+	.cta
+		margin-top: 36px
+		font-size: 12px
+		height: 36px
+		text-align: center
+		line-height: 2.5em
+		&:hover:after
+			
+		&:after
+			line-height: 2.75em!important
+			height: 36px
+			font-size: 12px
+
+
+/******ДОКУМЕНТАЦИЯ******/
+#documentation
+	background: #fff
+	img
+		width: 100%
+	.col-4
+		margin-top: 15px
+		h4
+			margin-top: -30px
+			text-align: center
+			font-weight: 400
+			position: relative
+			padding-top: 15px
+			&:before
+				content: ""
+				width: 200px
+				height: 1px
+				background: $color_bl
+				display: block
+				position: absolute
+				top: -8px
+				z-index: 2
+				left: 50%
+				margin-left: -100px
+
+
+
+
+/******МОДАЛКИ********/
+.modal-backdrop
+	background: rgba(240, 240, 240, 0.95)
+.modal
+	background: rgba(240, 240, 240, 0.95)
+	.modal-header
+		border: none
+	.modal-footer
+		border: none
+		padding-top: 0px
+	.close
+		position: absolute
+		top: 15px
+		right: 15px
+		line-height: 0
+		font-size: 26px
+		transform: rotateZ(45deg)
+		transition: cubic-bezier(0, 0, 0.2, 1) .33s
+		color: #e0e0e0
+		font-family: 'Open Sans'
+		font-weight: 400
+		//background: url(/img/close.svg) no-repeat center center
+		width: 14px
+		height: 14px
+		cursor: pointer
+		opacity: 1
+		&:hover
+			color: $color_bl
+			z-index: 99
+		&:focus
+			outline: none
+
+.modal.show
+	.modal-dialog
+		width: 750px
+		height: 420px
+		max-width: 750px
+		top: 50%
+		margin-top: -182px
+		.modal-content
+			overflow: hidden
+			position: relative
+			width: 750px
+			height: 420px
+			border: 0px
+			border-radius: 0px
+			box-shadow: 0px 11px 40px 7px rgba(0, 0, 0, 0.15)
+			padding-right: 85px
+			padding-left: 85px
+			padding-top: 15px
+
+#calc
+	.modal-dialog
+		width: 750px
+		height: 420px
+		max-width: 750px
+		top: 50%
+		margin-top: -182px
+		.modal-content
+			transition: cubic-bezier(0, 0, 0.2, 1) .33s
+			overflow: hidden
+			position: relative
+			width: 750px
+			height: 420px
+			.modal-body
+				.col-12
+					.input-col
+						margin-bottom: 10px
+			.input-col
+				margin-top: 25px
+				margin-bottom: 35px
+			.conf
+				font-size: 12px
+				color: $color_gr
+				line-height: 1.25em
+				margin-top: 15px
+				a
+					color: $color_gr
+					transition: cubic-bezier(0, 0, 0.2, 1) .33s
+
+			.next-step
+				text-align: center
+				position: relative
+				&:before
+					content: ""
+					background: url(/img/next-step.svg) no-repeat
+					width: 8px
+					height: 12px
+					position: absolute
+					top: 22px
+					right: 30px
+				&:hover
+					&:before
+						background: url(/img/next-step-active.svg) no-repeat
+						z-index: 9
+.steps
+	display: flex
+	justify-content: space-between
+	width: 100%
+	.step
+		position: relative
+		.icon
+			background: url(/img/next-step-gray.svg) no-repeat
+			width: 8px
+			height: 12px
+			position: absolute
+			top: 9px
+			right: -50px
+		p
+			font-weight: 500
+			font-size: 18px
+			color: #acabab
+			transition: cubic-bezier(0, 0, 0.2, 1) .33s
+			cursor: pointer
+			&:hover
+				color: $color_bl
+
+	.step.active
+		.icon
+			background: url(/img/next-step-active.svg) no-repeat
+		p
+			color: $color_bl
+			font-size: 22px
+			margin-top: -2px
+		
+
+
+/*********modal-content active************/
+#calc
+	.modal-content
+		overflow: hidden
+		display: none
+		transition: cubic-bezier(0, 0, 0.2, 1) .33s
+		transform: translateY(-100px)
+	.modal-content.active
+		display: flex
+		transition: cubic-bezier(0, 0, 0.2, 1) .33s
+		transform: translateY(0px)
+
+/******Модалки услуги******/
+.advantage-modal, .delivery-modal
+	h3
+		font-size: 22px
+		width: 100%
+		font-weight: 500
+		color: $color_nv
+		border-bottom: 1px solid $color_bl
+		padding-bottom: 7px
+		padding-top: 5px
+		//letter-spacing: 1px
+	p
+		color: $color_nv
+		line-height: 1.25em
+	.triggers
+		padding-top: 60px
+		p
+			font-size: 16px
+			color: #acabab
+			padding-left: 24px
+			position: relative
+			&:after
+				content: ""
+				background: url(/img/check.svg) no-repeat
+				width: 15px
+				height: 12px
+				position: absolute
+				top: 4px
+				left: 0px
+
+.advantage-modal.show, .delivery-modal.show
+	.modal-content
+		h3
+			animation: topfa  0.25s cubic-bezier(0, 0, 0.2, 1)
+		p
+			animation: topfa  0.5s cubic-bezier(0, 0, 0.2, 1)
+
+		.triggers
+			animation: topfa  0.75s cubic-bezier(0, 0, 0.2, 1)
+
+.input-row
+	padding: 20px 0px
+	p
+		padding: 0px
+		margin: 0px
+#calculator, #product
+	h3
+		margin-bottom: 0px
+		padding-bottom: 0px
+		text-align: center
+	label
+		font-family: 'Open Sans'
+		font-size: 18px
+		font-weight: 300
+	.type-product
+		justify-content: space-between
+		background: $color_bl
+		padding-top: 10px
+		margin-right: -50px
+		margin-left: -50px
+		margin-bottom: 15px
+		.col-4
+			cursor: pointer
+			p
+				font-size: 16px
+				text-align: center
+				color: #fff
+				margin-bottom: 10px
+			&.active
+				border-bottom: 4px solid $color_sin
+				margin-bottom: -2px
+				p
+					font-size: 18px
+					color: $color_sin
+	.modal-dialog
+		top: 15px
+		margin-top: 5px
+	.modal-content
+		height: auto!important
+		padding-left: 15px
+		padding-right: 15px
+		padding-bottom: 0
+
+	.dropdown
+		width: 100%
+		box-shadow: none
+		border-bottom: 1px solid #777
+		border-radius: 0
+		padding-bottom: 0px
+		outline: none
+		.select
+			padding-bottom: 7px
+			&:focus
+				outline: none
+			span
+				font-family: 'Open Sans'
+				font-size: 18px
+				font-weight: 300
+			.fa-chevron-down
+				position: absolute
+				right: 15px
+				top: 17px
+				color: $color_bl
+	.contact-form
+		background: $color_wh
+		padding:
+			top: 25px
+			bottom: 25px
+			left: 25px
+			right: 25px
+		margin-right: -30px
+		margin-left: -30px
+		margin-bottom: -14px
+		h3
+			margin-bottom: 25px
+		.cta
+			margin-top: 30px
+
+#product
+	.modal-dialog
+		width: 1140px
+		height: auto
+		max-width: 1140px
+		top: 15px
+		.modal-content
+			overflow: hidden
+			position: relative
+			width: 1140px
+			height: auto
+			border: 0px
+			border-radius: 0px
+			/* box-shadow: -10px 11px 40px 7px rgba(0, 176, 255, 0.4) */
+			padding-right: 5px
+			padding-left: 5px
+			padding-top: 15px
+			
+			.img-product-main
+				width: 100%
+			.product-modal-right
+				.calc-sec
+					background: #f9f9f9
+					margin-left: -30px
+					margin-right: -25px
+					margin-top: -15px
+					margin-bottom: -15px
+					padding:
+						left: 40px
+						right: 40px
+			.contact-form
+				margin-top: 15px
+			
+				&.title-product-form
+					margin-top: -30px
+					margin-bottom: 15px
+					padding-bottom: 0px
+			.phone-field
+				margin-top: 25px
+			.dropdown
+				background: #f9f9f9
+.not_phone
+	border-bottom: 1px solid red!important
+
+#contacts
+	background: $color_wh
+	p, h4
+		margin-bottom: 5px
+		line-height: 1.5em
+		text-align: center
+	.phone
+		margin-bottom: 15px
+		margin-top: 10px
+		color: $color_bl
+		font-size: 150%

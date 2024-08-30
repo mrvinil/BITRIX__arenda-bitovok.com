@@ -36,7 +36,7 @@ $queryData = http_build_query(array(
 	            "VALUE_TYPE" => "WORK",
 	        ),
 	    ),
-		"UF_CRM_1519071700" => 'arenda-bitovok.com - Заявка',
+		"UF_CRM_1519071700" => 'arenda-bitovok.com',
 	),
 	'params' => array("REGISTER_SONET_EVENT" => "Y")
 ));

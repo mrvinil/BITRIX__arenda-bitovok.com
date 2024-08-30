@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Тихвин";
+$arDirProperties = Array(
+
+);
+?>

@@ -12,7 +12,7 @@ button {
 .cta.bl:after {
     display: block;
     height: 56px;
-    line-height: 3.25em
+    line-height: 3.5em
 }
 .cta,
 .cta.b2:after {
@@ -20,7 +20,11 @@ button {
     height: 56px;
     line-height: 3.25em
 }
-
+header .cta.bl:after {
+    display: block;
+    height: 56px;
+    line-height: 2.7em
+}
 .cta.bl,
 .cta.outline {
     border: 1px solid #ffcf00;
@@ -49,7 +53,7 @@ h1 {
 
 footer,
 section {
-    min-width: 1170px
+    min-width: 370px;
 }
 
 .nv {
@@ -284,7 +288,7 @@ h1 i>i {
 }
 h2 {
     font-weight: 200;
-    font-size: 38px;
+    font-size: 46px;
     padding-bottom: 19px;
     text-transform: uppercase;
 }
@@ -319,8 +323,8 @@ p {
 
 section {
     position: relative;
-    padding-top: 70px!important;
-    padding-bottom: 70px!important
+    padding-top: 40px!important;
+    padding-bottom: 40px!important
 }
 section#advantage {
     /*padding-bottom: 100px!important;*/
@@ -338,7 +342,7 @@ section#advantage {
 }
 
 #catalog-arenda{
-        background: #fff;
+        background: #f5d6be;
 }
 #catalog-section #catalog-nav-1 ul li,
 #stick .header .toplinks .nav li a {
@@ -376,7 +380,8 @@ header .descriptor {
 }
 
 header .contacts {
-    text-align: right
+    text-align: right;
+	text-wrap: nowrap;
 }
 
 header .contacts p {
@@ -486,7 +491,7 @@ body > header > div > div > div:nth-child(4) > div > p:nth-child(2) > span:befor
 }
 
 #stick .header .toplinks .nav li a {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 700;
     /*color: #F44336;*/
     color: var(--color__yellow);
@@ -560,7 +565,7 @@ body > header > div > div > div:nth-child(4) > div > p:nth-child(2) > span:befor
 #stick .header .cta:after {
     color: #8e2d31;
     padding: 0;
-    line-height: 2.25em
+    line-height: 2.0em
 }
 
 #main.bkbd {
@@ -571,7 +576,7 @@ body > header > div > div > div:nth-child(4) > div > p:nth-child(2) > span:befor
 
 #main {
     height: 650px;
-    min-height: 650px
+/*    min-height: 650px*/
 }
 .overlay {
     width: 100%;
@@ -716,7 +721,7 @@ body > header > div > div > div:nth-child(4) > div > p:nth-child(2) > span:befor
 #main h2.big-h2{
     font-weight: 800;
     font-size: 106px;
-    margin-top: 130px;
+    margin-top: 100px;
     color: #fff;
     text-transform: uppercase;
     text-align: center;
@@ -1106,23 +1111,24 @@ section.after-main-sec{
 }
 
 #delivery .infographic .col-3:nth-child(1) .col-12:nth-child(1) .icon {
-    background: url(/img/car.svg) center top no-repeat
+    background: url(/img/icon/icon__car-park.svg) center top no-repeat
 }
 
 #delivery .infographic .col-3:nth-child(1) .col-12:nth-child(2) .icon {
-    background: url(/img/clok.svg) center top no-repeat
+    background: url(/img/icon/icon__rate.svg) center top no-repeat
 }
 
 #delivery .infographic .col-6:nth-child(2) {
-    background: url(/img/manipulator.png) center top no-repeat
+    background: url(/img/manipulator.png) center top no-repeat;
+	background-size: contain;
 }
 
 #delivery .infographic .col-3:nth-child(3) .col-12:nth-child(1) .icon {
-    background: url(/img/skid.svg) center top no-repeat
+    background: url(/img/icon/icon__sale.svg) center top no-repeat
 }
 
 #delivery .infographic .col-3:nth-child(3) .col-12:nth-child(2) .icon {
-    background: url(/img/man.svg) center top no-repeat
+    background: url(/img/icon/icon__experience.svg) center top no-repeat
 }
 
 #delivery .forma {
@@ -2108,7 +2114,7 @@ text-shadow: 0px 0px 10px #212629; */
 
 
 #contacts-bottom .container{
-    padding: 10px 20px 10px!important;
+    padding: 0!important;
 }
 #contacts-bottom p{
     color: #23292e;
@@ -2545,7 +2551,7 @@ text-shadow: 0px 0px 10px #212629; */
     height: 345px;
 }
 .img-product-main--wrap {
-    height: 230px;
+    max-height: 230px;
 }
 .product-gallery img{
     width: 82%;
@@ -2596,6 +2602,9 @@ text-shadow: 0px 0px 10px #212629; */
     color: #23292e;
     /* text-shadow: 0px 0px 10px #212629; */
 }
+#arenda_main_form .label{
+	font-size: 15px;
+}
 .pay{}
 .pay .icon{
     width: 120px;
@@ -2640,6 +2649,3 @@ text-shadow: 0px 0px 10px #212629; */
     text-align: center;
 }
 
-footer, section {
-    min-width: 370px;
-}

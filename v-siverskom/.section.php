@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Сиверский";
+$arDirProperties = Array(
+
+);
+?>

@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Приозерск";
+$arDirProperties = Array(
+
+);
+?>

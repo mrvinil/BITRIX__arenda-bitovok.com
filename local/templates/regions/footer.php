@@ -2,52 +2,35 @@
 
 
 <footer>
-	<section class="section" id="contacts">
-	<div class="container-fluid">
-		<div class="row" style="padding-top: 130px;">
-			<div class="col-4">
-				<h2 class="big-h2">Более 300 бытовок на складе нашего производства</h2>
-			</div>
-			<div class="col-4" style="padding-top: 190px;">
-				<img src="/img/map_russia-white.png" alt="">
-			</div>
-			<div class="col-4">
-				<h2 class="big-h2">Более 3000 бытовок в аренде по всей россии</h2>
-			</div>
-		</div>
-	</div>
-</section>
+
 
 <section class="section" id="contacts-bottom">
 	<div class="container">
 		<div class="row">
-			<div class="col-6">
+			<!-- <div class="col-4">
+				<p>Адрес:</p>
+				<p><b><span>Фрунзенская</span>, Ул. Киевская, дом 5</b></p>
+				<p><b><span>Озерки</span>, ш. Выборгское, дом 459</b></p>
+			</div> -->
+			<div class="col-12">
 				<p>Телефон:</p>
-				<p style="font-size: 150%;">
-					<b class="phone">
-						<a href="tel:<? if(file_exists($phonePath)) require $phonePath; ?>">
-							<?$APPLICATION->IncludeFile(
-					 			SITE_DIR."/include/phone.php",
-					  			Array(),
-					  			Array("MODE"=>"php")
-							);?>
-						</a>
-					</b>
-				</p>
+				<p style="font-size: 150%;"><b class="phone">
+					<a href="tel:<? if(file_exists($phonePath)) require $phonePath; ?>">
+						<?$APPLICATION->IncludeFile(
+				 			SITE_DIR."/include/phone.php",
+				  			Array(),
+				  			Array("MODE"=>"php")
+						);?>
+					</a></b></p>
 			</div>
-			<div class="col-4">
+			<!-- <div class="col-6">
 				<p>Режим работы:
-					<p>
-						<b>
-							<?$APPLICATION->IncludeFile(
+				<p><b><?$APPLICATION->IncludeFile(
 					 			SITE_DIR."/include/operating.php",
 					  			Array(),
 					  			Array("MODE"=>"php")
-							);?>
-						</b>
-					</p>
-				</p>
-			</div>
+							);?></b></p></p>
+			</div> -->
 		</div>
 	</div>
 </section>

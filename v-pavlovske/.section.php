@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Павловск";
+$arDirProperties = Array(
+
+);
+?>

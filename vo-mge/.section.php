@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Мга";
+$arDirProperties = Array(
+
+);
+?>

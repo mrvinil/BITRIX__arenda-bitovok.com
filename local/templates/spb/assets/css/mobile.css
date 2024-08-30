@@ -458,13 +458,12 @@
 	#contacts-bottom > div > div > div:nth-child(1) > p:nth-child(2):before {
 		display: none;
 	}
-	
-	#stick .header .col-7 {
+	/*#stick .header .col-7 {
 		padding-left: 0px;
 		-ms-flex: 0 0 50%;
 		flex: 0 0 50%;
 		max-width: 50%;
-	}
+	}*/
 	#stick .header .col-3 {
 		-ms-flex: 0 0 33.333333%;
 		flex: 0 0 33.333333%;
@@ -474,7 +473,7 @@
 		padding-right: 0px;
 	}
 	#stick .header .contacts p {
-		font-size: 25px;
+		font-size: 22px;
 	}
 	#stick .header .toplinks .nav li a {
 		font-size: 14px;
@@ -482,6 +481,13 @@
 	
 	
 	
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 991px) {
+	.banner__button {
+		font-size: 16px !important;
+	}
 	section.slider {
 		padding-top: 20px!important;
 		padding-bottom: 50px!important;
@@ -506,24 +512,57 @@
 	.slick__slider_santech .slick__slider-item {
 		grid-template-columns: 1fr;
 	}
+	.slick__slider-item-second {
+		height: 345px;
+	}
+	.slick__slider_double .slick__slider-item-second {
+		height: 245px;
+	}
+	
 }
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
+	.img-product-main {
+	  width: 100%;
+	}
+	.product-arenda h3{
+		font-size: 25px;
+	}
+	#stick .header .toplinks .nav li a{
+		font-size: 18px;
+	}
+	#stick .header {
+		padding-top: 10px;
+	}
+	#doc__op .tabs__caption {
+		display: block;
+	}
+	#doc__op .tabs__caption li {
+		width: 100%;
+		font-size: 16px;
+	}
+	#doc__op .tabs__content {
+		height: 150px;
+		background-size: contain;
+	}
+}
+
+@media (max-width: 576px) {
 
 }
 
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
 	header .logo {
-		-webkit-background-size: 164px;
-		background-size: 164px;
+		-webkit-background-size: 156px;
+		background-size: 156px;
 	}
-	header .header.container .col-6 {
+	/*header .header.container .col-6 {
 		-ms-flex: 0 0 41%;
 		flex: 0 0 41%;
 		max-width: 41%;
-	}
+	}*/
 	header .header.container .col-5 {
 		-ms-flex: 0 0 58.333333%;
     	flex: 0 0 58.333333%;
@@ -809,17 +848,6 @@
 	#doc__op h3 {
 		font-size: 16px;
 	}
-	#doc__op .tabs__caption {
-		display: block;
-	}
-	#doc__op .tabs__caption li {
-		width: 100%;
-		font-size: 16px;
-	}
-	#doc__op .tabs__content {
-		height: 150px;
-		background-size: contain;
-	}
 	section.section h2 {
 		font-size: 20px;
 	}
@@ -840,9 +868,9 @@
 	#poradok-oformlen h2 {
 		font-size: 32px;
 	}
-	#arenda_main_form .container {
+	/*#arenda_main_form .container {
 		display: none;
-	}
+	}*/
 	#contacts h2 {
 		font-size: 20px;
 	}
@@ -881,13 +909,13 @@
 		display: none;
 	}
 	
-	#stick .header .col-7 {
+	/*#stick .header .col-7 {
 		padding-left: 0px;
 		-ms-flex: 0 0 0%;
 		flex: 0 0 0%;
 		max-width: 0%;
 		display: none;
-	}
+	}*/
 	#stick .header .col-3 {
 		-ms-flex: 0 0 33.333333%;
 		flex: 0 0 50%;
@@ -923,6 +951,10 @@
 	.slick__slider-item-second {
 		padding: 10px;
 		grid-gap: 5px;
+		height: 245px;
+	}
+	.slick__slider_double .slick__slider-item-second {
+		height: 315px;
 	}
 	.slick__slider-item-second-title {
 		font-size: 16px;
@@ -966,6 +998,12 @@
 	.slick__slider_santech .slick__slider-item-second-text p {
 		font-size: 14px;
 	}
+	#delivery .infographic .col-12 {
+		min-height: 166px;
+	}
+	.slick__slider_double .slick__slider-item-second {
+        height: 145px;
+    }
 }
 
 /* Landscape phones and smaller */
@@ -1007,6 +1045,9 @@
 	}
 	header .contacts p {
 		font-size: 15px;
+	}
+	header .contacts {
+		text-align: center;
 	}
 	header section .container .col-8 {
 		-ms-flex: 0 0 100%;
@@ -1394,9 +1435,9 @@
 		margin-top: 0;
 		font-size: 36px;
 	}
-	#stick .header .contacts p {
+	/*#stick .header .contacts p {
 		font-size: 19px;
-	}
+	}*/
 	
 	
 	
@@ -1421,6 +1462,12 @@
 	.section {
 		width: 100%;
 		min-width: 370px;
+	}
+	#main {
+		height: auto;
+	}
+	#main.bk {
+		height: auto;
 	}
 }
 /* Extra Small Devices, Phones */
@@ -1457,3 +1504,40 @@
 		min-width: 100%;
 	}
 }
+
+@media only screen and (min-width: 375px) and (max-width: 1200px) {
+	.section {
+		width: 100%;
+		min-width: 100%;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+	#main h2.big-h2 {
+		font-size: 70px;
+	}
+	
+	#main h2.big-h2_small{
+		font-size: 70px;
+	}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+	#main h2.big-h2 {
+		font-size: 60px;
+	}
+	
+	#main h2.big-h2_small{
+		font-size: 45px;
+	}
+	
+	header .contacts .phone {
+		font-size: 28px;
+	}
+	
+	header .logo {
+        -webkit-background-size: 190px;
+        background-size: 190px;
+    }
+}
+    

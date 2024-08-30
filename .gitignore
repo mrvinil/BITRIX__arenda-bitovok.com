@@ -36,3 +36,5 @@
 /pma
 /upload
 /verstka
+/cgi-bin
+/.cache

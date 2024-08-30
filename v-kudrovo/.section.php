@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Кудрово";
+$arDirProperties = Array(
+
+);
+?>

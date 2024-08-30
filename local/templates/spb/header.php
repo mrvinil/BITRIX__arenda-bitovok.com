@@ -1,7 +1,90 @@
 <? if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die(); ?>
 <?
+$price = 8500; // Устанавливаем начальную цену
+$priceDay = round($price / 30);
+$priceDayOld = $priceDay + 20;
 $utm = $_GET['utm_product'];
 $utmMark = 'form-arendabitovokcom';
+
+
+
+
+$city = ''; // Переменная для хранения названия города из URL
+
+// Получаем название города из URL
+if (isset($_SERVER['REQUEST_URI']))
+{
+	$url_path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+	$segments = explode('/', rtrim($url_path, '/'));
+	$city = end($segments);
+}
+
+// Список городов и их транслитерации
+$cities = array(
+	'v-boksitogorske' => array('Бокситогорск', 'Бокситогорске', 'Бокситогорск'),
+	'v-gatchine' => array('Гатчина', 'Гатчине', 'Гатчину'),
+	'v-ivangorode' => array('Ивангород', 'Ивангороде', 'Ивангород'),
+	'v-kingiseppe' => array('Кингисепп', 'Кингисеппе', 'Кингисепп'),
+	'v-kirishah' => array('Кириши', 'Киришах', 'Кириши'),
+	'v-kirovske' => array('Кировск', 'Кировске', 'Кировск'),
+	'v-kolpino' => array('Колпино', 'Колпино', 'Колпино'),
+	'v-kommunare' => array('Коммунар', 'Коммунаре', 'Коммунар'),
+	'v-krasnom-sele' => array('Красное Село', 'Красном Селе', 'Красное Село'),
+	'v-kronshtadte' => array('Кронштадт', 'Кронштадте', 'Кронштадт'),
+	'v-kudrovo' => array('Кудрово', 'Кудрово', 'Кудрово'),
+	'v-kuzmolovskom' => array('Кузьмоловский', 'Кузьмоловском', 'Кузьмоловский'),
+	'v-lodejnom-pole' => array('Лодейное Поле', 'Лодейном Поле', 'Лодейное Поле'),
+	'v-lomonosove' => array('Ломоносов', 'Ломоносове', 'Ломоносов'),
+	'v-luge' => array('Луга', 'Луге', 'Лугу'),
+	'v-metallostroe' => array('Металлострой', 'Металлострое', 'Металлострой'),
+	'vo-mge' => array('Мга', 'Мге', 'Мгу'),
+	'v-murino' => array('Мурино', 'Мурино', 'Мурино'),
+	'v-nikolskom' => array('Никольское', 'Никольском', 'Никольское'),
+	'v-otradnom' => array('Отрадное', 'Отрадном', 'Отрадное'),
+	'v-pargolovo' => array('Парголово', 'Парголово', 'Парголово'),
+	'v-pavlovske' => array('Павловск', 'Павловске', 'Павловск'),
+	'v-petergofe' => array('Петергоф', 'Петергофе', 'Петергоф'),
+	'v-pikalyovo' => array('Пикалёво', 'Пикалёво', 'Пикалёво'),
+	'v-podporozhe' => array('Подпорожье', 'Подпорожье', 'Подпорожье'),
+	'v-posyolke-imeni-morozova' => array('посёлок имени Морозова', 'посёлке имени Морозова', 'посёлок имени Морозова'),
+	'v-posyolke-imeni-sverdlova' => array('посёлок имени Свердлова', 'посёлке имени Свердлова', 'посёлок имени Свердлова'),
+	'v-priozerske' => array('Приозерск', 'Приозерске', 'Приозерск'),
+	'v-pushkine' => array('Пушкин', 'Пушкин', 'Пушкин'),
+	'v-roshhino' => array('Рощино', 'Рощино', 'Рощино'),
+	'v-sertolovo' => array('Сертолово', 'Сертолово', 'Сертолово'),
+	'v-sestroretske' => array('Сестрорецк', 'Сестрорецке', 'Сестрорецк'),
+	'v-shlisselburge' => array('Шлиссельбург', 'Шлиссельбурге', 'Шлиссельбург'),
+	'v-siverskom' => array('Сиверский', 'Сиверском', 'Сиверский'),
+	'v-slantsah' => array('Сланцы', 'Сланцах', 'Сланцы'),
+	'v-sosnovom-boru' => array('Сосновый Бор', 'Сосновом Бору', 'Сосновый Бор'),
+	'v-strelne' => array('Стрельна', 'Стрельне', 'Стрельну'),
+	'v-svetogorske' => array('Светогорск', 'Светогорске', 'Светогорск'),
+	'v-svasstroe' => array('Сясьстрой', 'Сясьстрое', 'Сясьстрой'),
+	'v-tihvine' => array('Тихвин', 'Тихвине', 'Тихвин'),
+	'v-tosno' => array('Тосно', 'Тосно', 'Тосно'),
+	'v-ulyanovke' => array('Ульяновка', 'Ульяновке', 'Ульяновку'),
+	'v-volhove' => array('Волхов', 'Волхове', 'Волхов'),
+	'v-volosovo' => array('Волосово', 'Волосово', 'Волосово'),
+	'vo-vsevolozhske' => array('Всеволожск', 'Всеволожске', 'Всеволожск'),
+	'v-vyborge' => array('Выборг', 'Выборге', 'Выборг'),
+	'v-vyritse' => array('Вырица', 'Вырице', 'Вырицу'),
+	'v-yanino' => array('Янино', 'Янино', 'Янино'),
+	'v-zelenogorske' => array('Зеленогорск', 'Зеленогорске', 'Зеленогорск')
+);
+
+// Устанавливаем title и description в зависимости от города
+if (isset($cities[$city]))
+{
+	$city_name = $cities[$city][0];
+	$city_prepositional = $cities[$city][1];
+	$city_delivery = $cities[$city][2];
+}
+
+if(isset($cities[$city])) {
+	$city_name = $cities[$city][0];
+} else {
+	$city_name = "";
+}
 
 if ($utm == 'bk')
 {
@@ -78,6 +161,7 @@ if ($utm == 'bk')
 	Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/slick/slick-theme.css");
 	Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/css/accordion.css");
 	Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/css/animate_point2.css");
+	Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/css/jquery.fancybox.min.css");
 	
 	//JS
 	//CJSCore::Init(array("jquery2", 'fx'));
@@ -88,6 +172,7 @@ if ($utm == 'bk')
 	// Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/assets/js/jquery.inputmask.js");
 	// Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/assets/js/jquery.inputmask.numeric.extensions.js");
 	// Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/assets/js/main.js");
+	Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/assets/js/jquery.fancybox.min.js");
 	Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/assets/js/webhook.js");
 	Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/assets/slick/slick.min.js");
 	Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/assets/js/phoneinput.js");
@@ -152,7 +237,18 @@ if ($utm == 'bk')
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
-					<h2 class="big-h2">Аренда бытовок</h2>
+					<?php
+					if(isset($cities[$city])) {
+						$city_prepositional = $cities[$city][1];
+						?>
+						<h2 class="big-h2 big-h2_small">Аренда бытовок в <?php echo $city_prepositional; ?></h2>
+						<?php
+					} else {
+						?>
+						<h2 class="big-h2">Аренда бытовок</h2>
+						<?php
+					}
+					?>
 					<!-- <h1 style="margin-top: 0px;">
 						<span>Новые бытовки<br>по цене Б/У в аренду<br>от <b>7 000 руб/месяц</b></span>
 					</h1> -->
@@ -174,7 +270,7 @@ if ($utm == 'bk')
 						<div class="banner__advantage">
 							<div class="banner__advantage-item">
 								<img src="<?= SITE_TEMPLATE_PATH ?>/images/icons/icon__clock.svg" class="banner__advantage-icon">
-								<p class="banner__advantage-name">Будем у вас уже&nbsp;через&nbsp;3&nbsp;часа</p>
+								<p class="banner__advantage-name">Доставка под ключ&nbsp;за&nbsp;3&nbsp;часа</p>
 							</div>
 							<div class="banner__advantage-item">
 								<img src="<?= SITE_TEMPLATE_PATH ?>/images/icons/icon__wallet.svg" class="banner__advantage-icon">
@@ -191,9 +287,9 @@ if ($utm == 'bk')
 	
 	
 	<div class="header container">
-		<div class="row ">
+		<div class="row">
 			<div class="col-6 logo"></div>
-			<div class="col-5 ml-auto">
+			<div class="col-6">
 				<div class="contacts">
 					<a href="tel:<? if(file_exists($phonePath)) require $phonePath; ?>" class="phone nv xbold">
 						<?$APPLICATION->IncludeFile(
@@ -213,20 +309,20 @@ if ($utm == 'bk')
 </header>
 <div id="stick">
 	<div class="header container">
-		<div class="row ">
+		<div class="row no-gutters">
 			<!-- <div class="col-2">
 			  <div class="logo"></div>
 			</div> -->
-			<div class="col-7">
+			<div class="col-12 col-md-7">
 				<div class="toplinks">
 					<ul class="nav">
 						<li><a href="#catalog-arenda">Каталог бытовок</a></li>
 						<li><a href="#delivery">Доставка</a></li>
-						<li><a href="#contacts">Контакты</a></li>
+						<li><a href="#contacts-bottom">Контакты</a></li>
 					</ul>
 				</div>
 			</div>
-			<div class="col-3 ml-auto">
+			<div class="col-7 col-md-3 ml-auto">
 				<div class="contacts">
 					<p class="phone nv xbold"><a href="tel:<? if(file_exists($phonePath)) require $phonePath; ?>">
 						<?$APPLICATION->IncludeFile(
@@ -239,7 +335,7 @@ if ($utm == 'bk')
 				</div>
 			</div>
 			
-			<div class="col-2">
+			<div class="col-5 col-md-2">
 				<?$APPLICATION->IncludeFile(
 		 			SITE_DIR."/include/bitrix24Callback.php",
 		  			Array(),

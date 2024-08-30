@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Всеволожск";
+$arDirProperties = Array(
+
+);
+?>

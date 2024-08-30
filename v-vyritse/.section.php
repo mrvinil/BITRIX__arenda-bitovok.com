@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Вырица";
+$arDirProperties = Array(
+
+);
+?>

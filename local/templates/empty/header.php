@@ -102,10 +102,10 @@ $month = $_monthsList[date("n")];
 					Array("MODE"=>"php")
 			);?>
 			<span class="callback-link link">заказать звонок</span>
-			<div class="header__location header__location_type_mobile">
-				<img src="<?=SITE_TEMPLATE_PATH?>/images/icons/icon__address.png" class="header__location-icon">
-				<p class="header__location-value">Санкт-Петербург и область</p>
-			</div>
+<!--			<div class="header__location header__location_type_mobile">-->
+<!--				<img src="--><?//=SITE_TEMPLATE_PATH?><!--/images/icons/icon__address.png" class="header__location-icon">-->
+<!--				<p class="header__location-value">Санкт-Петербург и область</p>-->
+<!--			</div>-->
 		</div>
 	</div>
 </header>

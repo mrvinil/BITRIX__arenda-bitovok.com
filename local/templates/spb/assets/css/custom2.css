@@ -20,7 +20,7 @@ header .contacts .phone a {
 	} */
 
 #main.bk{
-  background: url(/img/bg-300.jpg) center center no-repeat, #f5d6be;
+  background: url(/img/bg-300_new.webp) bottom center no-repeat, #f5d6be;
   background-size: cover;
   max-height: 710px!important;
   padding-top: 0px!important;
@@ -479,7 +479,7 @@ transform: rotateZ(180deg);
 #doc__op .tabs__caption li {
     text-align: center;
     width: 345px;
-    color: #ffffff;
+    color: #f30404;
     text-transform: uppercase;
     list-style: none;
     cursor: pointer;
@@ -489,7 +489,6 @@ transform: rotateZ(180deg);
     transition: cubic-bezier(0, 0, .2, 1) .33s;
     margin-bottom: 15px;
     background: var(--color__yellow);
-    color: #fff;
     box-shadow: 0px 6px 8px 1px rgba(0, 0, 0, 0.25);
     padding: 20px 0;
 }
@@ -529,4 +528,21 @@ transform: rotateZ(180deg);
     /*color: #F44336;*/
     color: var(--color__yellow);
     text-decoration: none;
+}
+
+.card__img-slider {
+    margin: 0 auto;
+    width: 100%;
+    max-height: 230px;
+    /* overflow: hidden; */
+}
+
+.img-product-main--wrap {
+    max-height: 230px;
+    display: flex !important;
+    justify-content: center;
+    overflow: hidden;
+}
+.img-product-main {
+  width: auto;
 }

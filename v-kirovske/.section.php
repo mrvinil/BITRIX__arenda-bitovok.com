@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Кировск";
+$arDirProperties = Array(
+
+);
+?>

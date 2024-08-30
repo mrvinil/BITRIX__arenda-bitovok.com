@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Коммунар";
+$arDirProperties = Array(
+
+);
+?>

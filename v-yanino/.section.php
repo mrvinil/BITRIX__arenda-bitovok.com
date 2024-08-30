@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Янино";
+$arDirProperties = Array(
+
+);
+?>

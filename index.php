@@ -9,7 +9,7 @@ $APPLICATION->SetTitle("Аренда бытовок и блок-контейне
 			<div class="col-12">
 				<!--  <img src="/img/klop.png" class="catalog-arenda__img--klop"> -->
 				<h2>Каталог бытовок <b>в аренду</b></h2>
-				<h3>Блок-контейнеры подобных конфигураций<br>закрывают 100% потребностей строителей</h3>
+				<!-- <h3>Блок-контейнеры подобных конфигураций<br>закрывают 100% потребностей строителей</h3> -->
 			</div>
 		</div>
 		
@@ -17,24 +17,24 @@ $APPLICATION->SetTitle("Аренда бытовок и блок-контейне
 			<div class="product-wrap col-6 wow fadeIn" data-wow-delay="0s">
 				<div class="row form-product-1 product-arenda">
 					<div class="col-12 text--center">
-						<div class="row product-gallery">
+						<div class="row card__img-slider">
 							<div class="col-12 img-product-main--wrap">
 								<img class="img-product-main" src="/img/bk/bk01/0.jpg" alt="">
 							</div>
-							<img data-wow-delay="0.05s" class="img-fluid wow fadeInLeft img-thumb active"
-							     src="/img/bk/bk01/0.jpg" alt="">
-							<img data-wow-delay="0.1s" class="img-fluid wow fadeInLeft img-thumb"
-							     src="/img/bk/bk01/1.jpg" alt="">
-							<img data-wow-delay="0.15s" class="img-fluid wow fadeInLeft img-thumb"
-							     src="/img/bk/bk01/2.jpg" alt="">
+							<div class="col-12 img-product-main--wrap">
+								<img class="img-product-main" src="/img/bk/bk01/1.jpg" alt="">
+							</div>
+							<div class="col-12 img-product-main--wrap">
+								<img class="img-product-main" src="/img/bk/bk01/2.jpg" alt="">
+							</div>
 						</div>
 					</div>
 					<div class="col-12">
 						<h3 id="product_title">Металлическая бытовка</h3>
 						<h4 id="product_sub-title">Блок-контейнер «Стандартный»</h4>
 						<div class="price-block">
-							<p class="price-day">от <span><span>250</span></span> 234 руб/сутки</p>
-							<p class="price-month">от 7000 руб/месяц</p>
+							<p class="price-day">от <span><span><?= $priceDayOld ?></span></span> <?= $priceDay ?> руб/сутки</p>
+							<p class="price-month">от <?= $price ?> руб/месяц</p>
 						</div>
 						
 						<p class="arenda-product-size"><b>Размер, мм.: </b>6000х2400х2400</p>
@@ -69,24 +69,24 @@ $APPLICATION->SetTitle("Аренда бытовок и блок-контейне
 			<div class="product-wrap col-6 wow fadeIn" data-wow-delay="0s">
 				<div class="row form-product-2 product-arenda">
 					<div class="col-12 text--center">
-						<div class="row product-gallery">
+						<div class="row card__img-slider">
 							<div class="col-12 img-product-main--wrap">
 								<img class="img-product-main" src="/img/bk/bk03/0.jpg" alt="">
 							</div>
-							<img data-wow-delay="0.05s" class="wow fadeInLeft img-fluid img-thumb active"
-							     src="/img/bk/bk03/0.jpg" alt="">
-							<img data-wow-delay="0.1s" class="wow fadeInLeft img-fluid img-thumb"
-							     src="/img/bk/bk03/1.jpg" alt="">
-							<img data-wow-delay="0.15s" class="wow fadeInLeft img-fluid img-thumb"
-							     src="/img/bk/bk03/2.jpg" alt="">
+							<div class="col-12 img-product-main--wrap">
+								<img class="img-product-main" src="/img/bk/bk03/1.jpg" alt="">
+							</div>
+							<div class="col-12 img-product-main--wrap">
+								<img class="img-product-main" src="/img/bk/bk03/2.jpg" alt="">
+							</div>
 						</div>
 					</div>
 					<div class="col-12">
 						<h3 id="product_title">Металлическая бытовка</h3>
 						<h4 id="product_sub-title">Блок-контейнер «С тамбуром»</h4>
 						<div class="price-block">
-							<p class="price-day">от <span><span>250</span></span> 234 руб/сутки</p>
-							<p class="price-month">от 7000 руб/месяц</p>
+							<p class="price-day">от <span><span><?= $priceDayOld ?></span></span> <?= $priceDay ?> руб/сутки</p>
+							<p class="price-month">от <?= $price ?> руб/месяц</p>
 						</div>
 						<p class="arenda-product-size"><b>Размер, мм.: </b>6000х2400х2400</p>
 						<ul class="pruduct-desc">
@@ -117,24 +117,24 @@ $APPLICATION->SetTitle("Аренда бытовок и блок-контейне
 			<div class="product-wrap col-6 wow fadeIn" data-wow-delay="0s">
 				<div class="row form-product-3 product-arenda">
 					<div class="col-12 text--center">
-						<div class="row product-gallery">
+						<div class="row card__img-slider">
 							<div class="col-12 img-product-main--wrap">
 								<img class="img-product-main" src="/img/bk/bk02/0.jpg" alt="">
 							</div>
-							<img data-wow-delay="0.05s" class="wow fadeInLeft img-fluid img-thumb active"
-							     src="/img/bk/bk02/0.jpg" alt="">
-							<img data-wow-delay="0.1s" class="wow fadeInLeft img-fluid img-thumb"
-							     src="/img/bk/bk02/1.jpg" alt="">
-							<img data-wow-delay="0.15s" class="wow fadeInLeft img-fluid img-thumb"
-							     src="/img/bk/bk02/2.jpg" alt="">
+							<div class="col-12 img-product-main--wrap">
+								<img class="img-product-main" src="/img/bk/bk02/1.jpg" alt="">
+							</div>
+							<div class="col-12 img-product-main--wrap">
+								<img class="img-product-main" src="/img/bk/bk02/2.jpg" alt="">
+							</div>
 						</div>
 					</div>
 					<div class="col-12">
 						<h3 id="product_title">Металлическая бытовка</h3>
 						<h4 id="product_sub-title">Блок-контейнер «Распашонка»</h4>
 						<div class="price-block">
-							<p class="price-day">от <span><span>250</span></span> 234 руб/сутки</p>
-							<p class="price-month">от 7000 руб/месяц</p>
+							<p class="price-day">от <span><span><?= $priceDayOld ?></span></span> <?= $priceDay ?> руб/сутки</p>
+							<p class="price-month">от <?= $price ?> руб/месяц</p>
 						</div>
 						<p class="arenda-product-size"><b>Размер, мм.: </b>6000х2400х2400</p>
 						<ul class="pruduct-desc">
@@ -164,24 +164,24 @@ $APPLICATION->SetTitle("Аренда бытовок и блок-контейне
 			<div class="product-wrap col-6 wow fadeIn" data-wow-delay="0s">
 				<div class="row form-product-4 product-arenda">
 					<div class="col-12 text--center">
-						<div class="row product-gallery">
+						<div class="row card__img-slider">
 							<div class="col-12 img-product-main--wrap">
 								<img class="img-product-main" src="/img/container/0.jpg" alt="">
 							</div>
-							<img data-wow-delay="0.05s" class="wow fadeInLeft img-fluid img-thumb active"
-							     src="/img/container/0.jpg" alt="">
-							<img data-wow-delay="0.1s" class="wow fadeInLeft img-fluid img-thumb"
-							     src="/img/container/1.jpg" alt="">
-							<img data-wow-delay="0.15s" class="wow fadeInLeft img-fluid img-thumb"
-							     src="/img/container/2.jpg" alt="">
+							<div class="col-12 img-product-main--wrap">
+								<img class="img-product-main" src="/img/container/1.jpg" alt="">
+							</div>
+							<div class="col-12 img-product-main--wrap">
+								<img class="img-product-main" src="/img/container/2.jpg" alt="">
+							</div>
 						</div>
 					</div>
 					<div class="col-12">
 						<h3 id="product_title">Морской контейнер под склад</h3>
 						<h4 id="product_sub-title">20 Футов</h4>
 						<div class="price-block">
-							<p class="price-day">от <span><span>250</span></span> 234 руб/сутки</p>
-							<p class="price-month">от 7000 руб/месяц</p>
+							<p class="price-day">от <span><span><?= $priceDayOld ?></span></span> <?= $priceDay ?> руб/сутки</p>
+							<p class="price-month">от <?= $price ?> руб/месяц</p>
 						</div>
 						<p class="arenda-product-size"><b>Размер, мм.: </b>6000х2400х2400</p>
 						<ul class="pruduct-desc">
@@ -211,8 +211,6 @@ $APPLICATION->SetTitle("Аренда бытовок и блок-контейне
 		
 		</div>
 		
-		
-		<br>
 		<div id="open_other_1" class="mr-auto ml-auto cta b2 col-6" data-hover=" Посмотреть другие варианты">
 			Посмотреть другие варианты
 			<img src="/img/icon/hand.png">
@@ -834,10 +832,10 @@ $APPLICATION->SetTitle("Аренда бытовок и блок-контейне
 		</div>
 		<div style="background: rgba(255, 255, 255, 1); padding: 20px 2px; -webkit-box-shadow: 0 0 30px 0 rgba(0, 0, 0, .25); box-shadow: 0 0 30px 0 rgba(0, 0, 0, .25);"
 		     class="row forma">
-			<div class="col-6 form-section">
+			<div class="col-sm-12 col-md-6 form-section">
 				<div class="row input-row">
 					<div class="col-3">
-						<p>Количество бытовок, шт.:</p>
+						<p class="label">Количество бытовок, шт.:</p>
 					</div>
 					<div class="col-9 slider-input">
 						<div class="range-slider">
@@ -849,7 +847,7 @@ $APPLICATION->SetTitle("Аренда бытовок и блок-контейне
 				</div>
 				<div class="row input-row">
 					<div class="col-3">
-						<p>Срок аренды, месяцев:</p>
+						<p class="label">Срок аренды, месяцев:</p>
 					</div>
 					<div class="col-9 slider-input">
 						<div class="range-slider">
@@ -860,7 +858,7 @@ $APPLICATION->SetTitle("Аренда бытовок и блок-контейне
 					</div>
 				</div>
 			</div>
-			<div class="col-6 form-section">
+			<div class="col-sm-12 col-md-6 form-section">
 				<div class="row input-row">
 					<div class="col-12">
 						<div class="promoted-checkbox">
@@ -893,19 +891,19 @@ $APPLICATION->SetTitle("Аренда бытовок и блок-контейне
 			</div>
 			<div class="col-12 form-section">
 				<div class="row forma">
-					<div class="col-6">
-						<div class="input-col">
+					<div class="col-md-6">
+						<div class="input-col mb-3">
 							<input id="arenda_comment" class="comment-field" type="text"
 							       placeholder="Ваши пожелания, если есть...">
 						</div>
 					</div>
-					<div class="col-3">
-						<div class="input-col">
+					<div class="col-md-3">
+						<div class="input-col mb-3">
 							<input id="product_phone" type="tel" data-tel-input maxlength="18" class="arenda-phone-field phone-field"
 							       placeholder="+7 (___) ___-__-__">
 						</div>
 					</div>
-					<div class="col-3">
+					<div class="col-md-3">
 						<div class="input-col">
 							<input id="product_utm" type="hidden" value="<?= $utmMark ?>">
 							<button id="form-send" data-hover="Арендовать" class="cta bl">Арендовать
@@ -1044,11 +1042,18 @@ $APPLICATION->SetTitle("Аренда бытовок и блок-контейне
 
 			<div class="slick__slider-wrap">
 				<div class="slick__slider-item">
+					<div class="slick__slider-item-first" style="background: url(/img/slider3/klop1.png);"></div>
+					<div class="slick__slider-item-first" style="background: url(/img/slider3/klop2.png);"></div>
+				</div>
+			</div>
+
+			<div class="slick__slider-wrap">
+				<div class="slick__slider-item">
 					<div class="slick__slider-item-first" style="background: url(/img/slider3/7.jpg);"></div>
 					<div class="slick__slider-item-second">
 						<div class="slick__slider-item-second-title">07. Мы — профессионалы в аренде бытовок</div>
 						<div class="slick__slider-item-second-text">
-							<p>Звоните по номеру <a href="tel:+78124256215" style="font-size: 28px; font-weight: bold;">8 (812) 425-62-15</a>
+							<p>Звоните по номеру <a href="tel:+78124256215" style="font-size: 22px; font-weight: bold;">8 (812) 425-62-15</a>
 							</p>
 						</div>
 					</div>
@@ -1068,11 +1073,6 @@ $APPLICATION->SetTitle("Аренда бытовок и блок-контейне
 				</div>
 			</div>
 
-			<div class="slick__slider-wrap">
-				<div class="slick__slider-item slick__slider-item--single">
-					<div class="slick__slider-item-first" style="background: url(/img/slider3/9.jpg);"></div>
-				</div>
-			</div>
 		</div>
 		
 	</div>
