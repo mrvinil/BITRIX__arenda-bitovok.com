@@ -184,11 +184,13 @@
 	</div>
 </section>
 
-
 <div class="header_canvas">
-	<canvas id="canvas" width="320" height="194"></canvas>
+	<canvas id="canvas" width="320" height="250"></canvas>
 </div>
-<script src="/cars/js/script.js"></script>
+	<script src="/cars-gb/js/cars__new.js"></script>
+
+
+
 <section id="contacts" class="section kaskad-bot" style="
       background: url(/img/bg6.jpg) no-repeat top center;
       height: 500px;

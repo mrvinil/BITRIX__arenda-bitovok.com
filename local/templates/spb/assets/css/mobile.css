@@ -555,8 +555,8 @@
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
 	header .logo {
-		-webkit-background-size: 156px;
-		background-size: 156px;
+		-webkit-background-size: 150px;
+		background-size: 150px;
 	}
 	/*header .header.container .col-6 {
 		-ms-flex: 0 0 41%;
@@ -1536,8 +1536,7 @@
 	}
 	
 	header .logo {
-        -webkit-background-size: 190px;
-        background-size: 190px;
+        -webkit-background-size: 150px;
+        background-size: 150px;
     }
 }
-    

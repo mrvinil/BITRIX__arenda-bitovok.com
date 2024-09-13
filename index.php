@@ -637,6 +637,42 @@ $APPLICATION->SetTitle("Аренда бытовок и блок-контейне
 
 
 </section>
+	
+	<section class="section rev-video">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h2><b>Отзывы</b></h2>
+				</div>
+			</div>
+			<div class="rev-video__list">
+				<div class="rev-video__item">
+					<iframe width="100%" height="220" src="https://rutube.ru/play/embed/058b3faa1dec22463380fc2b66bbadeb/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+				</div>
+				<div class="rev-video__item">
+					<iframe width="100%" height="220" src="https://rutube.ru/play/embed/33e6aef083b30dc062db741ece558ecd/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+				</div>
+				<div class="rev-video__item">
+					<iframe width="100%" height="220" src="https://rutube.ru/play/embed/c12fa1248a2a9a4578cd6ebc439954d2/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+				</div>
+				<div class="rev-video__item">
+					<iframe width="100%" height="220" src="https://rutube.ru/play/embed/759a5f9b9d2439b15e5f860c1d991a44/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+				</div>
+				<div class="rev-video__item">
+					<iframe width="100%" height="220" src="https://rutube.ru/play/embed/61d4a52748dadcab07630aa886ed53e2/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+				</div>
+				<div class="rev-video__item">
+					<iframe width="100%" height="220" src="https://rutube.ru/play/embed/add3cd19f29f6474022d56137f1c348d/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+				</div>
+				<div class="rev-video__item">
+					<iframe width="100%" height="220" src="https://rutube.ru/play/embed/f85c527b2a67c878f1babdbe7c19d3ed/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+				</div>
+				<div class="rev-video__item">
+					<iframe width="100%" height="220" src="https://rutube.ru/play/embed/67d9e5bbf97cf8f2c378c26c0e9fb9c6/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+				</div>
+			</div>
+		</div>
+	</section>
 
 
 <section id="advantage" class="section slider">
