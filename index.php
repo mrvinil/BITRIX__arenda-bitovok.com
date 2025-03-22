@@ -47,7 +47,7 @@ $APPLICATION->SetTitle("Аренда бытовок и блок-контейне
 							<li>Потолок вагонка ПВХ</li>
 						</ul>
 						<div class="row product-arenda-form justify-content-center">
-							<div class="col-6">
+							<div class="col-4">
 								<div class="input-col">
 									
 									<input id="product_utm" type="hidden" value="<?= $utmMark ?>">
@@ -56,7 +56,7 @@ $APPLICATION->SetTitle("Аренда бытовок и блок-контейне
 								
 								</div>
 							</div>
-							<div class="col-6">
+							<div class="col-8">
 								<button id="form-send" data-hover="Арендовать" class="cta bl">Арендовать
 								</button>
 							</div>
@@ -71,10 +71,10 @@ $APPLICATION->SetTitle("Аренда бытовок и блок-контейне
 					<div class="col-12 text--center">
 						<div class="row card__img-slider">
 							<div class="col-12 img-product-main--wrap">
-								<img class="img-product-main" src="/img/bk/bk03/0.jpg" alt="">
+								<img class="img-product-main" src="/img/bk/bk03/0-1.jpg" alt="">
 							</div>
 							<div class="col-12 img-product-main--wrap">
-								<img class="img-product-main" src="/img/bk/bk03/1.jpg" alt="">
+								<img class="img-product-main" src="/img/bk/bk03/1-1.jpg" alt="">
 							</div>
 							<div class="col-12 img-product-main--wrap">
 								<img class="img-product-main" src="/img/bk/bk03/2.jpg" alt="">
@@ -98,14 +98,14 @@ $APPLICATION->SetTitle("Аренда бытовок и блок-контейне
 							<li>Потолок вагонка ПВХ</li>
 						</ul>
 						<div class="row product-arenda-form justify-content-center">
-							<div class="col-6">
+							<div class="col-4">
 								<div class="input-col">
 									<input id="product_utm" type="hidden" value="<?= $utmMark ?>">
 									<input id="product_phone" type="tel" data-tel-input maxlength="18" class="arenda-phone-field phone-field"
 									       placeholder="+7 (___) ___-__-__">
 								</div>
 							</div>
-							<div class="col-6">
+							<div class="col-8">
 								<button id="form-send" data-hover="Арендовать" class="cta bl">Арендовать
 								</button>
 							</div>
@@ -146,13 +146,13 @@ $APPLICATION->SetTitle("Аренда бытовок и блок-контейне
 							<li>Потолок вагонка ПВХ</li>
 						</ul>
 						<div class="row product-arenda-form justify-content-center">
-							<div class="col-6">
+							<div class="col-4">
 								<div class="input-col">
 									<input id="product_utm" type="hidden" value="<?= $utmMark ?>">
 									<input id="product_phone" type="tel" data-tel-input maxlength="18" class="arenda-phone-field phone-field" placeholder="+7 (___) ___-__-__">
 								</div>
 							</div>
-							<div class="col-6">
+							<div class="col-8">
 								<button id="form-send" data-hover="Арендовать" class="cta bl">Арендовать
 								</button>
 							</div>
@@ -169,7 +169,7 @@ $APPLICATION->SetTitle("Аренда бытовок и блок-контейне
 								<img class="img-product-main" src="/img/container/0.jpg" alt="">
 							</div>
 							<div class="col-12 img-product-main--wrap">
-								<img class="img-product-main" src="/img/container/1.jpg" alt="">
+								<img class="img-product-main" src="/img/container/1-1.jpg" alt="">
 							</div>
 							<div class="col-12 img-product-main--wrap">
 								<img class="img-product-main" src="/img/container/2.jpg" alt="">
@@ -180,8 +180,8 @@ $APPLICATION->SetTitle("Аренда бытовок и блок-контейне
 						<h3 id="product_title">Морской контейнер под склад</h3>
 						<h4 id="product_sub-title">20 Футов</h4>
 						<div class="price-block">
-							<p class="price-day">от <span><span><?= $priceDayOld ?></span></span> <?= $priceDay ?> руб/сутки</p>
-							<p class="price-month">от <?= $price ?> руб/месяц</p>
+							<p class="price-day">от <span><span><?= $konteinerPriceDayOld ?></span></span> <?= $konteinerPriceDay ?> руб/сутки</p>
+							<p class="price-month">от <?= $konteinerPrice ?> руб/месяц</p>
 						</div>
 						<p class="arenda-product-size"><b>Размер, мм.: </b>6000х2400х2400</p>
 						<ul class="pruduct-desc">
@@ -193,14 +193,14 @@ $APPLICATION->SetTitle("Аренда бытовок и блок-контейне
 							<li>Потолок вагонка ПВХ</li>
 						</ul>
 						<div class="row product-arenda-form justify-content-center">
-							<div class="col-6">
+							<div class="col-4">
 								<div class="input-col">
 									<input id="product_utm" type="hidden" value="<?= $utmMark ?>">
 									<input id="product_phone" type="tel" data-tel-input maxlength="18" class="arenda-phone-field phone-field"
 									       placeholder="+7 (___) ___-__-__">
 								</div>
 							</div>
-							<div class="col-6">
+							<div class="col-8">
 								<button id="form-send" data-hover="Арендовать" class="cta bl">Арендовать
 								</button>
 							</div>
@@ -219,7 +219,7 @@ $APPLICATION->SetTitle("Аренда бытовок и блок-контейне
 	</div>
 </section>
 
-<section class="section slider slider-blue">
+<section class="section slider slider-blue" style="background: #FFFAFA;">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
@@ -322,6 +322,12 @@ $APPLICATION->SetTitle("Аренда бытовок и блок-контейне
 		
 	</div>
 </section>
+	
+	
+	<div class="header_canvas">
+		<canvas id="canvas" width="320" height="250"></canvas>
+	</div>
+	<script src="/cars-gb/js/cars__new.js"></script>
 
 
 <section class="section" id="delivery">         <!-- ///////// Доставка ////////-->
@@ -362,7 +368,7 @@ $APPLICATION->SetTitle("Аренда бытовок и блок-контейне
 	</div>
 </section>
 
-<section class="section slider komplekt-slider">
+<section class="section slider komplekt-slider" style="background: #FFFAFA;">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
@@ -585,10 +591,10 @@ $APPLICATION->SetTitle("Аренда бытовок и блок-контейне
 			</div>
 			
 			<div class="hit-wrap">
-				<div class="hit-item">
-					<div class="hit-side__first" style="background: url(/img/arenda/bitkolesa.png);"></div>
+				<div class="hit-item"><!-- /img/arenda/bitkolesa.png -->
+					<div class="hit-side__first" style="background: url(/img/arenda/bitprorab.png);"></div>
 					<div class="hit-side__second">
-						<div class="hit-name">Бытовки на колесах</div>
+						<div class="hit-name">Бытовки стандарт</div>
 						<div class="hit-desc">
 							<span>1) Комфортное размещение</span>
 							<span>2) Полная комплектация</span>
@@ -642,7 +648,7 @@ $APPLICATION->SetTitle("Аренда бытовок и блок-контейне
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
-					<h2><b>Отзывы</b></h2>
+					<h2><b>Отзывы Балт-Строй</b></h2>
 				</div>
 			</div>
 			<div class="rev-video__list">
@@ -675,7 +681,7 @@ $APPLICATION->SetTitle("Аренда бытовок и блок-контейне
 	</section>
 
 
-<section id="advantage" class="section slider">
+<section id="advantage" class="section slider" style="background: #FFFAFA;">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
@@ -927,7 +933,7 @@ $APPLICATION->SetTitle("Аренда бытовок и блок-контейне
 			</div>
 			<div class="col-12 form-section">
 				<div class="row forma">
-					<div class="col-md-6">
+					<div class="col-md-4">
 						<div class="input-col mb-3">
 							<input id="arenda_comment" class="comment-field" type="text"
 							       placeholder="Ваши пожелания, если есть...">
@@ -939,7 +945,7 @@ $APPLICATION->SetTitle("Аренда бытовок и блок-контейне
 							       placeholder="+7 (___) ___-__-__">
 						</div>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-5">
 						<div class="input-col">
 							<input id="product_utm" type="hidden" value="<?= $utmMark ?>">
 							<button id="form-send" data-hover="Арендовать" class="cta bl">Арендовать
@@ -952,7 +958,7 @@ $APPLICATION->SetTitle("Аренда бытовок и блок-контейне
 	</div>
 </section>
 
-<section class="section" id="advantage">
+<section class="section" id="advantage" style="background: #FFFAFA;">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">

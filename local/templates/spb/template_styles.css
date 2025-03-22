@@ -8,6 +8,10 @@
 /*#main h2.big-h2_small {
 	font-size: 63px;
 }*/
+
+.logo {
+	cursor: pointer;
+}
 #region-menu-bottom a{
 	display: block;
     font-size: 1.2rem;
@@ -20,4 +24,75 @@
 	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 	grid-gap: 15px 5px;
 	padding: 100px 0;
+}
+
+.arenda__banner {
+	display: block;
+	max-width: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+	margin: 40px 0 40px;
+}
+
+/* АКЦИИ =====================================*/
+.stocks {
+	display: grid;
+	gap: 40px;
+}
+.stocks__desc {
+	font-size: 24px;
+	font-weight: 700;
+	background: #bfe095;
+	padding: 25px;
+	color: #fff;
+}
+.stocks__list {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 30px 10px;
+}
+.stocks__item {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+.stocks__img {
+	max-width: 100%;
+	/*min-height: 355px;*/
+	/*object-fit: cover;*/
+	display: block;
+	border: 5px solid #d2d2d2;
+	padding: 30px;
+}
+.stocks__name {
+	font-size: 26px;
+	font-weight: 700;
+}
+.stocks__text {
+	font-size: 16px;
+	font-weight: 400;
+}
+/*===================================== АКЦИИ*/
+
+
+@media (max-width: 991px) {
+	.stocks__desc {
+		font-size: 16px;
+	}
+	.stocks__img {
+		min-height: 160px;
+		padding: 15px;
+	}
+	.stocks__name {
+		font-size: 20px;
+	}
+	.stocks__text {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 767px) {
+	.stocks__list {
+		grid-template-columns: 1fr;
+	}
 }

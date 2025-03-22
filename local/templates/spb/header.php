@@ -3,6 +3,11 @@
 $price = 8500; // Устанавливаем начальную цену
 $priceDay = round($price / 30);
 $priceDayOld = $priceDay + 20;
+
+$konteinerPrice = 14000; // Устанавливаем начальную цену
+$konteinerPriceDay = round($konteinerPrice / 30);
+$konteinerPriceDayOld = $konteinerPriceDay + 20;
+
 $utm = $_GET['utm_product'];
 $utmMark = 'form-arendabitovokcom';
 
@@ -291,7 +296,7 @@ if ($utm == 'bk')
 	
 	<div class="header container">
 		<div class="row">
-			<div class="col-6 logo"></div>
+			<div class="col-6 logo" onclick="window.location.href='/'"></div>
 			<div class="col-6">
 				<div class="contacts">
 					<a href="tel:<? if(file_exists($phonePath)) require $phonePath; ?>" class="phone nv xbold">
@@ -321,6 +326,7 @@ if ($utm == 'bk')
 					<ul class="nav">
 						<li><a href="#catalog-arenda">Каталог бытовок</a></li>
 						<li><a href="#delivery">Доставка</a></li>
+						<li><a href="/stocks/">Акции</a></li>
 						<li><a href="#contacts-bottom">Контакты</a></li>
 					</ul>
 				</div>

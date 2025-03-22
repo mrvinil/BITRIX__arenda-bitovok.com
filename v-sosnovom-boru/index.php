@@ -181,8 +181,8 @@ $APPLICATION->SetPageProperty("description", "Аренда строительн�
 							<h3 id="product_title">Морской контейнер под склад</h3>
 							<h4 id="product_sub-title">20 Футов</h4>
 							<div class="price-block">
-								<p class="price-day">от <span><span><?= $priceDayOld ?></span></span> <?= $priceDay ?> руб/сутки</p>
-<p class="price-month">от <?= $price ?> руб/месяц</p>
+								<p class="price-day">от <span><span><?= $konteinerPriceDayOld ?></span></span> <?= $konteinerPriceDay ?> руб/сутки</p>
+<p class="price-month">от <?= $konteinerPrice ?> руб/месяц</p>
 							</div>
 							<p class="arenda-product-size"><b>Размер, мм.: </b>6000х2400х2400</p>
 							<ul class="pruduct-desc">

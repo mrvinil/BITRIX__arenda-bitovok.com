@@ -45,6 +45,12 @@
 	height: 95px;
 }
 
+@media (max-width: 439px) {
+	#stick {
+		height: 130px;
+	}
+}
+
 #stick .header {
 	padding-top: 26px;
 }

@@ -193,12 +193,12 @@ span.control_next {
   padding-right: 80px;
 } */
 section.slider{
-	background: #f5d6be;
+	background: #FFFAFA !important;
 }
 
 
 .slider-blue, #advantage{
-  background: #f5d6be;
+  background: #FFFAFA;
 }
 .slider-blue h2, #advantage h2, .slider-blue h3, #advantage h3{
   color: #23292e;

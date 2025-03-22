@@ -929,10 +929,6 @@
 	#stick .header .contacts p {
 		font-size: 25px;
 	}
-	#stick .header .toplinks .nav li a {
-		font-size: 14px;
-	}
-	
 	
 	section.slider {
 		padding-top: 20px!important;
@@ -1004,6 +1000,12 @@
 	.slick__slider_double .slick__slider-item-second {
         height: 145px;
     }
+}
+
+@media (max-width: 540px) {
+	#stick .header .toplinks .nav li a {
+		font-size: 14px;
+	}
 }
 
 /* Landscape phones and smaller */

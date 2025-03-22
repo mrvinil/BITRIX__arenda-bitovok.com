@@ -184,10 +184,7 @@
 	</div>
 </section>
 
-<div class="header_canvas">
-	<canvas id="canvas" width="320" height="250"></canvas>
-</div>
-	<script src="/cars-gb/js/cars__new.js"></script>
+
 
 
 
