@@ -135,8 +135,8 @@ if ($utm == 'bk')
 	        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
 	        crossorigin="anonymous"></script>
 	<script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-	<link href="/cars/css/style.css" rel="stylesheet">
-	<script src="/cars/js/three.js"></script>
+	<link href="/cars-gb/css/style.css" rel="stylesheet">
+	<script src="/cars-gb/js/three__new.js"></script>
 
 	<? $APPLICATION->ShowHead() ?>
 	

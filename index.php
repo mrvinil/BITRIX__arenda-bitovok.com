@@ -2,6 +2,165 @@
 $APPLICATION->SetPageProperty("title", "Аренда бытовок и блок-контейнеров с доставкой по СПб и Л.О.");
 $APPLICATION->SetTitle("Аренда бытовок и блок-контейнеров с доставкой по СПб и Л.О."); ?>
 
+<section class="section" id="advantage" style="background: #FFFAFA;">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h2>
+					<b>Балт Строй — самый крупный производитель</b><br>бытовок на территории России
+				</h2>
+			</div>
+		</div>
+		<div class="slick__slider slick__slider_baltstroy">
+			<div class="slick__slider-wrap">
+				<div class="slick__slider-item">
+					<div class="slick__slider-item-first" style="background: url(/img/slider3/1.jpg);"></div>
+					<div class="slick__slider-item-second">
+						<div class="slick__slider-item-second-title">01. Крупнейшее производство</div>
+						<div class="slick__slider-item-second-text">
+							<p>Все строения производятся на
+								собственном
+								автоматизированном производстве общей площадью 8000 кв.метров.
+							</p>
+							<div class="slick__slider-item-second-text-desc">
+								<div>
+									<span>Работаем</span>
+									<span>15 лет</span>
+									<span>на рынке</span>
+								</div>
+								<div>
+									<span>Произведено</span>
+									<span>>7 000</span>
+									<span>бытовок</span>
+								</div>
+								<div>
+									<span>Построено</span>
+									<span>>500</span>
+									<span>модульных зданий</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="slick__slider-wrap">
+				<div class="slick__slider-item">
+					<div class="slick__slider-item-first" style="background: url(/img/slider3/2.jpg);"></div>
+					<div class="slick__slider-item-second">
+						<div class="slick__slider-item-second-title">02. Прямые поставки строительных материалов</div>
+						<div class="slick__slider-item-second-text">
+							<p>За счет многолетнего опыта в сфере производства и строительства мобильных
+								сооружений
+								и модульных зднаний нам удалось наладить связи с прямыми поставщиками
+								строительных материалов.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="slick__slider-wrap">
+				<div class="slick__slider-item">
+					<div class="slick__slider-item-first" style="background: url(/img/slider3/3.jpg);"></div>
+					<div class="slick__slider-item-second">
+						<div class="slick__slider-item-second-title">03. Автоматизированное производство</div>
+						<div class="slick__slider-item-second-text">
+							<p>Мы ценим своих клиентов и всегда предлагаем приятные<br> бонусы и подарки.</p>
+							<p>Узнайте подробнее о действующих акциях у нашего менеджера по телефону <b>
+									<?$APPLICATION->IncludeFile(
+										SITE_DIR."/include/phone.php",
+										Array(),
+										Array("MODE"=>"php")
+									);?></b>
+								или оставьте заявку на обратный звонок — мы моментально перезвоним.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="slick__slider-wrap">
+				<div class="slick__slider-item">
+					<div class="slick__slider-item-first" style="background: url(/img/slider3/4.jpg);"></div>
+					<div class="slick__slider-item-second">
+						<div class="slick__slider-item-second-title">04. Бытовки и блок-контейнеры всегда в наличии на складе</div>
+						<div class="slick__slider-item-second-text">
+							<p>На нашем складе всегда есть в наличии как новые, так и<br> Б/У бытовки и
+								блок-контейнеры,
+								доставим в течение 3 часов.</p>
+							<p>Производство нового строения под заказ займет 1-2 дня.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="slick__slider-wrap">
+				<div class="slick__slider-item">
+					<div class="slick__slider-item-first" style="background: url(/img/slider3/5.jpg);"></div>
+					<div class="slick__slider-item-second">
+						<div class="slick__slider-item-second-title">05. Доставка в течение 3 часов после звонка</div>
+						<div class="slick__slider-item-second-text">
+							<p>В состав услуг <b>Балт Строй</b> входит доставка негабаритных грузов –
+								бытовок, строительных вагончиков, постов охраны по адресам заказчиков.
+								<br> Для этих целей мы используем личный парк
+								специализированного автотранспорта и погрузочной техники.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="slick__slider-wrap">
+				<div class="slick__slider-item">
+					<div class="slick__slider-item-first" style="background: url(/img/slider3/6.jpg);"></div>
+					<div class="slick__slider-item-second">
+						<div class="slick__slider-item-second-title">06. Больше 15 лет</div>
+						<div class="slick__slider-item-second-text">
+							<p>Комплексно снабжаем бытовками и блок-контейнерами строительные площадки по всей России.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="slick__slider-wrap">
+				<div class="slick__slider-item">
+					<div class="slick__slider-item-first" style="background: url(/img/slider3/klop1.png);"></div>
+					<div class="slick__slider-item-first" style="background: url(/img/slider3/klop2.png);"></div>
+				</div>
+			</div>
+			
+			<div class="slick__slider-wrap">
+				<div class="slick__slider-item">
+					<div class="slick__slider-item-first" style="background: url(/img/slider3/7.jpg);"></div>
+					<div class="slick__slider-item-second">
+						<div class="slick__slider-item-second-title">07. Мы — профессионалы в аренде бытовок</div>
+						<div class="slick__slider-item-second-text">
+							<p>Звоните по номеру <a href="tel:+78124256215" style="font-size: 22px; font-weight: bold;">8 (812) 425-62-15</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="slick__slider-wrap">
+				<div class="slick__slider-item">
+					<div class="slick__slider-item-first" style="background: url(/img/slider3/8.jpg);"></div>
+					<div class="slick__slider-item-second">
+						<div class="slick__slider-item-second-title">08. Сдаем в аренду по всей России</div>
+						<div class="slick__slider-item-second-text">
+							<p>Более 300 бытовок на складе нашего производства</p>
+							<p>Более 3000 бытовок в аренде по всей России</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+		</div>
+	
+	</div>
+</section>
 
 <section id="catalog-arenda" class="section">
 	<div class="container">
@@ -368,6 +527,51 @@ $APPLICATION->SetTitle("Аренда бытовок и блок-контейне
 	</div>
 </section>
 
+<section class="section slider slider-blue" style="background: #FFFAFA;">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h2><b>Доставка бытовок</b><br>по Санкт-Петербургу и области</h2>
+			</div>
+		</div>
+		
+		
+		<div class="slick__slider">
+			<div class="slick__slider-wrap">
+				<div class="slick__slider-item">
+					<div class="slick__slider-item-first" style="background: url(https://bitovki.biz/upload/iblock/0ff/yhr5tq6f5g2wabtofku9ct4q62at8szz.jpg);"></div>
+					<div class="slick__slider-item-first" style="background: url(https://bitovki.biz/upload/iblock/9a5/z8mocyc313r178b1nd2nxr0zc2py3mzc.jpg);"></div>
+				</div>
+			</div>
+			<div class="slick__slider-wrap">
+				<div class="slick__slider-item">
+					<div class="slick__slider-item-first" style="background: url(https://bitovki.biz/upload/iblock/07b/xe5yagayl435ax6i1by8cgjgmr6m8gmb.jpg);"></div>
+					<div class="slick__slider-item-first" style="background: url(https://bitovki.biz/upload/iblock/3d1/zu7jd7gd22s5gtnq0qaxujuar99ymc9a.jpg);"></div>
+				</div>
+			</div>
+			<div class="slick__slider-wrap">
+				<div class="slick__slider-item">
+					<div class="slick__slider-item-first" style="background: url(https://bitovki.biz/upload/iblock/451/3jt4u82e2h6yf41up1hyozw54qyste12.jpg);"></div>
+					<div class="slick__slider-item-first" style="background: url(https://bitovki.biz/upload/iblock/569/i4e3k2rr4yn8xcyz6pehmc4bjfpj54gw.jpg);"></div>
+				</div>
+			</div>
+			<div class="slick__slider-wrap">
+				<div class="slick__slider-item">
+					<div class="slick__slider-item-first" style="background: url(https://bitovki.biz/upload/iblock/87a/dv106mh3z4ywe5liwt4l1phwcec1wqnp.jpg);"></div>
+					<div class="slick__slider-item-first" style="background: url(https://bitovki.biz/upload/iblock/d03/mu2upyeh8w7uwv5m0q6isepxbfsi0nom.jpg);"></div>
+				</div>
+			</div>
+			<div class="slick__slider-wrap">
+				<div class="slick__slider-item">
+					<div class="slick__slider-item-first" style="background: url(https://bitovki.biz/upload/iblock/5f3/1t1i85623pqd7k0h1enj3v4lms6ziqak.jpg);"></div>
+					<div class="slick__slider-item-first" style="background: url(https://bitovki.biz/upload/iblock/a9d/9vga4t8upskk9z54dfnzvw97wjdlccxb.jpg);"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
 <section class="section slider komplekt-slider" style="background: #FFFAFA;">
 	<div class="container">
 		<div class="row">
@@ -652,18 +856,6 @@ $APPLICATION->SetTitle("Аренда бытовок и блок-контейне
 				</div>
 			</div>
 			<div class="rev-video__list">
-				<div class="rev-video__item">
-					<iframe width="100%" height="220" src="https://rutube.ru/play/embed/058b3faa1dec22463380fc2b66bbadeb/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-				</div>
-				<div class="rev-video__item">
-					<iframe width="100%" height="220" src="https://rutube.ru/play/embed/33e6aef083b30dc062db741ece558ecd/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-				</div>
-				<div class="rev-video__item">
-					<iframe width="100%" height="220" src="https://rutube.ru/play/embed/c12fa1248a2a9a4578cd6ebc439954d2/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-				</div>
-				<div class="rev-video__item">
-					<iframe width="100%" height="220" src="https://rutube.ru/play/embed/759a5f9b9d2439b15e5f860c1d991a44/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-				</div>
 				<div class="rev-video__item">
 					<iframe width="100%" height="220" src="https://rutube.ru/play/embed/61d4a52748dadcab07630aa886ed53e2/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 				</div>
@@ -958,167 +1150,7 @@ $APPLICATION->SetTitle("Аренда бытовок и блок-контейне
 	</div>
 </section>
 
-<section class="section" id="advantage" style="background: #FFFAFA;">
-	<div class="container">
-		<div class="row">
-			<div class="col-12">
-				<h2>
-					<b>Балт Строй — самый крупный производитель</b><br>бытовок на территории России
-				</h2>
-			</div>
-		</div>
-		
-		
-		<div class="slick__slider slick__slider_baltstroy">
-			<div class="slick__slider-wrap">
-				<div class="slick__slider-item">
-					<div class="slick__slider-item-first" style="background: url(/img/slider3/1.jpg);"></div>
-					<div class="slick__slider-item-second">
-						<div class="slick__slider-item-second-title">01. Крупнейшее производство</div>
-						<div class="slick__slider-item-second-text">
-							<p>Все строения производятся на
-								собственном
-								автоматизированном производстве общей площадью 8000 кв.метров.
-							</p>
-							<div class="slick__slider-item-second-text-desc">
-								<div>
-									<span>Работаем</span>
-									<span>15 лет</span>
-									<span>на рынке</span>
-								</div>
-								<div>
-									<span>Произведено</span>
-									<span>>7 000</span>
-									<span>бытовок</span>
-								</div>
-								<div>
-									<span>Построено</span>
-									<span>>500</span>
-									<span>модульных зданий</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-			<div class="slick__slider-wrap">
-				<div class="slick__slider-item">
-					<div class="slick__slider-item-first" style="background: url(/img/slider3/2.jpg);"></div>
-					<div class="slick__slider-item-second">
-						<div class="slick__slider-item-second-title">02. Прямые поставки строительных материалов</div>
-						<div class="slick__slider-item-second-text">
-							<p>За счет многолетнего опыта в сфере производства и строительства мобильных
-								сооружений
-								и модульных зднаний нам удалось наладить связи с прямыми поставщиками
-								строительных материалов.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-			<div class="slick__slider-wrap">
-				<div class="slick__slider-item">
-					<div class="slick__slider-item-first" style="background: url(/img/slider3/3.jpg);"></div>
-					<div class="slick__slider-item-second">
-						<div class="slick__slider-item-second-title">03. Автоматизированное производство</div>
-						<div class="slick__slider-item-second-text">
-							<p>Мы ценим своих клиентов и всегда предлагаем приятные<br> бонусы и подарки.</p>
-							<p>Узнайте подробнее о действующих акциях у нашего менеджера по телефону <b>
-								<?$APPLICATION->IncludeFile(
-						 			SITE_DIR."/include/phone.php",
-						  			Array(),
-						  			Array("MODE"=>"php")
-								);?></b>
-								или оставьте заявку на обратный звонок — мы моментально перезвоним.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-			<div class="slick__slider-wrap">
-				<div class="slick__slider-item">
-					<div class="slick__slider-item-first" style="background: url(/img/slider3/4.jpg);"></div>
-					<div class="slick__slider-item-second">
-						<div class="slick__slider-item-second-title">04. Бытовки и блок-контейнеры всегда в наличии на складе</div>
-						<div class="slick__slider-item-second-text">
-							<p>На нашем складе всегда есть в наличии как новые, так и<br> Б/У бытовки и
-								блок-контейнеры,
-								доставим в течение 3 часов.</p>
-							<p>Производство нового строения под заказ займет 1-2 дня.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-			<div class="slick__slider-wrap">
-				<div class="slick__slider-item">
-					<div class="slick__slider-item-first" style="background: url(/img/slider3/5.jpg);"></div>
-					<div class="slick__slider-item-second">
-						<div class="slick__slider-item-second-title">05. Доставка в течение 3 часов после звонка</div>
-						<div class="slick__slider-item-second-text">
-							<p>В состав услуг <b>Балт Строй</b> входит доставка негабаритных грузов –
-								бытовок, строительных вагончиков, постов охраны по адресам заказчиков.
-								<br> Для этих целей мы используем личный парк
-								специализированного автотранспорта и погрузочной техники.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
 
-			<div class="slick__slider-wrap">
-				<div class="slick__slider-item">
-					<div class="slick__slider-item-first" style="background: url(/img/slider3/6.jpg);"></div>
-					<div class="slick__slider-item-second">
-						<div class="slick__slider-item-second-title">06. Больше 15 лет</div>
-						<div class="slick__slider-item-second-text">
-							<p>Комплексно снабжаем бытовками и блок-контейнерами строительные площадки по всей России.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="slick__slider-wrap">
-				<div class="slick__slider-item">
-					<div class="slick__slider-item-first" style="background: url(/img/slider3/klop1.png);"></div>
-					<div class="slick__slider-item-first" style="background: url(/img/slider3/klop2.png);"></div>
-				</div>
-			</div>
-
-			<div class="slick__slider-wrap">
-				<div class="slick__slider-item">
-					<div class="slick__slider-item-first" style="background: url(/img/slider3/7.jpg);"></div>
-					<div class="slick__slider-item-second">
-						<div class="slick__slider-item-second-title">07. Мы — профессионалы в аренде бытовок</div>
-						<div class="slick__slider-item-second-text">
-							<p>Звоните по номеру <a href="tel:+78124256215" style="font-size: 22px; font-weight: bold;">8 (812) 425-62-15</a>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="slick__slider-wrap">
-				<div class="slick__slider-item">
-					<div class="slick__slider-item-first" style="background: url(/img/slider3/8.jpg);"></div>
-					<div class="slick__slider-item-second">
-						<div class="slick__slider-item-second-title">08. Сдаем в аренду по всей России</div>
-						<div class="slick__slider-item-second-text">
-							<p>Более 300 бытовок на складе нашего производства</p>
-							<p>Более 3000 бытовок в аренде по всей России</p>
-						</div>
-					</div>
-				</div>
-			</div>
-
-		</div>
-		
-	</div>
-</section>
 
 <section class="section" id="doc__op">    <!-- ///////// Документация ////////-->
 	<div class="container">

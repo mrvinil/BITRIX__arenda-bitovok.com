@@ -91,7 +91,8 @@ section {
 
 
 .cta.bl {
-    background: #ffcf00;
+    background: #fff;
+    /*background: #ffcf00;*/
     -webkit-transition: background 150ms ease-in-out, color 150ms ease-in-out;
     -o-transition: background 150ms ease-in-out, color 150ms ease-in-out;
     transition: background 150ms ease-in-out, color 150ms ease-in-out;
@@ -99,7 +100,7 @@ section {
     position: relative
 }
 .cta.b2 {
-    background: #fff;
+    /*background: #fff;*/
     -webkit-transition: background 150ms ease-in-out, color 150ms ease-in-out;
     -o-transition: background 150ms ease-in-out, color 150ms ease-in-out;
     transition: background 150ms ease-in-out, color 150ms ease-in-out;
@@ -120,7 +121,8 @@ section {
 .cta.bl:after,
 .cta.bl:hover:after {
     content: attr(data-hover);
-    background: #fff
+    background: #fff;
+    color: #282828;
 }
 .cta.b2:after,
 .cta.b2:hover:after {
@@ -268,7 +270,8 @@ p {
 }
 
 body {
-    background: #fff
+    background: #edeef8;
+    /*background: #fff*/
 }
 
 h1 {
@@ -636,8 +639,10 @@ body > header > div > div > div:nth-child(4) > div > p:nth-child(2) > span:befor
 }
 
 .banner__button {
-    background: #ffcf00 !important;
-    border: 1px solid #ffcf00 !important;
+    background: none !important;
+    color: #fff !important;
+    /*background: #ffcf00 !important;*/
+    border: 2px solid #fff !important;
     align-items: center;
     display: flex;
     justify-content: center;

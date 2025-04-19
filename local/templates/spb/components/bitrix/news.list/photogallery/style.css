@@ -85,8 +85,9 @@
 }
 .clear-filters {
 	display: block;
-	background-color: #ffcf00;
-	color: #333;
+	background: #fff;
+	/*background-color: #ffcf00;*/
+	color: #282828;
 	padding: 20px 25px;
 	text-decoration: none;
 	text-align: center;
