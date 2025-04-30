@@ -539,12 +539,25 @@ transform: rotateZ(180deg);
     /* overflow: hidden; */
 }
 
+/*.img-product-main--wrap {*/
+/*    max-height: 230px;*/
+/*    display: flex !important;*/
+/*    justify-content: center;*/
+/*    overflow: hidden;*/
+/*}*/
+/*.img-product-main {*/
+/*  width: auto;*/
+/*}*/
+
 .img-product-main--wrap {
-    max-height: 230px;
-    display: flex !important;
-    justify-content: center;
+    aspect-ratio: 495 / 219; /* современный способ */
+    width: 100%;
+    max-width: 411px;
     overflow: hidden;
 }
+
 .img-product-main {
-  width: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }

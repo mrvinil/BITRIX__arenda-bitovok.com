@@ -198,7 +198,7 @@ $APPLICATION->SetTitle("Аренда бытовок и блок-контейне
 						
 						<p class="arenda-product-size"><b>Размер, мм.: </b>6000х2400х2400</p>
 						<ul class="pruduct-desc">
-							<li>Электрическое оснащение 6 КВт — <b>В ПОДАРОК</b></li>
+							<li>Электрическое оснащение 6 КВт</li>
 							<li>Металлические двухъярусные кровати</li>
 							<li>Окно ПВХ с поворотной створкой</li>
 							<li>Линолеум на полу</li>
@@ -249,7 +249,7 @@ $APPLICATION->SetTitle("Аренда бытовок и блок-контейне
 						</div>
 						<p class="arenda-product-size"><b>Размер, мм.: </b>6000х2400х2400</p>
 						<ul class="pruduct-desc">
-							<li>Электрическое оснащение 6 КВт — <b>В ПОДАРОК</b></li>
+							<li>Электрическое оснащение 6 КВт</li>
 							<li>Металлические двухъярусные кровати</li>
 							<li>Окно ПВХ с поворотной створкой</li>
 							<li>Линолеум на полу</li>
@@ -297,7 +297,7 @@ $APPLICATION->SetTitle("Аренда бытовок и блок-контейне
 						</div>
 						<p class="arenda-product-size"><b>Размер, мм.: </b>6000х2400х2400</p>
 						<ul class="pruduct-desc">
-							<li>Электрическое оснащение 6 КВт — <b>В ПОДАРОК</b></li>
+							<li>Электрическое оснащение 6 КВт</li>
 							<li>Металлические двухъярусные кровати</li>
 							<li>Окно ПВХ с поворотной створкой</li>
 							<li>Линолеум на полу</li>
@@ -325,26 +325,26 @@ $APPLICATION->SetTitle("Аренда бытовок и блок-контейне
 					<div class="col-12 text--center">
 						<div class="row card__img-slider">
 							<div class="col-12 img-product-main--wrap">
-								<img class="img-product-main" src="/img/container/0.jpg" alt="">
+								<img class="img-product-main" src="/img/bk/bk05/bk-05-1nw.jpg" alt="">
 							</div>
 							<div class="col-12 img-product-main--wrap">
-								<img class="img-product-main" src="/img/container/1-1.jpg" alt="">
+								<img class="img-product-main" src="/img/bk/bk05/bk-05-2nw.jpg" alt="">
 							</div>
 							<div class="col-12 img-product-main--wrap">
-								<img class="img-product-main" src="/img/container/2.jpg" alt="">
+								<img class="img-product-main" src="/img/bk/bk05/bk-05-3nw.webp" alt="">
 							</div>
 						</div>
 					</div>
 					<div class="col-12">
-						<h3 id="product_title">Морской контейнер под склад</h3>
-						<h4 id="product_sub-title">20 Футов</h4>
+						<h3 id="product_title">Металлическая бытовка</h3>
+						<h4 id="product_sub-title">Блок-контейнер «С тамбуром»</h4>
 						<div class="price-block">
-							<p class="price-day">от <span><span><?= $konteinerPriceDayOld ?></span></span> <?= $konteinerPriceDay ?> руб/сутки</p>
-							<p class="price-month">от <?= $konteinerPrice ?> руб/месяц</p>
+							<p class="price-day">от <span><span><?= $priceDayOld ?></span></span> <?= $priceDay ?> руб/сутки</p>
+							<p class="price-month">от <?= $price ?> руб/месяц</p>
 						</div>
 						<p class="arenda-product-size"><b>Размер, мм.: </b>6000х2400х2400</p>
 						<ul class="pruduct-desc">
-							<li>Электрическое оснащение 6 КВт — <b>В ПОДАРОК</b></li>
+							<li>Электрическое оснащение 6 КВт</li>
 							<li>Металлические двухъярусные кровати</li>
 							<li>Окно ПВХ с поворотной створкой</li>
 							<li>Линолеум на полу</li>
@@ -695,58 +695,6 @@ $APPLICATION->SetTitle("Аренда бытовок и блок-контейне
 		
 		
 		<div class="slick-hit">
-			
-			<div class="hit-wrap">
-				<div class="hit-item">
-					<div class="hit-side__first"
-					     style="background: url(https://gorod-bitovok.ru/img/arenda/arenda-bit4.png);"></div>
-					<div class="hit-side__second">
-						<div class="hit-name">Для Строителей</div>
-						<div class="hit-desc">
-							<span>1) Комфортное размещение</span>
-							<span>2) Полная комплектация</span>
-							<span>3) Подходит для длительной эксплуатации</span>
-						</div>
-					</div>
-				</div>
-				<div class="hit-item">
-					<div class="hit-side__first"
-					     style="background: url(https://gorod-bitovok.ru/img/arenda/arenda-bit2.png);"></div>
-					<div class="hit-side__second">
-						<div class="hit-name">Для прорабов</div>
-						<div class="hit-desc">
-							<span>1) Комфортное размещение</span>
-							<span>2) Полная комплектация</span>
-							<span>3) Идеально для совещяний и планерок</span>
-						</div>
-					</div>
-				</div>
-				<div class="hit-item">
-					<div class="hit-side__first"
-					     style="background: url(https://gorod-bitovok.ru/img/arenda/arenda-bit3.png);"></div>
-					<div class="hit-side__second">
-						<div class="hit-name">Для комфортного проживания зимой</div>
-						<div class="hit-desc">
-							<span>1) Комфортное размещение</span>
-							<span>2) Полная комплектация</span>
-							<span>3) Подходит для длительной эксплуатации</span>
-						</div>
-					</div>
-				</div>
-				<div class="hit-item">
-					<div class="hit-side__first"
-					     style="background: url(https://gorod-bitovok.ru/img/arenda/arenda-bit1.png);"></div>
-					<div class="hit-side__second">
-						<div class="hit-name">Для мобильного офиса</div>
-						<div class="hit-desc">
-							<span>1) Комфортное размещение</span>
-							<span>2) Полная комплектация</span>
-							<span>3) Идеально для встреч и переговоров</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			
 			<div class="hit-wrap">
 				<div class="hit-item">
 					<div class="hit-side__first" style="background: url(/img/arenda/bitrab.png);"></div>
@@ -878,7 +826,7 @@ $APPLICATION->SetTitle("Аренда бытовок и блок-контейне
 		<div class="row">
 			<div class="col-12">
 				<h2>
-					<b>Варианты сантехнических бытовок</b><br> и модульных зданий в аренду<br>
+					<b>Варианты модульных зданий </b><br> в аренду<br>
 				</h2>
 			</div>
 		</div>
@@ -973,66 +921,6 @@ $APPLICATION->SetTitle("Аренда бытовок и блок-контейне
 								предоставление быстровозводимых модульных зданий в аренду, возможность
 								иметь надежного и единого партнера при многократной или длительной
 								аренде.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-			<div class="slick__slider-wrap">
-				<div class="slick__slider-item">
-					<div class="slick__slider-item-first" style="background: url(/img/slider4/5.jpg);"></div>
-					<div class="slick__slider-item-second">
-						<div class="slick__slider-item-second-title"></div>
-						<div class="slick__slider-item-second-text">
-							<p>Наряду с вопросами по организации раздевалки для рабочих, их проживанию
-								на стройке, организации рабочего места прораба или обустройству склада
-								на объекте строительства, одним из важнейших вопросов является где
-								рабочие будут принимать душ и куда они будут ходить в туалет!
-								Оптимальным решением в подобной ситуации, будет аренда сантехнической
-								(душевой или туалетной) бытовки.
-								Взяв в аренду сантехнический блок-контейнер, Вам достаточно будет его
-								подключить к водоснабжению, канализации и можно начинать
-								пользоваться!</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-			<div class="slick__slider-wrap">
-				<div class="slick__slider-item">
-					<div class="slick__slider-item-first" style="background: url(/img/slider4/6.jpg);"></div>
-					<div class="slick__slider-item-second">
-						<div class="slick__slider-item-second-title"></div>
-						<div class="slick__slider-item-second-text">
-							<p>Наряду с вопросами по организации раздевалки для рабочих, их проживанию
-								на стройке, организации рабочего места прораба или обустройству склада
-								на объекте строительства, одним из важнейших вопросов является где
-								рабочие будут принимать душ и куда они будут ходить в туалет!
-								Оптимальным решением в подобной ситуации, будет аренда сантехнической
-								(душевой или туалетной) бытовки.
-								Взяв в аренду сантехнический блок-контейнер, Вам достаточно будет его
-								подключить к водоснабжению, канализации и можно начинать
-								пользоваться!</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-			<div class="slick__slider-wrap">
-				<div class="slick__slider-item">
-					<div class="slick__slider-item-first" style="background: url(/img/slider4/7.jpg);"></div>
-					<div class="slick__slider-item-second">
-						<div class="slick__slider-item-second-title"></div>
-						<div class="slick__slider-item-second-text">
-							<p>Наряду с вопросами по организации раздевалки для рабочих, их проживанию
-								на стройке, организации рабочего места прораба или обустройству склада
-								на объекте строительства, одним из важнейших вопросов является где
-								рабочие будут принимать душ и куда они будут ходить в туалет!
-								Оптимальным решением в подобной ситуации, будет аренда сантехнической
-								(душевой или туалетной) бытовки.
-								Взяв в аренду сантехнический блок-контейнер, Вам достаточно будет его
-								подключить к водоснабжению, канализации и можно начинать
-								пользоваться!</p>
 						</div>
 					</div>
 				</div>
